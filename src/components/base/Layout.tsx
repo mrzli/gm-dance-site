@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { CSSProperties, useCallback, useState } from 'react';
 import {
   AppBar,
   Container,
@@ -14,6 +14,8 @@ import { useStyles } from '../../utils/ui-hooks';
 import { ScreenRoutes } from './ScreenRoutes';
 import { Menu } from 'mdi-material-ui';
 import { MainMenu } from './MainMenu';
+import { useHistory } from 'react-router-dom';
+import { History } from 'history';
 
 interface LayoutProps {}
 
@@ -33,8 +35,14 @@ function stylesCallback(theme: Theme): StyleRules<ClassKey, LayoutProps> {
   });
 }
 
+const CONTAINER_STYLES: CSSProperties = {
+  paddingTop: 10
+};
+
 export function Layout(props: LayoutProps): React.ReactElement {
   const classes = useStyles(props, stylesCallback);
+
+  const history: History = useHistory();
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const onMenuOpen = useCallback(() => {
@@ -43,6 +51,14 @@ export function Layout(props: LayoutProps): React.ReactElement {
   const onMenuClose = useCallback(() => {
     setMenuOpen(false);
   }, []);
+
+  const onNavigate = useCallback(
+    (url: string) => {
+      setMenuOpen(false);
+      history.push(url);
+    },
+    [history]
+  );
 
   return (
     <div>
@@ -63,8 +79,8 @@ export function Layout(props: LayoutProps): React.ReactElement {
         </Toolbar>
       </AppBar>
       <Toolbar />
-      <MainMenu open={menuOpen} onClose={onMenuClose} />
-      <Container maxWidth={false} style={{ paddingTop: 10 }}>
+      <MainMenu open={menuOpen} onClose={onMenuClose} onNavigate={onNavigate} />
+      <Container maxWidth={false} style={CONTAINER_STYLES}>
         <main>
           <ScreenRoutes />
         </main>
