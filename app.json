@@ -1,0 +1,15 @@
+{
+  "name": "dance",
+  "description": "Dance info for myself.",
+  "stack": "heroku-20",
+  "website": "https://gm-dance-site.herokuapp.com/",
+  "repository": "https://github.com/mrzli/dance",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "mars/create-react-app"
+    }
+  ]
+}
