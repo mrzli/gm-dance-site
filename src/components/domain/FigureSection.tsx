@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { FigureSectionData } from '../../types/domain/figure-section-data';
+import { Link } from '@material-ui/core';
 
 interface FigureSectionProps {
   readonly startRow: number;
@@ -46,7 +47,7 @@ export function FigureSection({
                 gridColumnStart: 2
               }}
             >
-              {figure.startHold}
+              <Link href={`#${figure.startHold}`}>{figure.startHold}</Link>
             </div>
             <div
               style={{
@@ -54,7 +55,7 @@ export function FigureSection({
                 gridColumnStart: 3
               }}
             >
-              {figure.endHold}
+              <Link href={`#${figure.endHold}`}>{figure.endHold}</Link>
             </div>
             <div
               style={{
