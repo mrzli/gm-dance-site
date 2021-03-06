@@ -1,12 +1,11 @@
 import React from 'react';
 import { FigureContainer } from '../domain/FigureContainer';
+import figuresData from '../../data/figures-data.json';
 
-interface IntroScreenProps {}
-
-export function IntroScreen(props: IntroScreenProps): React.ReactElement {
+export function IntroScreen(): React.ReactElement {
   return (
     <div>
-      <FigureContainer />
+      <FigureContainer figuresData={figuresData} />
     </div>
   );
 }
