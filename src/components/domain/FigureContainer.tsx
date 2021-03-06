@@ -9,7 +9,11 @@ interface FigureContainerProps {
 
 const CSS: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: '5fr 3fr 2fr 2fr 1fr'
+  gridTemplateColumns: '5fr 3fr 2fr 2fr 1fr',
+  rowGap: 8,
+  columnGap: 10,
+  marginBottom: 20,
+  lineHeight: 1.1
 };
 
 export function FigureContainer({
@@ -37,7 +41,7 @@ function getStartingRows(
 ): readonly number[] {
   return figuresData.reduce<readonly number[]>((acc, item, index, array) => {
     if (index === 0) {
-      return [1]; // 1 to account for figures header
+      return [2]; // grid indexing starts at 1, and 1 more to account for main data header
     } else {
       const cumulativeOffset =
         acc[acc.length - 1] + array[index - 1].figures.length + 1; // +1 to account for startHold row

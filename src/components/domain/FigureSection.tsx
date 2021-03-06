@@ -19,7 +19,11 @@ export function FigureSection({
         style={{
           gridRowStart: startRow,
           gridColumnStart: 1,
-          gridColumnEnd: 5
+          gridColumnEnd: 6,
+          paddingTop: 20,
+          paddingBottom: 5,
+          borderBottom: '1px solid black',
+          fontWeight: 'bold'
         }}
       >
         {startHold}

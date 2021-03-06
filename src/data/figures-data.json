@@ -2403,18 +2403,6 @@
     ]
   },
   {
-    "startHold": "LL>D",
-    "figures": [
-      {
-        "description": "LL>DD - bacanje obje ŽRuke i ulazak u Z u 5-8",
-        "startHold": "LL>D",
-        "endHold": "Z",
-        "note": "Prije početka podižemo i spajamo LL i DD (ali ne mijenjamo hvat)",
-        "video": "002 - 04"
-      }
-    ]
-  },
-  {
     "startHold": "LL>DD",
     "figures": [
       {
@@ -2430,6 +2418,13 @@
         "endHold": "LD+DL-Blizu",
         "note": "",
         "video": "002 - Pokreti 04"
+      },
+      {
+        "description": "LL>DD - bacanje obje ŽRuke i ulazak u Z u 5-8",
+        "startHold": "LL>DD",
+        "endHold": "Z",
+        "note": "Prije početka podižemo i spajamo LL i DD (ali ne mijenjamo hvat)",
+        "video": "002 - 04"
       },
       {
         "description": "LL>DD - Ž CCW obje iznad ŽGlave, na kraju prebacivanje ruku kad su blizu",
