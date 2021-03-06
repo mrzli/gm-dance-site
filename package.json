@@ -14,7 +14,7 @@
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check .",
     "postinstall": "husky install",
-    "convert-data": "ts-node ./src/data-converter/convert-data.ts",
+    "convert-data": "ts-node --project tsconfig.json ../gm-dance-site-data-converter/src/convert-data.ts",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -39,7 +39,6 @@
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.1",
     "@types/react-router-dom": "5.1.7",
-    "csv-parser": "3.0.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.1",
     "husky": "5.1.3",
