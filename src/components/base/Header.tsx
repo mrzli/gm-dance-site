@@ -49,7 +49,7 @@ export function Header(props: HeaderProps): React.ReactElement {
           <SvgIcon component={Menu} fontSize={'large'} />
         </IconButton>
         <Typography variant={'h6'} className={classes.title}>
-          News
+          Figure
         </Typography>
       </Toolbar>
     </header>

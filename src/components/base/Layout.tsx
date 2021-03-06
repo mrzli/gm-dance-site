@@ -6,18 +6,16 @@ import { useHistory } from 'react-router-dom';
 import { History } from 'history';
 import { Header } from './Header';
 
-interface LayoutProps {}
-
 const CONTAINER_STYLES: CSSProperties = {
   paddingTop: 10
 };
 
-export function Layout(props: LayoutProps): React.ReactElement {
+export function Layout(): React.ReactElement {
   const history: History = useHistory();
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const onMenuOpen = useCallback(() => {
-    setMenuOpen(true);
+    // setMenuOpen(true); // disable for now, not needed
   }, []);
   const onMenuClose = useCallback(() => {
     setMenuOpen(false);
