@@ -71,7 +71,7 @@ export function FigureSection({
                 gridColumnStart: 5
               }}
             >
-              {figure.video}
+              {figure.videos.join(', ')}
             </div>
           </Fragment>
         );

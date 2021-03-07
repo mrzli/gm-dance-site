@@ -3,5 +3,5 @@ export interface FigureData {
   readonly startHold: string;
   readonly endHold: string;
   readonly note: string;
-  readonly video: string;
+  readonly videos: readonly string[];
 }
