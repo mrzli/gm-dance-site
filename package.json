@@ -14,7 +14,6 @@
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check .",
     "postinstall": "husky install",
-    "convert-data": "ts-node --project tsconfig.json ../gm-dance-site-data-converter/src/convert-data.ts",
     "eject": "react-scripts eject"
   },
   "dependencies": {
