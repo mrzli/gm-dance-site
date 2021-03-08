@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import { History } from 'history';
 
 const CONTAINER_STYLES: CSSProperties = {
-  paddingTop: 10
+  padding: '10px 10px 20px 10px'
 };
 
 export function Layout(): React.ReactElement {

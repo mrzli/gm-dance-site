@@ -10,9 +10,8 @@ interface FigureContainerProps {
 const CSS: CSSProperties = {
   display: 'grid',
   gridTemplateColumns: '5fr 2fr 2fr 2fr 2fr',
-  rowGap: 8,
-  columnGap: 10,
-  marginBottom: 20,
+  // rowGap: 8,
+  // columnGap: 10,
   lineHeight: 1.1
 };
 

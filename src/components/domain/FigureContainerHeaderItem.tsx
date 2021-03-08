@@ -16,7 +16,8 @@ export function FigureContainerHeaderItem({
       style={{
         gridRowStart: row,
         gridColumnStart: column,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        padding: 5
       }}
     >
       {text}

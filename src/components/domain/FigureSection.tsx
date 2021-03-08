@@ -7,6 +7,8 @@ interface FigureSectionProps {
   readonly figureSectionData: FigureSectionData;
 }
 
+const CELL_PADDING = 5;
+
 export function FigureSection({
   startRow,
   figureSectionData
@@ -20,9 +22,8 @@ export function FigureSection({
         style={{
           gridRowStart: startRow,
           gridColumnStart: 1,
-          gridColumnEnd: 6,
-          paddingTop: 20,
-          paddingBottom: 5,
+          gridColumnEnd: -1,
+          padding: '20px 5px 5px 5px',
           borderBottom: '1px solid black',
           fontWeight: 'bold'
         }}
@@ -33,10 +34,22 @@ export function FigureSection({
         const currentRowIndex = startRow + index + 1;
         return (
           <Fragment key={index}>
+            {index % 2 === 0 ? (
+              <div
+                style={{
+                  gridRowStart: currentRowIndex,
+                  gridColumnStart: 1,
+                  gridColumnEnd: -1,
+                  backgroundColor: '#F0F0F0',
+                  padding: CELL_PADDING
+                }}
+              />
+            ) : undefined}
             <div
               style={{
                 gridRowStart: currentRowIndex,
-                gridColumnStart: 1
+                gridColumnStart: 1,
+                padding: CELL_PADDING
               }}
             >
               {figure.description}
@@ -44,7 +57,8 @@ export function FigureSection({
             <div
               style={{
                 gridRowStart: currentRowIndex,
-                gridColumnStart: 2
+                gridColumnStart: 2,
+                padding: CELL_PADDING
               }}
             >
               <Link href={`#${figure.startHold}`}>{figure.startHold}</Link>
@@ -52,7 +66,8 @@ export function FigureSection({
             <div
               style={{
                 gridRowStart: currentRowIndex,
-                gridColumnStart: 3
+                gridColumnStart: 3,
+                padding: CELL_PADDING
               }}
             >
               <Link href={`#${figure.endHold}`}>{figure.endHold}</Link>
@@ -60,7 +75,8 @@ export function FigureSection({
             <div
               style={{
                 gridRowStart: currentRowIndex,
-                gridColumnStart: 4
+                gridColumnStart: 4,
+                padding: CELL_PADDING
               }}
             >
               {figure.note}
@@ -68,7 +84,8 @@ export function FigureSection({
             <div
               style={{
                 gridRowStart: currentRowIndex,
-                gridColumnStart: 5
+                gridColumnStart: 5,
+                padding: CELL_PADDING
               }}
             >
               {figure.videos.join(', ')}
