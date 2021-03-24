@@ -120,15 +120,6 @@
         ]
       },
       {
-        "description": "Vođenje u dlanove, Ž laktovi zaključani, 1-2 val L, 3-4 val D, 5-6 val prema meni (privlačenje ruku i luk prema gore), 7 val zasjedanje (guram ruke dijagonalno prema dolje), 8 podizanje/ispravljanje Ž",
-        "startHold": "O",
-        "endHold": "O",
-        "note": "",
-        "videos": [
-          "002 - 03"
-        ]
-      },
-      {
         "description": "Ž CCW 720s LD iznad ŽGlave, DL ništa",
         "startHold": "O",
         "endHold": "O",
@@ -174,15 +165,6 @@
         ]
       },
       {
-        "description": "Dijagonalno vođenje sa tenzijom u rukama, počevši od korak_L_orj_L-korak_D-orj_D-naprijed-zrak-korak_D_orj_L-korak_L_orj_D-nazad-tap_i_ispravljanje, u 1-8",
-        "startHold": "O",
-        "endHold": "O",
-        "note": "",
-        "videos": [
-          "003 - 14"
-        ]
-      },
-      {
         "description": "Korak u L u 1, u 2-4 u mjestu Ž CCW LD iznad ŽGlave, DL ništa",
         "startHold": "O",
         "endHold": "O",
@@ -219,7 +201,7 @@
         ]
       },
       {
-        "description": "Počevši prema gore pa van vjetrenjače u kontaktu sa LD i DL (kao u obliku srca), dok su ruke preka gore, ovo je otprilike u 5, u 6-7 nastavljam luk, ali i privlačim ih sebi tako da se Ž u struku sagne prema ŽNaprijed, u 8 pogurnem Ž prema nazad tako da se ispravi",
+        "description": "Počevši prema gore pa van vjetrenjače u kontaktu sa LD i DL (kao u obliku srca), dok su ruke prema gore, ovo je otprilike u 5, u 6-7 nastavljam luk, ali i privlačim ih sebi tako da se Ž u struku sagne prema ŽNaprijed, u 8 pogurnem Ž prema nazad tako da se ispravi",
         "startHold": "O",
         "endHold": "O",
         "note": "",
@@ -242,7 +224,7 @@
         "endHold": "O",
         "note": "",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       },
       {
@@ -251,16 +233,7 @@
         "endHold": "O",
         "note": "",
         "videos": [
-          "005 - 07"
-        ]
-      },
-      {
-        "description": "Dijagonalno vođenje, u 1-4, počevši od korak_L_orj_L-korak_D-orj_D-naprijed-noga_u_zraku",
-        "startHold": "O",
-        "endHold": "O",
-        "note": "",
-        "videos": [
-          "005 - 09"
+          "005 - 08"
         ]
       },
       {
@@ -336,7 +309,7 @@
         ]
       },
       {
-        "description": "Istovremeni M i Ž vrlo lagani CCW pokret i lagano spuštanje u 7, 8 podizanje",
+        "description": "U 7-8, ruke široko postavljene, Istovremeni M i Ž vrlo lagani CCW pokret i lagano spuštanje u 7, 8 podizanje",
         "startHold": "O",
         "endHold": "O",
         "note": "",
@@ -417,15 +390,6 @@
         ]
       },
       {
-        "description": "Dijagonalno vođenje sa tenzijom u rukama, počevši od korak_L_orj_L-korak_D-orj_D-naprijed-zrak-korak_D_orj_L-korak_L_orj_D-nazad-tap_i_ispravljanje, u 1-8",
-        "startHold": "O",
-        "endHold": "O",
-        "note": "",
-        "videos": [
-          "020 - 05"
-        ]
-      },
-      {
         "description": "Basic u 1-2, 3-4 razdvajanje, DL u kontaktu",
         "startHold": "O",
         "endHold": "ORazdvojeno_DL",
@@ -458,7 +422,7 @@
         "endHold": "OZasjednuti",
         "note": "",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       },
       {
@@ -579,7 +543,7 @@
         ]
       },
       {
-        "description": "Dijagonalno vođenje sa tenzijom u rukama, počevši od korak_L_orj_L-korak_D-orj_D-naprijed u 1-3, i puštam LD, 4 DL preko MGlave i MDNoga preko MLNoge",
+        "description": "Dijagonalno vođenje sa tenzijom u rukama, počevši od korak_L_orj_L-korak_D_orj_D-naprijed u 1-3, i puštam LD, 4 DL preko MGlave i MDNoga preko MLNoge",
         "startHold": "O",
         "endHold": "RaširenoMDNogaPrekoMLNoge_DL-MLRameIzaVrata",
         "note": "",
@@ -629,7 +593,7 @@
         "endHold": "LD_DL-ŽDOkoLakta",
         "note": "",
         "videos": [
-          "010 - 06"
+          "010 - 07"
         ]
       },
       {
@@ -1409,6 +1373,65 @@
     ]
   },
   {
+    "startHold": "ODlanUDlan",
+    "figures": [
+      {
+        "description": "ODlanUDlan - Ž laktovi zaključani, 1-2 val L, 3-4 val D, 5-6 val prema meni (privlačenje ruku i luk prema gore), 7 val zasjedanje (guram ruke dijagonalno prema dolje), 8 podizanje/ispravljanje Ž",
+        "startHold": "ODlanUDlan",
+        "endHold": "ODlanUDlan",
+        "note": "",
+        "videos": [
+          "002 - 03"
+        ]
+      },
+      {
+        "description": "ODlanUDlan - dijagonalno vođenje sa tenzijom u rukama, počevši od korak_L_orj_L-korak_D_orj_D-naprijed-zrak, u 1-4",
+        "startHold": "ODlanUDlan",
+        "endHold": "ODlanUDlan",
+        "note": "",
+        "videos": [
+          "003 - 14"
+        ]
+      },
+      {
+        "description": "ODlanUDlan - dijagonalno vođenje sa tenzijom u rukama, počevši od korak_D_orj_L-korak_L_orj_D-nazad-tap_i_ispravljanje, u 5-8",
+        "startHold": "ODlanUDlan",
+        "endHold": "ODlanUDlan",
+        "note": "Nastavak od figure iznad",
+        "videos": [
+          "003 - 14"
+        ]
+      },
+      {
+        "description": "ODlanUDlan - dijagonalno vođenje, u 1-4, počevši od korak_L_orj_L-korak_D_orj_D-naprijed-noga_u_zraku",
+        "startHold": "ODlanUDlan",
+        "endHold": "ODlanUDlan",
+        "note": "",
+        "videos": [
+          "005 - 09"
+        ]
+      },
+      {
+        "description": "ODlanUDlan - dijagonalno vođenje sa tenzijom u rukama, počevši od korak_L_orj_L-korak_D_orj_D-naprijed-zrak, u 1-4",
+        "startHold": "ODlanUDlan",
+        "endHold": "ODlanUDlan",
+        "note": "",
+        "videos": [
+          "020 - 05"
+        ]
+      },
+      {
+        "description": "ODlanUDlan - dijagonalno vođenje sa tenzijom u rukama, počevši od korak_D_orj_L-korak_L_orj_D-nazad-tap_i_ispravljanje, u 5-8",
+        "startHold": "ODlanUDlan",
+        "endHold": "ODlanUDlan",
+        "note": "Nastavak od figure iznad",
+        "videos": [
+          "020 - 05"
+        ]
+      }
+    ]
+  },
+  {
     "startHold": "ORazdvojeno_DL",
     "figures": [
       {
@@ -1468,7 +1491,7 @@
         "endHold": "PZ",
         "note": "",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       }
     ]
@@ -1522,7 +1545,7 @@
         ]
       },
       {
-        "description": "PZ - dijagonalno vođenje, počevši od korak_L_orj_L-korak_D-orj_D-naprijed-tap-korak_D_orj_L-korak_L_orj_D-nazad-tap_i_ispravljanje",
+        "description": "PZ - dijagonalno vođenje, počevši od korak_L_orj_L-korak_D_orj_D-naprijed-tap-korak_D_orj_L-korak_L_orj_D-nazad-tap_i_ispravljanje",
         "startHold": "PZ",
         "endHold": "PZ",
         "note": "",
@@ -1743,7 +1766,7 @@
         "endHold": "ŽLeđima_LL_D-ŽDPrednjaRebra",
         "note": "",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       },
       {
@@ -1874,7 +1897,7 @@
         ]
       },
       {
-        "description": "Z - obični val ",
+        "description": "Z - obični val",
         "startHold": "Z",
         "endHold": "Z",
         "note": "",
@@ -1910,7 +1933,7 @@
         ]
       },
       {
-        "description": "Z - obični val ",
+        "description": "Z - obični val",
         "startHold": "Z",
         "endHold": "Z",
         "note": "",
@@ -2658,7 +2681,7 @@
     "startHold": "LD_D-ŽLZglobRavnoMDesno",
     "figures": [
       {
-        "description": "LD_D-ŽLZglobRavnoMDesno  - 5-6 bacam ŽLRuku iza Ž i hvatam DL-ŽIzaLeđa",
+        "description": "LD_D-ŽLZglobRavnoMDesno - 5-6 bacam ŽLRuku iza Ž i hvatam DL-ŽIzaLeđa",
         "startHold": "LD_D-ŽLZglobRavnoMDesno",
         "endHold": "LD_DL-ŽDStrukIzaLeđa",
         "note": "",
@@ -2695,7 +2718,7 @@
         "endHold": "PZ",
         "note": "",
         "videos": [
-          "010 - 06"
+          "010 - 07"
         ]
       },
       {
@@ -2704,7 +2727,7 @@
         "endHold": "L-ŽDZglobRavnoMLijevo_DL",
         "note": "",
         "videos": [
-          "010 - 06"
+          "010 - 07"
         ]
       }
     ]
@@ -2835,7 +2858,7 @@
     "startHold": "LD_DL-ŽIzaLeđa",
     "figures": [
       {
-        "description": " LD_DL-ŽIzaLeđa - 5-6 Ž CCW spin u mjestu, LD iznad ŽGlave, DL u visini struka, 7 lagano se spustimo u koljenima i malo zarotiramo svatko u svoju L stranu (CCW), 8 ponovno se ispravimo",
+        "description": "LD_DL-ŽIzaLeđa - 5-6 Ž CCW spin u mjestu, LD iznad ŽGlave, DL u visini struka, 7 lagano se spustimo u koljenima i malo zarotiramo svatko u svoju L stranu (CCW), 8 ponovno se ispravimo",
         "startHold": "LD_DL-ŽIzaLeđa",
         "endHold": "O",
         "note": "",
@@ -3843,7 +3866,7 @@
         "endHold": "L-ŽDKuk_D-ŽLKuk",
         "note": "",
         "videos": [
-          "002 - Pokreti 01"
+          "002 - Pokreti 02"
         ]
       },
       {
@@ -3852,7 +3875,7 @@
         "endHold": "L-ŽDKuk_D-ŽLKuk",
         "note": "",
         "videos": [
-          "002 - Pokreti 01"
+          "002 - Pokreti 02"
         ]
       },
       {
@@ -3861,7 +3884,7 @@
         "endHold": "L-ŽDKuk_D-ŽLKuk",
         "note": "",
         "videos": [
-          "002 - Pokreti 01"
+          "002 - Pokreti 02"
         ]
       },
       {
@@ -3870,7 +3893,7 @@
         "endHold": "L-ŽDKuk_D-ŽLKuk",
         "note": "",
         "videos": [
-          "002 - Pokreti 01"
+          "002 - Pokreti 02"
         ]
       },
       {
@@ -3879,7 +3902,7 @@
         "endHold": "L-ŽDKuk_D-ŽLKuk",
         "note": "",
         "videos": [
-          "002 - Pokreti 01"
+          "002 - Pokreti 02"
         ]
       },
       {
@@ -3888,7 +3911,7 @@
         "endHold": "L-ŽDKuk_D-ŽLKuk",
         "note": "",
         "videos": [
-          "002 - Pokreti 01"
+          "002 - Pokreti 02"
         ]
       }
     ]
@@ -4235,7 +4258,7 @@
         "endHold": "LD_DL-ŽDOkoLakta",
         "note": "",
         "videos": [
-          "010 - 06"
+          "010 - 07"
         ]
       }
     ]
@@ -4678,7 +4701,7 @@
         "endHold": "L90_LD-ŽLRame_DL",
         "note": "",
         "videos": [
-          "003 - 17"
+          "003 - 18"
         ]
       },
       {
@@ -4751,7 +4774,7 @@
     "startHold": "D90_LL_DD-ŽDRame",
     "figures": [
       {
-        "description": "D90_LL_DD-ŽDRame - u mjestu Ž CW 270s LL iznad ŽGlave, DD ostaje u kontaktu, u 1-4, ",
+        "description": "D90_LL_DD-ŽDRame - u mjestu Ž CW 270s LL iznad ŽGlave, DD ostaje u kontaktu, u 1-4,",
         "startHold": "D90_LL_DD-ŽDRame",
         "endHold": "LL>DD",
         "note": "",
@@ -5082,7 +5105,7 @@
         "endHold": "DDBokUzBok_L-ŽDLopatica_D-ŽLLopatica",
         "note": "",
         "videos": [
-          "003 - 17"
+          "003 - 18"
         ]
       },
       {
@@ -5487,7 +5510,7 @@
         "endHold": "Z",
         "note": "",
         "videos": [
-          "003 - 17"
+          "003 - 18"
         ]
       },
       {
@@ -5753,7 +5776,7 @@
         "endHold": "ŽLeđima_L-ŽLRame_D-ŽDPrednjaRebra",
         "note": "Prije početka prebačaj sa LL na L-ŽLRame",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       },
       {
@@ -5771,7 +5794,7 @@
         "endHold": "ŽLeđima_LL_D-ŽDPrednjaRebra",
         "note": "",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       }
     ]
@@ -6056,7 +6079,7 @@
         "endHold": "ŽLeđima_LL_D-ŽDPrednjaRebra",
         "note": "",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       },
       {
@@ -6155,7 +6178,7 @@
         "endHold": "MLeđima_LL-MLIznadRamena",
         "note": "",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       },
       {
@@ -6554,7 +6577,7 @@
         "endHold": "O",
         "note": "",
         "videos": [
-          "005 - 07"
+          "005 - 08"
         ]
       },
       {
@@ -6595,7 +6618,7 @@
     "startHold": "MLeđima_LL-MLIznadRamena_DD-MDPoredStrane",
     "figures": [
       {
-        "description": "MLeđima_LL-MLIznadRamena_DD-MDPoredStrane - jednostavan val u 1-4, na 1-2 kad idemo naprijed u val postavljamo DD na MPrsa, na 3-4 kad idemo nazad u val prebacujemo LL preko MGlave ",
+        "description": "MLeđima_LL-MLIznadRamena_DD-MDPoredStrane - jednostavan val u 1-4, na 1-2 kad idemo naprijed u val postavljamo DD na MPrsa, na 3-4 kad idemo nazad u val prebacujemo LL preko MGlave",
         "startHold": "MLeđima_LL-MLIznadRamena_DD-MDPoredStrane",
         "endHold": "MLeđima_DD-MDPrsa",
         "note": "",
