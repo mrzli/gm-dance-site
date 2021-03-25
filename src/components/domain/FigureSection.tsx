@@ -49,10 +49,11 @@ export function FigureSection({
               style={{
                 gridRowStart: currentRowIndex,
                 gridColumnStart: 1,
-                padding: CELL_PADDING
+                padding: CELL_PADDING,
+                textAlign: 'end'
               }}
             >
-              {figure.description}
+              {index + 1}.
             </div>
             <div
               style={{
@@ -61,7 +62,7 @@ export function FigureSection({
                 padding: CELL_PADDING
               }}
             >
-              <Link href={`#${figure.startHold}`}>{figure.startHold}</Link>
+              {figure.description}
             </div>
             <div
               style={{
@@ -70,7 +71,7 @@ export function FigureSection({
                 padding: CELL_PADDING
               }}
             >
-              <Link href={`#${figure.endHold}`}>{figure.endHold}</Link>
+              <Link href={`#${figure.startHold}`}>{figure.startHold}</Link>
             </div>
             <div
               style={{
@@ -79,12 +80,21 @@ export function FigureSection({
                 padding: CELL_PADDING
               }}
             >
-              {figure.note}
+              <Link href={`#${figure.endHold}`}>{figure.endHold}</Link>
             </div>
             <div
               style={{
                 gridRowStart: currentRowIndex,
                 gridColumnStart: 5,
+                padding: CELL_PADDING
+              }}
+            >
+              {figure.note}
+            </div>
+            <div
+              style={{
+                gridRowStart: currentRowIndex,
+                gridColumnStart: 6,
                 padding: CELL_PADDING
               }}
             >

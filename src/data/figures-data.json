@@ -201,15 +201,6 @@
         ]
       },
       {
-        "description": "Počevši prema gore pa van vjetrenjače u kontaktu sa LD i DL (kao u obliku srca), dok su ruke prema gore, ovo je otprilike u 5, u 6-7 nastavljam luk, ali i privlačim ih sebi tako da se Ž u struku sagne prema ŽNaprijed, u 8 pogurnem Ž prema nazad tako da se ispravi",
-        "startHold": "O",
-        "endHold": "O",
-        "note": "",
-        "videos": [
-          "005 - 05"
-        ]
-      },
-      {
         "description": "Ž CCW LD iznad ŽGlave, DL ništa, u 5-8",
         "startHold": "O",
         "endHold": "O",
@@ -417,15 +408,6 @@
         ]
       },
       {
-        "description": "Vođenje u dlanove, Ž laktovi zaključani, 1-2 val L, 3-4 val D, 5-6 val prema meni (privlačenje ruku i luk prema gore), 7-8 val sa zasjedanjem",
-        "startHold": "O",
-        "endHold": "OZasjednuti",
-        "note": "",
-        "videos": [
-          "005 - 08"
-        ]
-      },
-      {
         "description": "Bacanje ŽLRuke",
         "startHold": "O",
         "endHold": "PZ",
@@ -462,7 +444,7 @@
         ]
       },
       {
-        "description": "Korak-tap u L u 5-6, Ž CCW LD iznad ŽGlave, DL ništa, u 7-8, u koretu MDRuka na ŽLeđa",
+        "description": "Korak-tap u L u 5-6, u 7-8 Ž CCW LD iznad ŽGlave, DL ništa, u okretu MDRuka na ŽLeđa",
         "startHold": "O",
         "endHold": "PZ",
         "note": "",
@@ -534,21 +516,12 @@
         ]
       },
       {
-        "description": "Bacanje LD u ŽNazad u 1-4 i otvaranje",
+        "description": "U 1-4, bacanje LD u ŽNazad otprilike na 3, i onda otvaranje",
         "startHold": "O",
         "endHold": "Rašireno_DL",
         "note": "",
         "videos": [
           "003 - 07"
-        ]
-      },
-      {
-        "description": "Dijagonalno vođenje sa tenzijom u rukama, počevši od korak_L_orj_L-korak_D_orj_D-naprijed u 1-3, i puštam LD, 4 DL preko MGlave i MDNoga preko MLNoge",
-        "startHold": "O",
-        "endHold": "RaširenoMDNogaPrekoMLNoge_DL-MLRameIzaVrata",
-        "note": "",
-        "videos": [
-          "020 - 05"
         ]
       },
       {
@@ -570,9 +543,9 @@
         ]
       },
       {
-        "description": "M CW L iznad DL u 5-8, DL otpustimo kad zasmeta u okretu, pri kraju okreta D spustimo dolje da bude u kontaktu sa ŽLŽglobom",
+        "description": "M CW L iznad DL u 5-8, DL otpustimo kad zasmeta u okretu, pri kraju okreta D spustimo dolje da MDPodlaktica bude u kontaktu sa ŽLZglobom",
         "startHold": "O",
-        "endHold": "LD_D-ŽLZglob",
+        "endHold": "LD_MDZglob-ŽLZglob",
         "note": "Na kraju već započinjemo slijedeći pokret, zapravo DL naprave 180s do početka slijedeće figure i orijentirane su prema gore",
         "videos": [
           "002 - 01"
@@ -597,6 +570,15 @@
         ]
       },
       {
+        "description": "U basicu, 1 DL malo prema MLijevo, 2 DL prema MDesno, 3 nastavljam pokret sa DL i bacam ju ŽIzaLeđa, 4 opet hvatam LD-ŽIzaLeđa",
+        "startHold": "O",
+        "endHold": "LD_DL-ŽDStrukIzaLeđa",
+        "note": "",
+        "videos": [
+          "005 - 05"
+        ]
+      },
+      {
         "description": "U 5 korak u D, orijentacija u L, 6-8 Ž CW LD iznad ŽGlave, DL u visini struka",
         "startHold": "O",
         "endHold": "LD_DL-ŽDStrukIzaLeđa",
@@ -615,7 +597,7 @@
         ]
       },
       {
-        "description": "U 1-2 lagani CCW luk sa DL počevši prema dolje i MLijevo, koji u 3-4, tj u trenutku kad je DL usmjeren U MDesno prelazi u bacanje ŽDRuke iza ŽLeđa, i na kraju radimo kontakt D-ŽLIzaLeđa",
+        "description": "U 1-2 lagani CCW luk sa DL počevši prema dolje i MLijevo, koji u 3-4, tj u trenutku kad je DL usmjeren U MDesno prelazi u bacanje ŽLRuke iza ŽLeđa, i na kraju radimo kontakt D-ŽLIzaLeđa",
         "startHold": "O",
         "endHold": "LD_DL-ŽDStrukIzaLeđa",
         "note": "",
@@ -630,15 +612,6 @@
         "note": "",
         "videos": [
           "020 - 04"
-        ]
-      },
-      {
-        "description": "U basicu, 1 DL malo prema MLijevo, 2 DL prema MDesno, 3 nastavljam pokret sa DL i bacam ju ŽIzaLeđa, 4 opet hvatam LD-ŽIzaLeđa",
-        "startHold": "O",
-        "endHold": "LD_DL-ŽIzaLeđa",
-        "note": "",
-        "videos": [
-          "005 - 05"
         ]
       },
       {
@@ -1403,6 +1376,15 @@
         ]
       },
       {
+        "description": "ODlanUDlan - počevši prema gore pa van vjetrenjače u kontaktu sa LD i DL (kao u obliku srca), dok su ruke prema gore, ovo je otprilike u 5, u 6-7 nastavljam luk, ali i privlačim ih sebi tako da se Ž u struku sagne prema ŽNaprijed, u 8 pogurnem Ž prema nazad tako da se ispravi",
+        "startHold": "ODlanUDlan",
+        "endHold": "ODlanUDlan",
+        "note": "",
+        "videos": [
+          "005 - 05"
+        ]
+      },
+      {
         "description": "ODlanUDlan - dijagonalno vođenje, u 1-4, počevši od korak_L_orj_L-korak_D_orj_D-naprijed-noga_u_zraku",
         "startHold": "ODlanUDlan",
         "endHold": "ODlanUDlan",
@@ -1425,6 +1407,24 @@
         "startHold": "ODlanUDlan",
         "endHold": "ODlanUDlan",
         "note": "Nastavak od figure iznad",
+        "videos": [
+          "020 - 05"
+        ]
+      },
+      {
+        "description": "ODlanUDlan - 1-2 val L, 3-4 val D, 5-6 val prema meni (privlačenje ruku i luk prema gore), 7-8 val sa zasjedanjem",
+        "startHold": "ODlanUDlan",
+        "endHold": "ODlanUDlanZasjednuti",
+        "note": "",
+        "videos": [
+          "005 - 08"
+        ]
+      },
+      {
+        "description": "ODlanUDlan - dijagonalno vođenje sa tenzijom u rukama, počevši od korak_L_orj_L-korak_D_orj_D-naprijed u 1-3, i puštam LD, 4 DL preko MGlave i MDNoga preko MLNoge",
+        "startHold": "ODlanUDlan",
+        "endHold": "RaširenoMDNogaPrekoMLNoge_DL-MLRameIzaVrata",
+        "note": "",
         "videos": [
           "020 - 05"
         ]
@@ -1483,11 +1483,11 @@
     ]
   },
   {
-    "startHold": "OZasjednuti",
+    "startHold": "ODlanUDlanZasjednuti",
     "figures": [
       {
-        "description": "OZasjednuti - 1-4 počevši prema gore pa van vjetrenjače u kontaktu sa LD i DL (kao u obliku srca), kad su ruke gore nastavljam luk, ali i privlačim ih sebi tako da se Ž u struku sagne prema ŽNaprijed, u 5-6 pogurnem Ž prema nazad tako da se ispravi, 7-8 bacam ŽLRuku i ulazim u PZ",
-        "startHold": "OZasjednuti",
+        "description": "ODlanUDlanZasjednuti - 1-4 počevši prema gore pa van vjetrenjače u kontaktu sa LD i DL (kao u obliku srca), kad su ruke gore nastavljam luk, ali i privlačim ih sebi tako da se Ž u struku sagne prema ŽNaprijed, u 5-6 pogurnem Ž prema nazad tako da se ispravi, 7-8 bacam ŽLRuku i ulazim u PZ",
+        "startHold": "ODlanUDlanZasjednuti",
         "endHold": "PZ",
         "note": "",
         "videos": [
@@ -2664,11 +2664,11 @@
     ]
   },
   {
-    "startHold": "LD_D-ŽLZglob",
+    "startHold": "LD_MDZglob-ŽLZglob",
     "figures": [
       {
-        "description": "LD_D-ŽLZglob - DL CCW vjetrenjača, puni krug plus koliko je potrebno da ruka dođe do dolje, i uzimamo DL u normalni hvat",
-        "startHold": "LD_D-ŽLZglob",
+        "description": "LD_MDZglob-ŽLZglob - DL CCW vjetrenjača, puni krug plus koliko je potrebno da ruka dođe do dolje, i uzimamo DL u normalni hvat",
+        "startHold": "LD_MDZglob-ŽLZglob",
         "endHold": "O",
         "note": "",
         "videos": [
@@ -2735,6 +2735,15 @@
   {
     "startHold": "LD_DL-ŽDStrukIzaLeđa",
     "figures": [
+      {
+        "description": "LD_DL-ŽDStrukIzaLeđa - 5-6 Ž CCW spin u mjestu, LD iznad ŽGlave, DL u visini struka, 7 lagano se spustimo u koljenima i malo zarotiramo svatko u svoju L stranu (CCW), 8 ponovno se ispravimo",
+        "startHold": "LD_DL-ŽDStrukIzaLeđa",
+        "endHold": "O",
+        "note": "",
+        "videos": [
+          "005 - 05"
+        ]
+      },
       {
         "description": "LD_DL-ŽDStrukIzaLeđa - Ž CCW spin LD iznad ŽGlave, DL ništa, u 7-8",
         "startHold": "LD_DL-ŽDStrukIzaLeđa",
@@ -2850,20 +2859,6 @@
         "note": "",
         "videos": [
           "010 - 02"
-        ]
-      }
-    ]
-  },
-  {
-    "startHold": "LD_DL-ŽIzaLeđa",
-    "figures": [
-      {
-        "description": "LD_DL-ŽIzaLeđa - 5-6 Ž CCW spin u mjestu, LD iznad ŽGlave, DL u visini struka, 7 lagano se spustimo u koljenima i malo zarotiramo svatko u svoju L stranu (CCW), 8 ponovno se ispravimo",
-        "startHold": "LD_DL-ŽIzaLeđa",
-        "endHold": "O",
-        "note": "",
-        "videos": [
-          "005 - 05"
         ]
       }
     ]
