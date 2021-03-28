@@ -840,7 +840,7 @@
         ]
       },
       {
-        "description": "M CW vanjski 450s DL u visini struka, LD ništa, u 1-4, u trenutku kad sam MLeđima (između 2 i 3), prehvatim LD u DD",
+        "description": "M CW vanjski DL u visini struka, LD ništa, u 1-4, u trenutku kad sam MLeđima (između 2 i 3), prehvatim LD u DD",
         "startHold": "O",
         "endHold": "DD",
         "note": "",
@@ -3659,7 +3659,7 @@
         ]
       },
       {
-        "description": "DD - Ž CCW 4s DD iznad ŽGlave, LL ništa, u 5-6, istovremeno M CW 90s prema Ž, okret zaustavljamo sa L-ŽLRame",
+        "description": "DD - Ž CCW 270s DD iznad ŽGlave, LL ništa, u 5-6, istovremeno M CW 90s prema Ž, okret zaustavljamo sa L-ŽLRame",
         "startHold": "DD",
         "endHold": "DD>L-ŽLRame",
         "note": "",
