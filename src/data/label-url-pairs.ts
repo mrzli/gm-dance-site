@@ -6,7 +6,11 @@ export const LABEL_URL_PAIRS: readonly LabelUrlPair[] = [
     url: '/'
   },
   {
-    label: 'Basic',
-    url: '/basic'
+    label: 'Bachata Inspire',
+    url: '/bachata-inspire'
+  },
+  {
+    label: 'Marius & Elena',
+    url: '/marius-and-elena'
   }
 ];

@@ -15,10 +15,15 @@ const CSS: CSSProperties = {
   lineHeight: 1.1
 };
 
+interface SectionStartingData {
+  readonly startingGridRow: number;
+  readonly startingFigureNumber: number;
+}
+
 export function FigureContainer({
   figuresData
 }: FigureContainerProps): React.ReactElement {
-  const startingRows = getStartingRows(figuresData);
+  const sectionsStartingData = getSectionsStartingData(figuresData);
   return (
     <div style={CSS}>
       <FigureContainerHeader />
@@ -26,7 +31,8 @@ export function FigureContainer({
         return (
           <FigureSection
             key={item.startHold}
-            startRow={startingRows[index]}
+            startGridRow={sectionsStartingData[index].startingGridRow}
+            startFigureNumber={sectionsStartingData[index].startingFigureNumber}
             figureSectionData={item}
           />
         );
@@ -35,16 +41,34 @@ export function FigureContainer({
   );
 }
 
-function getStartingRows(
+function getSectionsStartingData(
   figuresData: readonly FigureSectionData[]
-): readonly number[] {
-  return figuresData.reduce<readonly number[]>((acc, item, index, array) => {
-    if (index === 0) {
-      return [2]; // grid indexing starts at 1, and 1 more to account for main data header
-    } else {
-      const cumulativeOffset =
-        acc[acc.length - 1] + array[index - 1].figures.length + 1; // +1 to account for startHold row
-      return acc.concat(cumulativeOffset);
-    }
-  }, []);
+): readonly SectionStartingData[] {
+  return figuresData.reduce<readonly SectionStartingData[]>(
+    (acc, item, index, array) => {
+      if (index === 0) {
+        return [
+          {
+            startingGridRow: 2, // grid indexing starts at 1, and 1 more to account for main data header
+            startingFigureNumber: 1
+          }
+        ];
+      } else {
+        const previousSectionStartingData = acc[acc.length - 1];
+        const previousSectionFigureCount = array[index - 1].figures.length;
+        const currentStartingGridRow =
+          previousSectionStartingData.startingGridRow +
+          previousSectionFigureCount +
+          1; // +1 to account for startHold row
+        const currentStartingFigureNumber =
+          previousSectionStartingData.startingFigureNumber +
+          previousSectionFigureCount;
+        return acc.concat({
+          startingGridRow: currentStartingGridRow,
+          startingFigureNumber: currentStartingFigureNumber
+        });
+      }
+    },
+    []
+  );
 }

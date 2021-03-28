@@ -10,6 +10,10 @@ import {
 } from '@material-ui/core';
 import { Menu } from 'mdi-material-ui';
 import { useStyles } from '../../utils/ui-hooks';
+import { useLocation } from 'react-router-dom';
+import { Location } from 'history';
+import { getHeaderTitle } from '../../utils/domain/domain-utils';
+import { LABEL_URL_PAIRS } from '../../data/label-url-pairs';
 
 interface HeaderProps {
   readonly onMenuOpen: () => void;
@@ -35,6 +39,7 @@ export function Header(props: HeaderProps): React.ReactElement {
   const { onMenuOpen } = props;
 
   const classes = useStyles(props, stylesCallback);
+  const location: Location = useLocation();
 
   return (
     <header>
@@ -49,7 +54,7 @@ export function Header(props: HeaderProps): React.ReactElement {
           <SvgIcon component={Menu} fontSize={'large'} />
         </IconButton>
         <Typography variant={'h6'} className={classes.title}>
-          Figure
+          {getHeaderTitle(location, LABEL_URL_PAIRS)}
         </Typography>
       </Toolbar>
     </header>

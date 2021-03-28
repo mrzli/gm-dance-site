@@ -534,7 +534,7 @@
         ]
       },
       {
-        "description": "Vjetrenjača DL preko ŽGlave u 1-4",
+        "description": "Vjetrenjača DL preko ŽGlave u 1-4, u basicu",
         "startHold": "O",
         "endHold": "LD_D-ŽDRame",
         "note": "",
@@ -876,7 +876,7 @@
         ]
       },
       {
-        "description": "Ž CCW LD preko ŽGlave, DL ništa, u 5-8, na kraju prehvat iz DL u DD, i hvatamo LL ispod DD",
+        "description": "Ž CCW LD preko ŽGlave, DL ništa, u 5-8, na kraju prehvat iz LD u DD, i hvatamo LL ispod DD",
         "startHold": "O",
         "endHold": "DD>LL",
         "note": "",
@@ -930,7 +930,7 @@
         ]
       },
       {
-        "description": "Vjetranjače prema van sa LD i DL do ravno gore u 1-2, 3-4 klizim rukama niz ŽRuke i ŽStrane do ŽStruka",
+        "description": "Vjetranjače prema van sa LD i DL do ravno gore u 1-2, 3-4 klizim rukama niz ŽRuke i ŽStrane do ŽStruka, stojimo",
         "startHold": "O",
         "endHold": "L-ŽDStruk_D-ŽLStruk",
         "note": "",
@@ -939,7 +939,7 @@
         ]
       },
       {
-        "description": "Vjetranjače prema van sa LD i DL do ravno gore u 1-4",
+        "description": "Vjetranjače prema van sa LD i DL do ravno gore u 1-4, u basicu",
         "startHold": "O",
         "endHold": "L-ŽDZglobRavnoGore_D-ŽLZglobRavnoGore",
         "note": "",
@@ -948,7 +948,7 @@
         ]
       },
       {
-        "description": "Vjetranjače prema van sa LD i DL do ravno gore u 1-4",
+        "description": "Vjetranjače prema van sa LD i DL do ravno gore u 1-4, u basicu",
         "startHold": "O",
         "endHold": "L-ŽDZglobRavnoGore_D-ŽLZglobRavnoGore",
         "note": "",
@@ -957,7 +957,7 @@
         ]
       },
       {
-        "description": "U mjestu, u 1-4, sa LD, u kontaktu, radim CCW vjetrenjaču, otprilike krug i pol, završim tako da je LD ravno u MLijevo, radim promjene težine u nizu: L-D-LL",
+        "description": "U mjestu, u 1-4, sa LD u kontaktu, radim CCW vjetrenjaču, otprilike krug i pol, završim tako da je LD ravno u MLijevo, radim promjene težine u nizu: L-D-L-L",
         "startHold": "O",
         "endHold": "L-ŽDZglobRavnoMLijevo",
         "note": "Radimo u nastavku prethodne figure",

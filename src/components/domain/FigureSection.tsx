@@ -3,14 +3,16 @@ import { FigureSectionData } from '../../types/domain/figure-section-data';
 import { Link } from '@material-ui/core';
 
 interface FigureSectionProps {
-  readonly startRow: number;
+  readonly startGridRow: number;
+  readonly startFigureNumber: number;
   readonly figureSectionData: FigureSectionData;
 }
 
 const CELL_PADDING = 5;
 
 export function FigureSection({
-  startRow,
+  startGridRow,
+  startFigureNumber,
   figureSectionData
 }: FigureSectionProps): React.ReactElement {
   const { startHold, figures } = figureSectionData;
@@ -20,7 +22,7 @@ export function FigureSection({
       <div
         id={startHold}
         style={{
-          gridRowStart: startRow,
+          gridRowStart: startGridRow,
           gridColumnStart: 1,
           gridColumnEnd: -1,
           padding: '20px 5px 5px 5px',
@@ -31,7 +33,7 @@ export function FigureSection({
         {startHold}
       </div>
       {figures.map((figure, index) => {
-        const currentRowIndex = startRow + index + 1;
+        const currentRowIndex = startGridRow + index + 1;
         return (
           <Fragment key={index}>
             {index % 2 === 0 ? (
@@ -53,7 +55,7 @@ export function FigureSection({
                 textAlign: 'end'
               }}
             >
-              {index + 1}.
+              {startFigureNumber + index}.
             </div>
             <div
               style={{
