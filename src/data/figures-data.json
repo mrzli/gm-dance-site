@@ -525,6 +525,15 @@
         ]
       },
       {
+        "description": "Basic u 1-4 sa razdvajanjem na 3-4, 5-8 zamjena pozicija, tako da Ž u 5 povlačimo sa LD, DL ništa. i istovremeno radimo M CW 270s i Ž CCW 270s, i na kraju sagnjurimo LD",
+        "startHold": "O",
+        "endHold": "Rašireno_LD",
+        "note": "",
+        "videos": [
+          "003 - 04"
+        ]
+      },
+      {
         "description": "Vjetrenjača DL preko ŽGlave u 1-4",
         "startHold": "O",
         "endHold": "LD_D-ŽDRame",
@@ -626,7 +635,7 @@
       {
         "description": "Ž CCW LD iznad ŽGlave, DL ništa, u 5-8, na kraju još DL preko MGlave",
         "startHold": "O",
-        "endHold": "LD-MDRameOkoVrata",
+        "endHold": "LD-MDRameIzaVrata",
         "note": "",
         "videos": [
           "010 - 08"
@@ -635,19 +644,10 @@
       {
         "description": "Ž CCW sa obje iznad ŽGlave, u 5-8, na kraju još LD preko MGlave",
         "startHold": "O",
-        "endHold": "LD-MDRameOkoVrata_DL-MLLakat",
+        "endHold": "LD-MDRameIzaVrata_DL-MLLakat",
         "note": "",
         "videos": [
           "003 - 10"
-        ]
-      },
-      {
-        "description": "M CW vanjski LD u visini struka, DL ništa, u 1-4, n kraju MDLakat naslonimo na ŽDLakat sa vanjske strane",
-        "startHold": "O",
-        "endHold": "LD-MDStrukIzaLeđa_DD-LakatNaLakat",
-        "note": "",
-        "videos": [
-          "010 - 05"
         ]
       },
       {
@@ -662,7 +662,7 @@
       {
         "description": "Ž CCW 270s LD iznad ŽGlave, DL ništa, u 5-8, pred kraj M CW 90s da se orijentiramo prema Ž, MDRuka na ŽLeđa pred kraj okreta da uđemo u PZ poziciju i također na 7-8 dižemo LD da bude ravno prema gore",
         "startHold": "O",
-        "endHold": "LD-RavnoGore_D-ŽDLopatica",
+        "endHold": "LD-RavnoGore_D-ŽLLopatica",
         "note": "",
         "videos": [
           "003 - 04"
@@ -671,7 +671,7 @@
       {
         "description": "Ž CCW LD iznad ŽGlave, DL ništa, u 5-8, MDRuka na ŽLeđa u okretu, također na 7-8 dižemo LD da bude ravno prema gore",
         "startHold": "O",
-        "endHold": "LD-RavnoGore_D-ŽDLopatica",
+        "endHold": "LD-RavnoGore_D-ŽLLopatica",
         "note": "",
         "videos": [
           "003 - 16"
@@ -680,7 +680,7 @@
       {
         "description": "Ž CCW 270s LD iznad ŽGlave, DL ništa, u 5-8, pred kraj M CW 90s da se orijentiramo prema Ž, MDRuka na ŽLeđa pred kraj okreta da uđemo u PZ poziciju i također na 7-8 dižemo LD da bude ravno prema gore",
         "startHold": "O",
-        "endHold": "LD-RavnoGore_D-ŽDLopatica",
+        "endHold": "LD-RavnoGore_D-ŽLLopatica",
         "note": "",
         "videos": [
           "004 - 02"
@@ -698,10 +698,19 @@
       {
         "description": "Ž CW LD iznad ŽGlave, DL u visini struka, u 1-4, na kraju još LD iznad ŽGlave",
         "startHold": "O",
-        "endHold": "LD-ŽLRameOkoVrata_DL-ŽDStrukIzaLeđa",
+        "endHold": "LD-ŽLRameIzaVrata_DL-ŽDStrukIzaLeđa",
         "note": "",
         "videos": [
           "010 - 09"
+        ]
+      },
+      {
+        "description": "M CW vanjski LD u visini struka, DL ništa, u 1-4, n kraju MDLakat naslonimo na ŽDLakat sa vanjske strane",
+        "startHold": "O",
+        "endHold": "LD-MDStrukIzaLeđa_MDNadlaktica-ŽDLakat",
+        "note": "",
+        "videos": [
+          "010 - 05"
         ]
       },
       {
@@ -720,15 +729,6 @@
         "note": "",
         "videos": [
           "020 - 06"
-        ]
-      },
-      {
-        "description": "Ž CCW LD iznad ŽGlave, DL u visini struka, u 5-8",
-        "startHold": "O",
-        "endHold": "DL_LD-ŽDStrukIzaLeđa",
-        "note": "",
-        "videos": [
-          "010 - 02"
         ]
       },
       {
@@ -783,6 +783,15 @@
         "note": "",
         "videos": [
           "003 - 09"
+        ]
+      },
+      {
+        "description": "Ž CCW LD iznad ŽGlave, DL u visini struka, u 5-8",
+        "startHold": "O",
+        "endHold": "DL_LD-ŽLStrukIzaLeđa",
+        "note": "",
+        "videos": [
+          "010 - 02"
         ]
       },
       {
@@ -1664,7 +1673,7 @@
       {
         "description": "PZ - u 5-8, 5-6 korak-tap i LD počnem voditi prema unutra (CW vjetrenjača, u D pa dolje), 7-8 korak tap i nastavak sa LD dok je oprilike orijetirana prema gore (ili blizu toga)",
         "startHold": "PZ",
-        "endHold": "LD-RavnoGore_D-ŽDLopatica",
+        "endHold": "LD-RavnoGore_D-ŽLLopatica",
         "note": "",
         "videos": [
           "003 - 06"
@@ -1673,7 +1682,7 @@
       {
         "description": "PZ - sa LD vodim luk ŽLRuke počevši prema dolje i ŽNazad, ŽLRuka završava na MLRamenu, a mi radimo kontakt L-ŽDRame, u 1-4",
         "startHold": "PZ",
-        "endHold": "LD-ŽLRame_D-ŽDLopatica",
+        "endHold": "LD-ŽLRame_D-ŽLLopatica",
         "note": "",
         "videos": [
           "020 - 01"
@@ -1682,7 +1691,7 @@
       {
         "description": "PZ - sa LD vodim luk ŽLRuke počevši prema dolje i ŽNazad, ŽLRuka prelazi preko MGlave i završava na MDRamenu, a mi radimo kontakt L-ŽDRame, u 1-4",
         "startHold": "PZ",
-        "endHold": "LD-ŽLRame_D-ŽDLopatica",
+        "endHold": "L-ŽDRame_D-ŽLLopatica_ŽDRuka-MDRame",
         "note": "",
         "videos": [
           "020 - 01"
@@ -1700,7 +1709,7 @@
       {
         "description": "PZ - 1-2 izbacivanje L-ŽDPodlaktica unazad do trenutka kad je LD-RavnoGore, 3-4 Ž CCW 180s vođen vjerojatno sa obje ruke pomalo, istovremeno M CCW 90s, tako da je Ž u L90",
         "startHold": "PZ",
-        "endHold": "L90_LD-RavnoGore_D-ŽDLopatica",
+        "endHold": "L90_LD-RavnoGore_D-ŽLLopatica",
         "note": "",
         "videos": [
           "005 - 06"
@@ -2906,11 +2915,11 @@
     ]
   },
   {
-    "startHold": "LD-MDRameOkoVrata",
+    "startHold": "LD-MDRameIzaVrata",
     "figures": [
       {
-        "description": "LD-MDRameOkoVrata - 1-2 odmah na početku stavljamo MDDlanVanskaStrana na vanjsku ŽDNadlakticu, puštamo LD, MTežina na MLijevo, i lagani Ž CW zablokiran sa MDRukom, 3-4 lagani Ž CCW vođen sa MDRukom, zaustavljamo sa L-ŽDPrednjiKuk, 5-6 lagani Ž CW vođen sa MLRukom, zaustavljamo sa D-ŽDStruk, 7-8 Ž CCW vođem sa MDesnom i u okretu MDesna na ŽLeđa",
-        "startHold": "LD-MDRameOkoVrata",
+        "description": "LD-MDRameIzaVrata - 1-2 odmah na početku stavljamo MDDlanVanskaStrana na vanjsku ŽDNadlakticu, puštamo LD, MTežina na MLijevo, i lagani Ž CW zablokiran sa MDRukom, 3-4 lagani Ž CCW vođen sa MDRukom, zaustavljamo sa L-ŽDPrednjiKuk, 5-6 lagani Ž CW vođen sa MLRukom, zaustavljamo sa D-ŽDStruk, 7-8 Ž CCW vođem sa MDesnom i u okretu MDesna na ŽLeđa",
+        "startHold": "LD-MDRameIzaVrata",
         "endHold": "PZ",
         "note": "",
         "videos": [
@@ -2920,11 +2929,11 @@
     ]
   },
   {
-    "startHold": "LD-MDRameOkoVrata_DL-MLLakat",
+    "startHold": "LD-MDRameIzaVrata_DL-MLLakat",
     "figures": [
       {
-        "description": "LD-MDRameOkoVrata_DL-MLLakat - 1-4, odmah na početku puštam LD i bacam DL u ŽNazad, i u hodu prihvaćam LL i DD",
-        "startHold": "LD-MDRameOkoVrata_DL-MLLakat",
+        "description": "LD-MDRameIzaVrata_DL-MLLakat - 1-4, odmah na početku puštam LD i bacam DL u ŽNazad, i u hodu prihvaćam LL i DD",
+        "startHold": "LD-MDRameIzaVrata_DL-MLLakat",
         "endHold": "LL>DD",
         "note": "",
         "videos": [
@@ -2957,20 +2966,6 @@
     ]
   },
   {
-    "startHold": "LD-MDStrukIzaLeđa_DD-LakatNaLakat",
-    "figures": [
-      {
-        "description": "LD-MDStrukIzaLeđa_DD-LakatNaLakat - u 5-8, MDLaktom izbacujemo ŽDRuku prema MDesno i gore (u istom trenutku puštamo LD), i na kraju hvatamo Ž za struk",
-        "startHold": "LD-MDStrukIzaLeđa_DD-LakatNaLakat",
-        "endHold": "L-ŽDStruk_D-ŽLStruk",
-        "note": "",
-        "videos": [
-          "010 - 05"
-        ]
-      }
-    ]
-  },
-  {
     "startHold": "LD-MLRameIzaVrata",
     "figures": [
       {
@@ -2994,11 +2989,11 @@
     ]
   },
   {
-    "startHold": "LD-RavnoGore_D-ŽDLopatica",
+    "startHold": "LD-RavnoGore_D-ŽLLopatica",
     "figures": [
       {
-        "description": "LD-RavnoGore_D-ŽDLopatica - 1-2 LD guram ravno naprijed u luk tako da dođe do ravno dolje na 2 i onda smo u L-ŽDZglob, koraci su naprijed-u_mjestu, u procesu se zajedno sa ženom se zarotiram oprilike za CW 90s, na 3-4 povučem L-ŽDZgblob u nastavak luka prema sebi do trenutka kad je ŽDRuka ravno u lijevo, zarotiramo se zajedno za otprilike CCW 180s, koraci su nazad-u_mjestu, na 5-6 pogurnem Ž malu u D i stavim ŽDRuka-MLPrsa, i 7-8 se zakrenem prema Ž",
-        "startHold": "LD-RavnoGore_D-ŽDLopatica",
+        "description": "LD-RavnoGore_D-ŽLLopatica - 1-2 LD guram ravno naprijed u luk tako da dođe do ravno dolje na 2 i onda smo u L-ŽDZglob, koraci su naprijed-u_mjestu, u procesu se zajedno sa ženom se zarotiram oprilike za CW 90s, na 3-4 povučem L-ŽDZgblob u nastavak luka prema sebi do trenutka kad je ŽDRuka ravno u lijevo, zarotiramo se zajedno za otprilike CCW 180s, koraci su nazad-u_mjestu, na 5-6 pogurnem Ž malu u D i stavim ŽDRuka-MLPrsa, i 7-8 se zakrenem prema Ž",
+        "startHold": "LD-RavnoGore_D-ŽLLopatica",
         "endHold": "PZ",
         "note": "",
         "videos": [
@@ -3006,8 +3001,8 @@
         ]
       },
       {
-        "description": "LD-RavnoGore_D-ŽDLopatica - 1-2 LD preko ŽGlave, 3-4 guram Ž prema dolje u čučanj, 5-6 pregib ŽVrata, 7-8 podizanje Ž",
-        "startHold": "LD-RavnoGore_D-ŽDLopatica",
+        "description": "LD-RavnoGore_D-ŽLLopatica - 1-2 LD preko ŽGlave, 3-4 guram Ž prema dolje u čučanj, 5-6 pregib ŽVrata, 7-8 podizanje Ž",
+        "startHold": "LD-RavnoGore_D-ŽLLopatica",
         "endHold": "PZ",
         "note": "",
         "videos": [
@@ -3015,8 +3010,8 @@
         ]
       },
       {
-        "description": "LD-RavnoGore_D-ŽDLopatica - 1-2 LD guram ravno naprijed u luk tako da dođe do ravno dolje na 2 i onda smo u L-ŽDZglob, koraci su naprijed-u_mjestu, u procesu se zajedno sa ženom se zarotiram oprilike za CW 90s, na 3-4 povučem L-ŽDZgblob u nastavak luka prema sebi do trenutka kad je ŽDRuka ravno u lijevo, zarotiramo se zajedno za otprilike CCW 180s, koraci su nazad-u_mjestu, na 5-6 pogurnem Ž malu u D i stavim ŽDRuka-MLPrsa, i 7-8 se zakrenem prema Ž",
-        "startHold": "LD-RavnoGore_D-ŽDLopatica",
+        "description": "LD-RavnoGore_D-ŽLLopatica - 1-2 LD guram ravno naprijed u luk tako da dođe do ravno dolje na 2 i onda smo u L-ŽDZglob, koraci su naprijed-u_mjestu, u procesu se zajedno sa ženom se zarotiram oprilike za CW 90s, na 3-4 povučem L-ŽDZgblob u nastavak luka prema sebi do trenutka kad je ŽDRuka ravno u lijevo, zarotiramo se zajedno za otprilike CCW 180s, koraci su nazad-u_mjestu, na 5-6 pogurnem Ž malu u D i stavim ŽDRuka-MLPrsa, i 7-8 se zakrenem prema Ž",
+        "startHold": "LD-RavnoGore_D-ŽLLopatica",
         "endHold": "PZ",
         "note": "",
         "videos": [
@@ -3024,35 +3019,21 @@
         ]
       },
       {
-        "description": "Basic u 1-4 sa razdvajanjem na 3-4, 5-8 zamjena pozicija, tako da Ž u 5 povlačimo sa LD, DL ništa. i istovremeno radimo M CW 270s i Ž CCW 270s, i na kraju sagnjurimo LD",
-        "startHold": "LD-RavnoGore_D-ŽDLopatica",
-        "endHold": "Rašireno_LD",
-        "note": "",
-        "videos": [
-          "003 - 04"
-        ]
-      },
-      {
-        "description": "LD-RavnoGore_D-ŽDLopatica - 1-4 LD guram ravno MNaprijed u luk, i na 3 u nastavku pokreta zabacim prema sebi tako da ŽDRuka ode na MLStranu, na 4 stavimo L-ŽDRame, i istovremeno na 3-4 vodimo ženu i sa MDRukom, tako da napravi lagani Ž CCW 90s, i još dodatno u 4 odemo u lagani čučanj",
-        "startHold": "LD-RavnoGore_D-ŽDLopatica",
-        "endHold": "L90_L-ŽDRame_D-ŽLLopatica",
-        "note": "",
-        "videos": [
-          "004 - 02"
-        ]
-      }
-    ]
-  },
-  {
-    "startHold": "LD-RavnoGore_D-ŽLLopatica",
-    "figures": [
-      {
         "description": "LD-RavnoGore_D-ŽLLopatica - u basicu, CCW vjetrenjača sa LD u kontaktu, do situacije kad su LD ravno prema dolje, u 5-6, 7-8 sa LD klizim po ŽDStrani i izbacim ŽDRuku ravno prema gore",
         "startHold": "LD-RavnoGore_D-ŽLLopatica",
         "endHold": "Z",
         "note": "",
         "videos": [
           "020 - 01"
+        ]
+      },
+      {
+        "description": "LD-RavnoGore_D-ŽLLopatica - 1-4 LD guram ravno MNaprijed u luk, i na 3 u nastavku pokreta zabacim prema sebi tako da ŽDRuka ode na MLStranu, na 4 stavimo L-ŽDRame, i istovremeno na 3-4 vodimo ženu i sa MDRukom, tako da napravi lagani Ž CCW 90s, i još dodatno u 4 odemo u lagani čučanj",
+        "startHold": "LD-RavnoGore_D-ŽLLopatica",
+        "endHold": "L90_L-ŽDRame_D-ŽLLopatica",
+        "note": "",
+        "videos": [
+          "004 - 02"
         ]
       }
     ]
@@ -3081,12 +3062,12 @@
     ]
   },
   {
-    "startHold": "LD-ŽLRame_D-ŽDLopatica",
+    "startHold": "LD-ŽLRame_D-ŽLLopatica",
     "figures": [
       {
-        "description": "LD-ŽLRame_D-ŽDLopatica - zajedniči val sa zasjedanjem u 5-7, 8 ispravljanje",
-        "startHold": "LD-ŽLRame_D-ŽDLopatica",
-        "endHold": "LD-ŽLRame_D-ŽDLopatica",
+        "description": "LD-ŽLRame_D-ŽLLopatica - zajednički val sa malim zasjedanjem u 5-7, 8 ispravljanje",
+        "startHold": "LD-ŽLRame_D-ŽLLopatica",
+        "endHold": "LD-ŽLRame_D-ŽLLopatica",
         "note": "",
         "videos": [
           "020 - 01"
@@ -3109,15 +3090,29 @@
     ]
   },
   {
-    "startHold": "LD-ŽLRameOkoVrata_DL-ŽDStrukIzaLeđa",
+    "startHold": "LD-ŽLRameIzaVrata_DL-ŽDStrukIzaLeđa",
     "figures": [
       {
         "description": "LD-ŽLRameOkoVrata_DL-ŽDStrukIzaLeđa - 5-6 Ž CCW spin",
-        "startHold": "LD-ŽLRameOkoVrata_DL-ŽDStrukIzaLeđa",
+        "startHold": "LD-ŽLRameIzaVrata_DL-ŽDStrukIzaLeđa",
         "endHold": "O",
         "note": "",
         "videos": [
           "010 - 09"
+        ]
+      }
+    ]
+  },
+  {
+    "startHold": "LD-MDStrukIzaLeđa_MDNadlaktica-ŽDLakat",
+    "figures": [
+      {
+        "description": "LD-MDStrukIzaLeđa_MDNadlaktica-ŽDLakat - u 5-8, MDLaktom izbacujemo ŽDRuku prema MDesno i gore (u istom trenutku puštamo LD), i na kraju hvatamo Ž za struk",
+        "startHold": "LD-MDStrukIzaLeđa_MDNadlaktica-ŽDLakat",
+        "endHold": "L-ŽDStruk_D-ŽLStruk",
+        "note": "",
+        "videos": [
+          "010 - 05"
         ]
       }
     ]
@@ -4068,6 +4063,20 @@
     ]
   },
   {
+    "startHold": "L-ŽDRame_D-ŽLLopatica_ŽDRuka-MDRame",
+    "figures": [
+      {
+        "description": "L-ŽDRame_D-ŽLLopatica_ŽDRuka-MDRame - zajednički val sa malim zasjedanjem u 5-7, 8 ispravljanje, u procesu ŽDRuka sklizne s MRamena",
+        "startHold": "L-ŽDRame_D-ŽLLopatica_ŽDRuka-MDRame",
+        "endHold": "LD-ŽLRame_D-ŽLLopatica",
+        "note": "",
+        "videos": [
+          "020 - 01"
+        ]
+      }
+    ]
+  },
+  {
     "startHold": "L-ŽDStruk_D-ŽLStruk",
     "figures": [
       {
@@ -4738,11 +4747,11 @@
     ]
   },
   {
-    "startHold": "D90_LD-RavnoNanprijed_D-ŽDLopatica",
+    "startHold": "D90_LD-RavnoNanprijed_D-ŽLLopatica",
     "figures": [
       {
-        "description": "D90_LD-RavnoNanprijed_D-ŽDLopatica - ovdje hodamo dijagonalno, tj linijom ravno između M i Ž smjera gledanja, kao neki tango korak, 1-2 korak, 3-4 korak, 5-6 korak-tap, i malo podignemo LD prema gore, kao pripremu za slijedeće, 7-8 slide unazad",
-        "startHold": "D90_LD-RavnoNanprijed_D-ŽDLopatica",
+        "description": "D90_LD-RavnoNanprijed_D-ŽLLopatica - ovdje hodamo dijagonalno, tj linijom ravno između M i Ž smjera gledanja, kao neki tango korak, 1-2 korak, 3-4 korak, 5-6 korak-tap, i malo podignemo LD prema gore, kao pripremu za slijedeće, 7-8 slide unazad",
+        "startHold": "D90_LD-RavnoNanprijed_D-ŽLLopatica",
         "endHold": "PZ",
         "note": "",
         "videos": [
@@ -4992,12 +5001,12 @@
     ]
   },
   {
-    "startHold": "L90_LD-RavnoGore_D-ŽDLopatica",
+    "startHold": "L90_LD-RavnoGore_D-ŽLLopatica",
     "figures": [
       {
-        "description": "L90_LD-RavnoGore_D-ŽDLopatica - 5-6 spuštanje dolje u koljenima, 7-8 brzo podizanje nazad i odmah nakon zakretanje Ž CW 180s u mjestu, i ispružimo LD ravno prema naprijed",
-        "startHold": "L90_LD-RavnoGore_D-ŽDLopatica",
-        "endHold": "D90_LD-RavnoNanprijed_D-ŽDLopatica",
+        "description": "L90_LD-RavnoGore_D-ŽLLopatica - 5-6 spuštanje dolje u koljenima, 7-8 brzo podizanje nazad i odmah nakon zakretanje Ž CW 180s u mjestu, i ispružimo LD ravno prema naprijed",
+        "startHold": "L90_LD-RavnoGore_D-ŽLLopatica",
+        "endHold": "D90_LD-RavnoNanprijed_D-ŽLLopatica",
         "note": "",
         "videos": [
           "005 - 06"
