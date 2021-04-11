@@ -13,7 +13,7 @@ import { useStyles } from '../../utils/ui-hooks';
 import { useLocation } from 'react-router-dom';
 import { Location } from 'history';
 import { getHeaderTitle } from '../../utils/domain/domain-utils';
-import { LABEL_URL_PAIRS } from '../../data/label-url-pairs';
+import { ROUTE_DATA } from '../routes/route-data';
 
 interface HeaderProps {
   readonly onMenuOpen: () => void;
@@ -54,7 +54,7 @@ export function Header(props: HeaderProps): React.ReactElement {
           <SvgIcon component={Menu} fontSize={'large'} />
         </IconButton>
         <Typography variant={'h6'} className={classes.title}>
-          {getHeaderTitle(location, LABEL_URL_PAIRS)}
+          {getHeaderTitle(location, ROUTE_DATA)}
         </Typography>
       </Toolbar>
     </header>

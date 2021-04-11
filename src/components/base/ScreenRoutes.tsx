@@ -1,22 +1,17 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { BachataInspireScreen } from '../screens/BachataInspireScreen';
-import { MariusAndElenaScreen } from '../screens/MariusAndElenaScreen';
+import { ROUTE_DATA } from '../routes/route-data';
 
-interface ScreenRoutesProps {}
-
-export function ScreenRoutes(props: ScreenRoutesProps): React.ReactElement {
+export function ScreenRoutes(): React.ReactElement {
   return (
     <Switch>
-      <Route exact={true} path={'/'}>
-        <BachataInspireScreen />
-      </Route>
-      <Route path={'/bachata-inspire'}>
-        <BachataInspireScreen />
-      </Route>
-      <Route path={'/marius-and-elena'}>
-        <MariusAndElenaScreen />
-      </Route>
+      {ROUTE_DATA.map((route) => {
+        return (
+          <Route exact={route.exact} path={route.url}>
+            {route.element}
+          </Route>
+        );
+      })}
       <Route path={'*'}>
         <Redirect to={'/'} />
       </Route>

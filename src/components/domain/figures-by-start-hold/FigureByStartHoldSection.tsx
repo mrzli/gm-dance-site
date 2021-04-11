@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
-import { FigureSectionData } from '../../types/domain/figure-section-data';
+import { FigureByStartHoldSectionData } from '../../../types/domain/figure-by-start-hold-section-data';
 import { Link } from '@material-ui/core';
 
 interface FigureSectionProps {
   readonly startGridRow: number;
   readonly startFigureNumber: number;
-  readonly figureSectionData: FigureSectionData;
+  readonly figureSectionData: FigureByStartHoldSectionData;
 }
 
 const CELL_PADDING = 5;
 
-export function FigureSection({
+export function FigureByStartHoldSection({
   startGridRow,
   startFigureNumber,
   figureSectionData

@@ -1,10 +1,10 @@
 import React, { CSSProperties } from 'react';
-import { FigureSectionData } from '../../types/domain/figure-section-data';
-import { FigureSection } from './FigureSection';
-import { FigureContainerHeader } from './FigureContainerHeader';
+import { FigureByStartHoldSectionData } from '../../../types/domain/figure-by-start-hold-section-data';
+import { FigureByStartHoldSection } from './FigureByStartHoldSection';
+import { FigureByStartHoldContainerHeader } from './FigureByStartHoldContainerHeader';
 
 interface FigureContainerProps {
-  readonly figuresData: readonly FigureSectionData[];
+  readonly figuresData: readonly FigureByStartHoldSectionData[];
 }
 
 const CSS: CSSProperties = {
@@ -20,16 +20,16 @@ interface SectionStartingData {
   readonly startingFigureNumber: number;
 }
 
-export function FigureContainer({
+export function FigureByStartHoldContainer({
   figuresData
 }: FigureContainerProps): React.ReactElement {
   const sectionsStartingData = getSectionsStartingData(figuresData);
   return (
     <div style={CSS}>
-      <FigureContainerHeader />
+      <FigureByStartHoldContainerHeader />
       {figuresData.map((item, index) => {
         return (
-          <FigureSection
+          <FigureByStartHoldSection
             key={item.startHold}
             startGridRow={sectionsStartingData[index].startingGridRow}
             startFigureNumber={sectionsStartingData[index].startingFigureNumber}
@@ -42,7 +42,7 @@ export function FigureContainer({
 }
 
 function getSectionsStartingData(
-  figuresData: readonly FigureSectionData[]
+  figuresData: readonly FigureByStartHoldSectionData[]
 ): readonly SectionStartingData[] {
   return figuresData.reduce<readonly SectionStartingData[]>(
     (acc, item, index, array) => {

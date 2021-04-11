@@ -1,4 +1,4 @@
-export interface FigureData {
+export interface FigureByStartHoldData {
   readonly description: string;
   readonly startHold: string;
   readonly endHold: string;

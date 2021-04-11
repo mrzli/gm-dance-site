@@ -1,6 +1,6 @@
 import React, { CSSProperties, useMemo } from 'react';
 import { Drawer, List, ListItem, ListItemText } from '@material-ui/core';
-import { LABEL_URL_PAIRS } from '../../data/label-url-pairs';
+import { ROUTE_DATA } from '../routes/route-data';
 import { Fn0 } from '../../types/generic/generic-types';
 
 interface MainMenuProps {
@@ -20,7 +20,7 @@ export function MainMenu({
   onNavigate
 }: MainMenuProps): React.ReactElement {
   const onNavigateList = useMemo<readonly Fn0<void>[]>(() => {
-    return LABEL_URL_PAIRS.map((pair) => {
+    return ROUTE_DATA.map((pair) => {
       return () => {
         onNavigate(pair.url);
       };
@@ -30,7 +30,7 @@ export function MainMenu({
   return (
     <Drawer anchor={'left'} open={open} onClose={onClose}>
       <List>
-        {LABEL_URL_PAIRS.map((pair, index) => (
+        {ROUTE_DATA.map((pair, index) => (
           <ListItem
             key={index}
             style={LIST_ITEM_STYLES}

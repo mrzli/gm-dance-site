@@ -6,7 +6,7 @@ interface FigureContainerHeaderItemProps {
   readonly text: string;
 }
 
-export function FigureContainerHeaderItem({
+export function FigureByStartHoldContainerHeaderItem({
   row,
   column,
   text
