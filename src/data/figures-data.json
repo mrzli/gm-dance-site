@@ -66,7 +66,7 @@
         ]
       },
       {
-        "description": "M CCW D iznad LD u 1-4, LD otpustimo kad zasmeta u okretu",
+        "description": "M CCW MDRuka iznad LD u 1-4, LD otpustimo kad zasmeta u okretu",
         "startHold": "O",
         "endHold": "O",
         "note": "",
@@ -822,7 +822,7 @@
         ]
       },
       {
-        "description": "M CCW D iznad LD u 1-4, LD otpustimo kad zasmeta u okretu, na kraju prihvaćamo DD",
+        "description": "M CCW MDRuka iznad LD u 1-4, LD otpustimo kad zasmeta u okretu, na kraju prihvaćamo DD",
         "startHold": "O",
         "endHold": "DD",
         "note": "",
@@ -855,6 +855,15 @@
         "note": "",
         "videos": [
           "010 - 04"
+        ]
+      },
+      {
+        "description": "M CCW MDRuka iznad LD, u 1-4, puštamo LD kad nam zasmeta, na kraju prihvaćamo DD",
+        "startHold": "O",
+        "endHold": "DD",
+        "note": "",
+        "videos": [
+          "010 - 10"
         ]
       },
       {
@@ -1101,21 +1110,12 @@
         ]
       },
       {
-        "description": "Ž CCW 450s DL iznad ŽGlave, LD ništa, u 5-8, pred kraj izbacimo DL za završno zakretanje Ž, ŽDRuka ide na MLeđa, L-ŽDLopatica i D-ŽLLopatica",
+        "description": "Ž CCW 450s LD iznad ŽGlave, DL ništa, u 5-8, pred kraj izbacimo DL za završno zakretanje Ž, L-ŽDLopatica i D-ŽLLopatica",
         "startHold": "O",
         "endHold": "L90_L-ŽDLopatica_D-ŽLLopatica",
         "note": "",
         "videos": [
           "030 - 03"
-        ]
-      },
-      {
-        "description": "Ž CCW 450s DL iznad ŽGlave, LD ništa, u 5-8, pred kraj izbacimo DL za završno zakretanje Ž, ŽDRuka ide na MLeđa, MLRuka iznad ŽDRuke na ŽLeđa, i MDRuka na ŽLStruk",
-        "startHold": "O",
-        "endHold": "L90_L-ŽDLopatica_D-ŽLStruk",
-        "note": "",
-        "videos": [
-          "020 - 03"
         ]
       },
       {
@@ -1143,15 +1143,6 @@
         "note": "Nastavak od figure iznad.",
         "videos": [
           "010 - 08"
-        ]
-      },
-      {
-        "description": "M CCW 270s MDRuka iznad LD, u 1-4, puštamo LD kad nam zasmeta, na kraju prihvaćamo DD",
-        "startHold": "O",
-        "endHold": "L90Odvojeno_DD",
-        "note": "",
-        "videos": [
-          "010 - 10"
         ]
       },
       {
@@ -1350,6 +1341,15 @@
         "note": "",
         "videos": [
           "005 - 10"
+        ]
+      },
+      {
+        "description": "Ž CCW 450s DL iznad ŽGlave, LD ništa, u 5-8, pred kraj izbacimo DL za završno zakretanje Ž, ŽDRuka ide na MLeđa, MLRuka iznad ŽDRuke na ŽDRame, i MDRuka na ŽLStruk",
+        "startHold": "O",
+        "endHold": "L90_L-ŽDRame_D-ŽLStruk",
+        "note": "",
+        "videos": [
+          "020 - 03"
         ]
       }
     ]
