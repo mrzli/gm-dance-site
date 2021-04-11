@@ -13,7 +13,7 @@
     "lint": "eslint --ext .ts,.tsx,.js .",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "postinstall": "husky install",
+    "postinstall": "ts-node --project scripts/tsconfig.json scripts/src/postinstall.ts",
     "eject": "react-scripts eject"
   },
   "dependencies": {

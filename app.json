@@ -11,5 +11,8 @@
     {
       "url": "mars/create-react-app"
     }
-  ]
+  ],
+  "env": {
+    "DEPLOYMENT": "true"
+  }
 }

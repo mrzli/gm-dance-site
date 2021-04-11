@@ -1002,7 +1002,7 @@
         ]
       },
       {
-        "description": "Počevši prema dolje pa van vjetrenjače u kontaktu, sa LD i DL, LD preko MGlave, DL preko ŽGlave, puštamo obje, u 1-4, stojimo",
+        "description": "Počevši prema dolje pa van vjetrenjače u kontaktu, sa LD i DL, LD preko MGlave, DL preko ŽGlave, puštamo obje, u 1-4",
         "startHold": "O",
         "endHold": "D-ŽDRame_ŽD-MDRame",
         "note": "",
