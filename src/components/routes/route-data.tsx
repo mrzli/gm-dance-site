@@ -4,13 +4,7 @@ import { BachataInspireByStartHoldScreen } from '../screens/BachataInspireByStar
 import { MariusAndElenaScreen } from '../screens/MariusAndElenaScreen';
 import { BachataInspireByType } from '../screens/BachataInspireByType';
 
-export const ROUTE_DATA: readonly RouteItem[] = [
-  {
-    label: 'Intro',
-    url: '/',
-    exact: true,
-    element: <BachataInspireByStartHoldScreen />
-  },
+const EXPLICIT_ROUTES: readonly RouteItem[] = [
   {
     label: 'Bachata Inspire By Start Hold',
     url: '/bachata-inspire-by-start-hold',
@@ -29,4 +23,11 @@ export const ROUTE_DATA: readonly RouteItem[] = [
     exact: false,
     element: <MariusAndElenaScreen />
   }
+];
+
+const DEFAULT_ROUTE_INDEX = 1;
+
+export const ROUTE_DATA: readonly RouteItem[] = [
+  { ...EXPLICIT_ROUTES[DEFAULT_ROUTE_INDEX], url: '/', exact: true },
+  ...EXPLICIT_ROUTES
 ];

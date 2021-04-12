@@ -7,7 +7,7 @@ export function ScreenRoutes(): React.ReactElement {
     <Switch>
       {ROUTE_DATA.map((route) => {
         return (
-          <Route exact={route.exact} path={route.url}>
+          <Route key={route.url} exact={route.exact} path={route.url}>
             {route.element}
           </Route>
         );

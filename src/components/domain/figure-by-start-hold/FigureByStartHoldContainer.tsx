@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { FigureByStartHoldSectionData } from '../../../types/domain/figure-by-start-hold-section-data';
+import { FigureByStartHoldSectionData } from '../../../types/domain/figure-by-start-hold/figure-by-start-hold-section-data';
 import { FigureByStartHoldSection } from './FigureByStartHoldSection';
 import { FigureByStartHoldContainerHeader } from './FigureByStartHoldContainerHeader';
 

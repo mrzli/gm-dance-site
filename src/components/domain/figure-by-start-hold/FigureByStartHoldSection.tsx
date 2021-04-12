@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { FigureByStartHoldSectionData } from '../../../types/domain/figure-by-start-hold-section-data';
+import { FigureByStartHoldSectionData } from '../../../types/domain/figure-by-start-hold/figure-by-start-hold-section-data';
 import { Link } from '@material-ui/core';
 
 interface FigureSectionProps {
