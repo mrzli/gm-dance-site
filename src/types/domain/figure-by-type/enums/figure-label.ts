@@ -1,10 +1,4 @@
 export enum FigureLabel {
-  GroupBasic = 'GroupBasic',
-  GroupSimplePositionChange = 'GroupSimplePositionChange',
-  GroupSimpleWomanTurn = 'GroupSimpleWomanTurn',
-  GroupSimpleManTurn = 'GroupSimpleManTurn',
-  GroupSimpleSimultaneousTurn = 'GroupSimpleSimultaneousTurn',
-
   PeriodOneToEight = 'PeriodOneToEight',
   PeriodOneToFour = 'PeriodOneToFour',
   PeriodFiveToEight = 'PeriodFiveToEight',
@@ -39,12 +33,6 @@ export enum FigureLabel {
 }
 
 export const MAP_FIGURE_LABEL_TO_TEXT = new Map<FigureLabel, string>([
-  [FigureLabel.GroupBasic, 'Basic'],
-  [FigureLabel.GroupSimplePositionChange, 'Simple Position Change'],
-  [FigureLabel.GroupSimpleWomanTurn, 'Simple W Turn'],
-  [FigureLabel.GroupSimpleManTurn, 'Simple M Turn'],
-  [FigureLabel.GroupSimpleSimultaneousTurn, 'Simple Simultaneous Turn'],
-
   [FigureLabel.PeriodOneToEight, '1-8'],
   [FigureLabel.PeriodOneToFour, '1-4'],
   [FigureLabel.PeriodFiveToEight, '5-8'],

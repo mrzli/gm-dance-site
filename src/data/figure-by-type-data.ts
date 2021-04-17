@@ -11,21 +11,28 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         description: 'Basic.',
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
-        labels: [FigureLabel.GroupBasic],
+        labels: [],
         videos: [FigureVideo.V_001_Pokreti]
       },
       {
         description: 'Forward-backward.',
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
-        labels: [FigureLabel.GroupBasic],
+        labels: [],
         videos: [FigureVideo.V_001_Pokreti]
+      },
+      {
+        description: '- As above, but in semi-closed hold.',
+        startHold: FigureHold.SemiClosed,
+        endHold: FigureHold.SemiClosed,
+        labels: [],
+        videos: [FigureVideo.V_001_02]
       },
       {
         description: 'Slow.',
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
-        labels: [FigureLabel.GroupBasic],
+        labels: [],
         videos: [FigureVideo.V_001_Pokreti]
       }
     ]
@@ -37,28 +44,28 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         description: 'Pull woman to yourself / move into a closed hold.',
         startHold: FigureHold.Open,
         endHold: FigureHold.Closed,
-        labels: [FigureLabel.GroupSimplePositionChange],
+        labels: [],
         videos: [FigureVideo.V_001_Pokreti]
       },
       {
         description: 'Push woman from yourself / push yourself from woman.',
         startHold: FigureHold.Closed,
         endHold: FigureHold.Open,
-        labels: [FigureLabel.GroupSimplePositionChange],
+        labels: [],
         videos: [FigureVideo.V_001_Pokreti]
       },
       {
-        description: 'WLH throw back',
+        description: 'WLHand throw back',
         startHold: FigureHold.Open,
         endHold: FigureHold.SemiClosed,
-        labels: [FigureLabel.GroupSimplePositionChange],
-        videos: [FigureVideo.V_001_Pokreti]
+        labels: [],
+        videos: [FigureVideo.V_001_Pokreti, FigureVideo.V_001_02]
       },
       {
-        description: 'WRH throw back',
+        description: 'WRHand throw back',
         startHold: FigureHold.SemiClosed,
         endHold: FigureHold.Closed,
-        labels: [FigureLabel.GroupSimplePositionChange],
+        labels: [],
         videos: [FigureVideo.V_001_Pokreti]
       }
     ]
@@ -71,7 +78,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleWomanTurn,
           FigureLabel.PeriodOneToFour,
           FigureLabel.TurnWomanTurn,
           FigureLabel.TurnWomanCw,
@@ -80,11 +86,22 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         videos: [FigureVideo.V_001_Pokreti]
       },
       {
+        description: 'W CW LR above WHead, RL nothing.',
+        startHold: FigureHold.LRPalmOnPalm,
+        endHold: FigureHold.Open,
+        labels: [
+          FigureLabel.PeriodOneToFour,
+          FigureLabel.TurnWomanTurn,
+          FigureLabel.TurnWomanCw,
+          FigureLabel.TurnWomanDegrees360
+        ],
+        videos: [FigureVideo.V_001_02]
+      },
+      {
         description: 'W CCW LR above WHead, RL nothing.',
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleWomanTurn,
           FigureLabel.PeriodFiveToEight,
           FigureLabel.TurnWomanTurn,
           FigureLabel.TurnWomanCcw,
@@ -97,7 +114,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.SemiClosed,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleWomanTurn,
           FigureLabel.PeriodFiveToEight,
           FigureLabel.TurnWomanTurn,
           FigureLabel.TurnWomanCcw,
@@ -111,20 +127,18 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.SemiClosed,
         labels: [
-          FigureLabel.GroupSimpleWomanTurn,
           FigureLabel.PeriodFiveToEight,
           FigureLabel.TurnWomanTurn,
           FigureLabel.TurnWomanCcw,
           FigureLabel.TurnWomanDegrees360
         ],
-        videos: [FigureVideo.V_001_Pokreti]
+        videos: [FigureVideo.V_001_Pokreti, FigureVideo.V_001_02]
       },
       {
         description: '- As above, but starting from semi-closed position.',
         startHold: FigureHold.SemiClosed,
         endHold: FigureHold.SemiClosed,
         labels: [
-          FigureLabel.GroupSimpleWomanTurn,
           FigureLabel.PeriodFiveToEight,
           FigureLabel.TurnWomanTurn,
           FigureLabel.TurnWomanCcw,
@@ -142,7 +156,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleManTurn,
           FigureLabel.PeriodOneToFour,
           FigureLabel.TurnManTurn,
           FigureLabel.TurnManCcw,
@@ -155,7 +168,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleManTurn,
           FigureLabel.PeriodFiveToEight,
           FigureLabel.TurnManTurn,
           FigureLabel.TurnManCw,
@@ -169,7 +181,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleManTurn,
           FigureLabel.PeriodOneToFour,
           FigureLabel.TurnManTurn,
           FigureLabel.TurnManCcw,
@@ -182,7 +193,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.RR,
         labels: [
-          FigureLabel.GroupSimpleManTurn,
           FigureLabel.PeriodOneToFour,
           FigureLabel.TurnManTurn,
           FigureLabel.TurnManCcw,
@@ -196,7 +206,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleManTurn,
           FigureLabel.PeriodFiveToEight,
           FigureLabel.TurnManTurn,
           FigureLabel.TurnManCw,
@@ -207,7 +216,7 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
     ]
   },
   {
-    title: 'Simple turns (simultaneous)',
+    title: 'Simple turns (simultaneous/together)',
     variations: [
       {
         description:
@@ -215,7 +224,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleSimultaneousTurn,
           FigureLabel.PeriodOneToFour,
           FigureLabel.TurnWomanTurn,
           FigureLabel.TurnWomanCcw,
@@ -232,7 +240,6 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         startHold: FigureHold.Open,
         endHold: FigureHold.Open,
         labels: [
-          FigureLabel.GroupSimpleSimultaneousTurn,
           FigureLabel.PeriodFiveToEight,
           FigureLabel.TurnWomanTurn,
           FigureLabel.TurnWomanCcw,
@@ -240,6 +247,21 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
           FigureLabel.TurnManTurn,
           FigureLabel.TurnManCw,
           FigureLabel.TurnManDegrees360
+        ],
+        videos: [FigureVideo.V_001_Pokreti]
+      },
+      {
+        description: 'M/W CW together.',
+        startHold: FigureHold.SemiClosed,
+        endHold: FigureHold.SemiClosed,
+        labels: [
+          FigureLabel.PeriodFiveToEight,
+          FigureLabel.TurnWomanTurn,
+          FigureLabel.TurnWomanCw,
+          FigureLabel.TurnWomanDegrees180,
+          FigureLabel.TurnManTurn,
+          FigureLabel.TurnManCw,
+          FigureLabel.TurnManDegrees180
         ],
         videos: [FigureVideo.V_001_Pokreti]
       }
@@ -295,8 +317,44 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
     ]
   },
   {
-    title: 'Woman to R90 or RLHipByHip entrance',
+    title: 'R90/L90 or RLHipToHip/LRHipToHip',
     variations: [
+      {
+        description: 'W CCW, LR above WHead, RL waist height.',
+        startHold: FigureHold.Open,
+        endHold: FigureHold.R90__LR__RL_WRWaist,
+        labels: [
+          FigureLabel.PeriodFiveToEight,
+          FigureLabel.TurnWomanTurn,
+          FigureLabel.TurnWomanCcw,
+          FigureLabel.TurnWomanDegrees270
+        ],
+        videos: [FigureVideo.V_001_02]
+      },
+      {
+        description: 'W CW, LR shoulder height, RL waist height.',
+        startHold: FigureHold.R90__LR__RL_WRWaist,
+        endHold: FigureHold.L90__LR_WLShoulder__RL,
+        labels: [
+          FigureLabel.PeriodOneToFour,
+          FigureLabel.TurnWomanTurn,
+          FigureLabel.TurnWomanCw,
+          FigureLabel.TurnWomanDegrees180
+        ],
+        videos: [FigureVideo.V_001_02]
+      },
+      {
+        description: 'W CCW, LR shoulder height, RL nothing.',
+        startHold: FigureHold.L90__LR_WLShoulder__RL,
+        endHold: FigureHold.LRPalmOnPalm,
+        labels: [
+          FigureLabel.PeriodFiveToEight,
+          FigureLabel.TurnWomanTurn,
+          FigureLabel.TurnWomanCcw,
+          FigureLabel.TurnWomanDegrees270
+        ],
+        videos: [FigureVideo.V_001_02]
+      },
       {
         description:
           'W CCW led by RR up to a WShoulder, small M CCW to align MRHip to WLHip.',
@@ -311,12 +369,7 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
           FigureLabel.TurnManDegrees90
         ],
         videos: [FigureVideo.V_001_01]
-      }
-    ]
-  },
-  {
-    title: 'Woman to R90 or RLHipByHip exit',
-    variations: [
+      },
       {
         description: 'W CW, and small M CW to face the woman.',
         startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
@@ -349,6 +402,21 @@ export const FIGURE_BY_TYPE_DATA: readonly FigureByTypeSectionData[] = [
         endHold: FigureHold.Closed,
         labels: [FigureLabel.PeriodFiveToEight],
         videos: [FigureVideo.V_001_01]
+      },
+      {
+        description: 'Stylized CW windmill in contact with WRWrist.',
+        startHold: FigureHold.SemiClosed,
+        endHold: FigureHold.SemiClosed,
+        labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],
+        videos: [FigureVideo.V_001_02]
+      },
+      {
+        description:
+          'Stylistic swaying left-right. Can be 4 beats or 8 beats (simply repeated twice).',
+        startHold: FigureHold.SemiClosed,
+        endHold: FigureHold.SemiClosed,
+        labels: [FigureLabel.PeriodOneToEight],
+        videos: [FigureVideo.V_001_02]
       }
     ]
   },

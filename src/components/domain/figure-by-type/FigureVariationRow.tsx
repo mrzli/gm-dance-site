@@ -30,13 +30,8 @@ interface FigureVariationRowProps {
   readonly variation: FigureByTypeVariation;
 }
 
-const CONTAINER_STYLE: React.CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: '3fr 1fr 2fr 1fr',
-  columnGap: 10
-};
-
 type ClassKey =
+  | 'container'
   | 'holdChip'
   | 'holdChipAvatar'
   | 'labelGroupChip'
@@ -59,6 +54,10 @@ function createChipStyles(theme: Theme, baseColor: string): CSSProperties {
     '&:hover': {
       backgroundColor: highlightColor,
       color: theme.palette.getContrastText(highlightColor)
+    },
+    '&:focus': {
+      backgroundColor: baseColor,
+      color: theme.palette.getContrastText(baseColor)
     }
   };
 }
@@ -85,6 +84,11 @@ function stylesCallback(
   const videoChipColor = grey[300];
 
   return createStyles<ClassKey, FigureVariationRowProps>({
+    container: {
+      display: 'grid',
+      gridTemplateColumns: '3fr 1fr 2fr 1fr',
+      columnGap: 10
+    },
     holdChip: createChipStyles(theme, holdChipColor),
     holdChipAvatar: createChipAvatarStyles(theme, holdChipColor),
     labelGroupChip: createChipStyles(theme, labelGroupChipColor),
@@ -111,7 +115,7 @@ export function FigureVariationRow(
   const { variation } = props;
 
   return (
-    <div style={CONTAINER_STYLE}>
+    <div className={classes.container}>
       <div style={{ gridRowStart: 1, gridColumnStart: 1 }}>
         {variation.description}
       </div>
