@@ -10,6 +10,7 @@ interface FigureByTypeContainerProps {
 export function FigureByTypeContainer({
   figuresData
 }: FigureByTypeContainerProps): React.ReactElement {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [expandedIndex, setExpandedIndex] = useState<number | undefined>(
     undefined
   );
@@ -46,7 +47,7 @@ export function FigureByTypeContainer({
           <FigureByTypeSection
             key={index}
             data={figureItem}
-            isExpanded={expandedIndex === index}
+            isExpanded={true} //{expandedIndex === index}
             onExpandedChange={(expanded) => {
               setExpandedIndex(expanded ? index : undefined);
             }}

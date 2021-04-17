@@ -5,8 +5,12 @@ export enum FigureLabel {
   GroupSimpleManTurn = 'GroupSimpleManTurn',
   GroupSimpleSimultaneousTurn = 'GroupSimpleSimultaneousTurn',
 
+  PeriodOneToEight = 'PeriodOneToEight',
   PeriodOneToFour = 'PeriodOneToFour',
   PeriodFiveToEight = 'PeriodFiveToEight',
+
+  MovementMoving = 'MovementMoving',
+  MovementStanding = 'MovementStanding',
 
   TurnWomanTurn = 'TurnWomanTurn',
   TurnWomanSpin = 'TurnWomanSpin',
@@ -41,8 +45,12 @@ export const MAP_FIGURE_LABEL_TO_TEXT = new Map<FigureLabel, string>([
   [FigureLabel.GroupSimpleManTurn, 'Simple M Turn'],
   [FigureLabel.GroupSimpleSimultaneousTurn, 'Simple Simultaneous Turn'],
 
+  [FigureLabel.PeriodOneToEight, '1-8'],
   [FigureLabel.PeriodOneToFour, '1-4'],
   [FigureLabel.PeriodFiveToEight, '5-8'],
+
+  [FigureLabel.MovementMoving, 'Moving'],
+  [FigureLabel.MovementStanding, 'Standing'],
 
   [FigureLabel.TurnWomanTurn, 'W Turn'],
   [FigureLabel.TurnWomanSpin, 'W Spin'],

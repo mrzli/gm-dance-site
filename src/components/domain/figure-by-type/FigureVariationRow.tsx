@@ -8,7 +8,14 @@ import {
   StyleRules,
   Theme
 } from '@material-ui/core';
-import { grey, green, lightBlue, orange, red } from '@material-ui/core/colors';
+import {
+  grey,
+  green,
+  lightBlue,
+  orange,
+  red,
+  indigo
+} from '@material-ui/core/colors';
 import { emptyFn } from '../../../utils/generic-function-utils';
 import { useStyles } from '../../../utils/ui-hooks';
 import {
@@ -36,6 +43,8 @@ type ClassKey =
   | 'labelGroupChipAvatar'
   | 'labelPeriodChip'
   | 'labelPeriodChipAvatar'
+  | 'labelMovementChip'
+  | 'labelMovementChipAvatar'
   | 'labelTurnChip'
   | 'labelTurnChipAvatar'
   | 'videoChip'
@@ -71,6 +80,7 @@ function stylesCallback(
   const holdChipColor = green[300];
   const labelGroupChipColor = lightBlue[400];
   const labelPeriodChipColor = orange[400];
+  const labelMovementChipColor = indigo[400];
   const labelTurnChipColor = red[400];
   const videoChipColor = grey[300];
 
@@ -81,6 +91,11 @@ function stylesCallback(
     labelGroupChipAvatar: createChipAvatarStyles(theme, labelGroupChipColor),
     labelPeriodChip: createChipStyles(theme, labelPeriodChipColor),
     labelPeriodChipAvatar: createChipAvatarStyles(theme, labelPeriodChipColor),
+    labelMovementChip: createChipStyles(theme, labelMovementChipColor),
+    labelMovementChipAvatar: createChipAvatarStyles(
+      theme,
+      labelMovementChipColor
+    ),
     labelTurnChip: createChipStyles(theme, labelTurnChipColor),
     labelTurnChipAvatar: createChipAvatarStyles(theme, labelTurnChipColor),
     videoChip: createChipStyles(theme, videoChipColor),
@@ -180,6 +195,12 @@ function getFigureLabelChipData(figureLabel: FigureLabel): LabelChipData {
       chipClassName: 'labelPeriodChip',
       avatarClassName: 'labelPeriodChipAvatar',
       avatarCharacter: 'P'
+    };
+  } else if (figureLabel.startsWith('Movement')) {
+    return {
+      chipClassName: 'labelMovementChip',
+      avatarClassName: 'labelMovementChipAvatar',
+      avatarCharacter: 'M'
     };
   } else if (figureLabel.startsWith('Turn')) {
     return {
