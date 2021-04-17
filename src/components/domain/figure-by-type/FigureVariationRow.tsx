@@ -11,6 +11,9 @@ import {
 import { grey, green, lightBlue } from '@material-ui/core/colors';
 import { emptyFn } from '../../../utils/generic-function-utils';
 import { useStyles } from '../../../utils/ui-hooks';
+import { MAP_FIGURE_LABEL_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-label';
+import { MAP_FIGURE_HOLD_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-hold';
+import { MAP_FIGURE_VIDEO_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 interface FigureVariationRowProps {
   readonly variation: FigureByTypeVariation;
@@ -18,7 +21,7 @@ interface FigureVariationRowProps {
 
 const CONTAINER_STYLE: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: '3fr 1fr 1fr 1fr',
+  gridTemplateColumns: '3fr 1fr 2fr 1fr',
   columnGap: 10
 };
 
@@ -89,14 +92,14 @@ export function FigureVariationRow(
         <Chip
           className={classes.holdChip}
           avatar={<Avatar className={classes.holdChipAvatar}>S</Avatar>}
-          label={variation.startHold}
+          label={MAP_FIGURE_HOLD_TO_TEXT.get(variation.startHold)}
           size={'small'}
           onClick={emptyFn}
         />
         <Chip
           className={classes.holdChip}
           avatar={<Avatar className={classes.holdChipAvatar}>E</Avatar>}
-          label={variation.endHold}
+          label={MAP_FIGURE_HOLD_TO_TEXT.get(variation.endHold)}
           size={'small'}
           onClick={emptyFn}
         />
@@ -108,7 +111,7 @@ export function FigureVariationRow(
               key={index}
               className={classes.labelChip}
               avatar={<Avatar className={classes.labelChipAvatar}>L</Avatar>}
-              label={label}
+              label={MAP_FIGURE_LABEL_TO_TEXT.get(label)}
               size={'small'}
               onClick={emptyFn}
             />
@@ -122,7 +125,7 @@ export function FigureVariationRow(
               key={index}
               className={classes.videoChip}
               avatar={<Avatar className={classes.videoChipAvatar}>V</Avatar>}
-              label={video}
+              label={MAP_FIGURE_VIDEO_TO_TEXT.get(video)}
               size={'small'}
               onClick={emptyFn}
             />
