@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React from 'react';
 import chroma from 'chroma-js';
 import { FigureByTypeVariation } from '../../../types/domain/figure-by-type/figure-by-type-variation';
 import {
@@ -8,18 +8,22 @@ import {
   StyleRules,
   Theme
 } from '@material-ui/core';
-import { grey, green, lightBlue } from '@material-ui/core/colors';
+import { grey, green, lightBlue, orange, red } from '@material-ui/core/colors';
 import { emptyFn } from '../../../utils/generic-function-utils';
 import { useStyles } from '../../../utils/ui-hooks';
-import { MAP_FIGURE_LABEL_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-label';
+import {
+  FigureLabel,
+  MAP_FIGURE_LABEL_TO_TEXT
+} from '../../../types/domain/figure-by-type/enums/figure-label';
 import { MAP_FIGURE_HOLD_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-hold';
 import { MAP_FIGURE_VIDEO_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-video';
+import { ClassNameMap, CSSProperties } from '@material-ui/styles';
 
 interface FigureVariationRowProps {
   readonly variation: FigureByTypeVariation;
 }
 
-const CONTAINER_STYLE: CSSProperties = {
+const CONTAINER_STYLE: React.CSSProperties = {
   display: 'grid',
   gridTemplateColumns: '3fr 1fr 2fr 1fr',
   columnGap: 10
@@ -28,58 +32,66 @@ const CONTAINER_STYLE: CSSProperties = {
 type ClassKey =
   | 'holdChip'
   | 'holdChipAvatar'
-  | 'labelChip'
-  | 'labelChipAvatar'
+  | 'labelGroupChip'
+  | 'labelGroupChipAvatar'
+  | 'labelPeriodChip'
+  | 'labelPeriodChipAvatar'
+  | 'labelTurnChip'
+  | 'labelTurnChipAvatar'
   | 'videoChip'
   | 'videoChipAvatar';
+
+function createChipStyles(theme: Theme, baseColor: string): CSSProperties {
+  const highlightColor = chroma(baseColor).darken().hex();
+  return {
+    backgroundColor: baseColor,
+    color: theme.palette.getContrastText(baseColor),
+    margin: 2,
+    '&:hover': {
+      backgroundColor: highlightColor,
+      color: theme.palette.getContrastText(highlightColor)
+    }
+  };
+}
+
+function createChipAvatarStyles(
+  theme: Theme,
+  baseColor: string
+): CSSProperties {
+  const avatarColor = chroma(baseColor).brighten().hex();
+  return {
+    backgroundColor: avatarColor,
+    color: theme.palette.getContrastText(avatarColor)
+  };
+}
 
 function stylesCallback(
   theme: Theme
 ): StyleRules<ClassKey, FigureVariationRowProps> {
   const holdChipColor = green[300];
-  const holdAvatarColor = chroma(holdChipColor).brighten().hex();
-
-  const labelChipColor = lightBlue[400];
-  const labelAvatarColor = chroma(labelChipColor).brighten().hex();
-
+  const labelGroupChipColor = lightBlue[400];
+  const labelPeriodChipColor = orange[400];
+  const labelTurnChipColor = red[400];
   const videoChipColor = grey[300];
-  const videoAvatarColor = chroma(videoChipColor).brighten().hex();
 
   return createStyles<ClassKey, FigureVariationRowProps>({
-    holdChip: {
-      backgroundColor: holdChipColor,
-      color: theme.palette.getContrastText(holdChipColor),
-      margin: 2
-    },
-    holdChipAvatar: {
-      backgroundColor: holdAvatarColor,
-      color: theme.palette.getContrastText(holdAvatarColor)
-    },
-    labelChip: {
-      backgroundColor: labelChipColor,
-      color: theme.palette.getContrastText(labelChipColor),
-      margin: 2
-    },
-    labelChipAvatar: {
-      backgroundColor: labelAvatarColor,
-      color: theme.palette.getContrastText(labelAvatarColor)
-    },
-    videoChip: {
-      backgroundColor: videoChipColor,
-      color: theme.palette.getContrastText(videoChipColor),
-      margin: 2
-    },
-    videoChipAvatar: {
-      backgroundColor: videoAvatarColor,
-      color: theme.palette.getContrastText(videoAvatarColor)
-    }
+    holdChip: createChipStyles(theme, holdChipColor),
+    holdChipAvatar: createChipAvatarStyles(theme, holdChipColor),
+    labelGroupChip: createChipStyles(theme, labelGroupChipColor),
+    labelGroupChipAvatar: createChipAvatarStyles(theme, labelGroupChipColor),
+    labelPeriodChip: createChipStyles(theme, labelPeriodChipColor),
+    labelPeriodChipAvatar: createChipAvatarStyles(theme, labelPeriodChipColor),
+    labelTurnChip: createChipStyles(theme, labelTurnChipColor),
+    labelTurnChipAvatar: createChipAvatarStyles(theme, labelTurnChipColor),
+    videoChip: createChipStyles(theme, videoChipColor),
+    videoChipAvatar: createChipAvatarStyles(theme, videoChipColor)
   });
 }
 
 export function FigureVariationRow(
   props: FigureVariationRowProps
 ): React.ReactElement {
-  const classes = useStyles(props, stylesCallback);
+  const classes: ClassNameMap<ClassKey> = useStyles(props, stylesCallback);
 
   const { variation } = props;
 
@@ -106,16 +118,7 @@ export function FigureVariationRow(
       </div>
       <div style={{ gridRowStart: 1, gridColumnStart: 3 }}>
         {variation.labels.map((label, index) => {
-          return (
-            <Chip
-              key={index}
-              className={classes.labelChip}
-              avatar={<Avatar className={classes.labelChipAvatar}>L</Avatar>}
-              label={MAP_FIGURE_LABEL_TO_TEXT.get(label)}
-              size={'small'}
-              onClick={emptyFn}
-            />
-          );
+          return getLabelChipElement(label, index, classes);
         })}
       </div>
       <div style={{ gridRowStart: 1, gridColumnStart: 4 }}>
@@ -134,4 +137,57 @@ export function FigureVariationRow(
       </div>
     </div>
   );
+}
+
+interface LabelChipData {
+  readonly chipClassName: ClassKey;
+  readonly avatarClassName: ClassKey;
+  readonly avatarCharacter: string;
+}
+
+function getLabelChipElement(
+  label: FigureLabel,
+  index: number,
+  classes: ClassNameMap<ClassKey>
+): React.ReactElement {
+  const chipData = getFigureLabelChipData(label);
+
+  return (
+    <Chip
+      key={index}
+      className={classes[chipData.chipClassName]}
+      avatar={
+        <Avatar className={classes[chipData.avatarClassName]}>
+          {chipData.avatarCharacter}
+        </Avatar>
+      }
+      label={MAP_FIGURE_LABEL_TO_TEXT.get(label)}
+      size={'small'}
+      onClick={emptyFn}
+    />
+  );
+}
+
+function getFigureLabelChipData(figureLabel: FigureLabel): LabelChipData {
+  if (figureLabel.startsWith('Group')) {
+    return {
+      chipClassName: 'labelGroupChip',
+      avatarClassName: 'labelGroupChipAvatar',
+      avatarCharacter: 'G'
+    };
+  } else if (figureLabel.startsWith('Period')) {
+    return {
+      chipClassName: 'labelPeriodChip',
+      avatarClassName: 'labelPeriodChipAvatar',
+      avatarCharacter: 'P'
+    };
+  } else if (figureLabel.startsWith('Turn')) {
+    return {
+      chipClassName: 'labelTurnChip',
+      avatarClassName: 'labelTurnChipAvatar',
+      avatarCharacter: 'T'
+    };
+  } else {
+    throw new Error(`Invalid figure label: '${figureLabel}'`);
+  }
 }
