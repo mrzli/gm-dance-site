@@ -2,9 +2,12 @@ import React, { CSSProperties } from 'react';
 import { FigureByTypeSectionData } from '../../../types/domain/figure-by-type/figure-by-type-section-data';
 import { Typography } from '@material-ui/core';
 import { FigureVariationRow } from './FigureVariationRow';
+import { padNonNegativeInteger } from '../../../utils/generic';
 
 interface FigureByTypeSectionProps {
   readonly data: FigureByTypeSectionData;
+  readonly groupIndex: number;
+  readonly sectionIndex: number;
 }
 
 const VARIATIONS_CONTAINER_STYLE: CSSProperties = {
@@ -20,7 +23,9 @@ const HR_STYLE: CSSProperties = {
 };
 
 export function FigureByTypeSection({
-  data
+  data,
+  groupIndex,
+  sectionIndex
 }: FigureByTypeSectionProps): React.ReactElement {
   return (
     <div style={VARIATIONS_CONTAINER_STYLE}>
@@ -30,7 +35,7 @@ export function FigureByTypeSection({
           marginBottom: 6
         }}
       >
-        {data.title}
+        {getTitle(groupIndex, sectionIndex, data.title)}
       </Typography>
       {data.variations.map((variation, index) => {
         return (
@@ -44,4 +49,15 @@ export function FigureByTypeSection({
       })}
     </div>
   );
+}
+
+function getTitle(
+  groupIndex: number,
+  sectionIndex: number,
+  title: string
+): string {
+  const groupString = padNonNegativeInteger(groupIndex + 1, 2);
+  const sectionString = padNonNegativeInteger(sectionIndex + 1, 2);
+
+  return `${groupString}.${sectionString} - ${title}`;
 }

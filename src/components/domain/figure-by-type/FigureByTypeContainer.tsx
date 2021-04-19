@@ -23,7 +23,7 @@ export function FigureByTypeContainer({
             key={index}
             style={{ gridColumnStart: 1, gridRowStart: index + 1 }}
           >
-            <FigureByTypeSectionGroup data={group} />
+            <FigureByTypeSectionGroup data={group} groupIndex={index} />
           </div>
         );
       })}
