@@ -1,22 +1,16 @@
-import React, { CSSProperties, useCallback } from 'react';
+import React, { CSSProperties } from 'react';
 import { FigureByTypeSectionData } from '../../../types/domain/figure-by-type/figure-by-type-section-data';
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Typography
-} from '@material-ui/core';
-import { ExpandMore } from '@material-ui/icons';
+import { Typography } from '@material-ui/core';
 import { FigureVariationRow } from './FigureVariationRow';
 
 interface FigureByTypeSectionProps {
   readonly data: FigureByTypeSectionData;
-  readonly isExpanded: boolean;
-  readonly onExpandedChange: (expanded: boolean) => void;
 }
 
 const VARIATIONS_CONTAINER_STYLE: CSSProperties = {
-  flexDirection: 'column'
+  display: 'flex',
+  flexDirection: 'column',
+  marginTop: 10
 };
 
 const HR_STYLE: CSSProperties = {
@@ -26,36 +20,28 @@ const HR_STYLE: CSSProperties = {
 };
 
 export function FigureByTypeSection({
-  data,
-  isExpanded,
-  onExpandedChange
+  data
 }: FigureByTypeSectionProps): React.ReactElement {
-  const onExpandedChangeCallback = useCallback(
-    (_event: unknown, expanded: boolean) => {
-      onExpandedChange(expanded);
-    },
-    [onExpandedChange]
-  );
-
   return (
-    <div>
-      <Accordion expanded={isExpanded} onChange={onExpandedChangeCallback}>
-        <AccordionSummary expandIcon={<ExpandMore />}>
-          <Typography style={{ fontWeight: 'bold' }}>{data.title}</Typography>
-        </AccordionSummary>
-        <AccordionDetails style={VARIATIONS_CONTAINER_STYLE}>
-          {data.variations.map((variation, index) => {
-            return (
-              <>
-                <FigureVariationRow key={index} variation={variation} />
-                {index !== data.variations.length - 1 ? (
-                  <hr style={HR_STYLE} />
-                ) : undefined}
-              </>
-            );
-          })}
-        </AccordionDetails>
-      </Accordion>
+    <div style={VARIATIONS_CONTAINER_STYLE}>
+      <Typography
+        style={{
+          fontWeight: 'bold',
+          marginBottom: 6
+        }}
+      >
+        {data.title}
+      </Typography>
+      {data.variations.map((variation, index) => {
+        return (
+          <>
+            <FigureVariationRow key={index} variation={variation} />
+            {index !== data.variations.length - 1 ? (
+              <hr style={HR_STYLE} />
+            ) : undefined}
+          </>
+        );
+      })}
     </div>
   );
 }
