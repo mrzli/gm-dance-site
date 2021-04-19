@@ -148,6 +148,18 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnManDegrees360
           ],
           videos: [FigureVideo.V_001_Pokreti]
+        },
+        {
+          description: '- As above, but putting MRWrist on WLWrist at the end.',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.LR__MRWrist_WLWrist,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees360
+          ],
+          videos: [FigureVideo.V_002_01]
         }
       ]
     },

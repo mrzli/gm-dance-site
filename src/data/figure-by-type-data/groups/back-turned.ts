@@ -180,7 +180,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_002_Pokreti_04]
         },
         {
-          description: 'Sensual, front wave with sit.',
+          description: 'Sensual, front wave with sitting.',
           startHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
           endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
           labels: [FigureLabel.PeriodOneToEight],

@@ -123,7 +123,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_01]
         },
         {
           description:
@@ -131,7 +131,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_01]
         },
         {
           description:
@@ -139,7 +139,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_01]
         },
         {
           description:
@@ -147,7 +147,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_01]
         }
       ]
     },
@@ -197,6 +197,14 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.LR__R_WRShoulder,
           labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_Pokreti_01]
+        },
+        {
+          description:
+            'RL CCW windmill, 2 turns. At the end we take RL normally.',
+          startHold: FigureHold.LR__MRWrist_WLWrist,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_01]
         }
       ]
     }

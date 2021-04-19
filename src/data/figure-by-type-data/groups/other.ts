@@ -30,7 +30,7 @@ export const FIGURE_BY_TYPE_OTHER: FigureByTypeSectionGroupData = {
           startHold: FigureHold.LRAndRLClose,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_002_Pokreti_01]
+          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_01]
         }
       ]
     },
