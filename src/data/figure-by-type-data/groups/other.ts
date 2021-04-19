@@ -11,11 +11,26 @@ export const FIGURE_BY_TYPE_OTHER: FigureByTypeSectionGroupData = {
       variations: [
         {
           description:
-            "Throwing woman's hands down and to the outside, and putting my hands on her waist.",
+            "Throwing woman's hands starting down and to the outside, and putting my hands on her shoulders.",
+          startHold: FigureHold.LRAndRLClose,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description: '- As above, but putting my hands on her waist.',
           startHold: FigureHold.LRAndRLClose,
           endHold: FigureHold.L_WRWaist__R_WLWaist,
           labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_001_01]
+        },
+        {
+          description:
+            "Raising woman's hands starting down and to the outside on 1-4. Putting her hands on my shoulder on 5-8.",
+          startHold: FigureHold.LRAndRLClose,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_002_Pokreti_01]
         }
       ]
     },
@@ -34,6 +49,43 @@ export const FIGURE_BY_TYPE_OTHER: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_001_01]
+        },
+        {
+          description: 'Sensual CW with WHips, starting with ML-WB.',
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description: 'Sensual CCW with WHips, starting with MR-WB.',
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description: '- As above two, but led with MHips.',
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description:
+            "Sensual horizontal '8' with WHips. First 2 beats movement of WHips to up and ML, second 2 beats to up and MR.",
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description:
+            "Sensual combination WHips circle plus horizontal '8' CCW with WHips. Circle starts with MR-WB, and finished on ML after 2 beats. Next 2 beats is the second part of the horizontal '8', the one starting with MR and up.",
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_002_Pokreti_02]
         }
       ]
     },
