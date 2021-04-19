@@ -110,15 +110,7 @@ export const FIGURE_BY_TYPE_OTHER: FigureByTypeSectionGroupData = {
 
     {
       title: '********** UNSORTED **********',
-      variations: [
-        {
-          description: 'Hip to hip walk.',
-          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
-          endHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
-          labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_001_01]
-        }
-      ]
+      variations: []
     }
   ]
 };

@@ -57,14 +57,14 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
           videos: [FigureVideo.V_001_Pokreti]
         },
         {
-          description: 'WLHand throw back',
+          description: 'WLHand throw back.',
           startHold: FigureHold.Open,
           endHold: FigureHold.SemiClosed,
           labels: [FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_001_Pokreti, FigureVideo.V_001_02]
         },
         {
-          description: 'WRHand throw back',
+          description: 'WRHand throw back.',
           startHold: FigureHold.SemiClosed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],

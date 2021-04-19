@@ -8,4 +8,5 @@ export interface FigureByTypeVariation {
   readonly endHold: FigureHold;
   readonly labels: readonly FigureLabel[];
   readonly videos: readonly FigureVideo[];
+  readonly isNew?: boolean;
 }
