@@ -41,6 +41,14 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.SemiClosed,
           labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_001_02]
+        },
+        {
+          description:
+            'RL over MHead into LR_RL-MLShoulderWLHandBehindMNeck, then we release RL, and step into semi-closed hold. Can be performed after W CW.',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.SemiClosed,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_001_03]
         }
       ]
     }

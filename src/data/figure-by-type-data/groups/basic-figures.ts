@@ -69,14 +69,6 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_001_Pokreti]
-        },
-        {
-          description:
-            'RL over MHead into LR_RL-MLShoulderWLHandBehindMNeck, then we release RL, and step into semi-closed hold. Can be performed after W CW.',
-          startHold: FigureHold.Open,
-          endHold: FigureHold.SemiClosed,
-          labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_001_03]
         }
       ]
     }
