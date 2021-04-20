@@ -115,7 +115,11 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
+          videos: [
+            FigureVideo.V_002_Pokreti_01,
+            FigureVideo.V_002_Pokreti_02,
+            FigureVideo.V_002_02
+          ]
         },
         {
           description:
