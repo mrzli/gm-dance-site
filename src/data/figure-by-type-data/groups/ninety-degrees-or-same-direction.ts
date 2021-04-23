@@ -125,7 +125,7 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_SAME_ORIENTATION: FigureByTypeSect
       ]
     },
     {
-      title: '90 degrees internal',
+      title: '90 degrees moves',
       variations: [
         {
           description: 'W CW, LR shoulder height, RL waist height.',

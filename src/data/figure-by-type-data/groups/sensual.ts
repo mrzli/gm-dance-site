@@ -7,16 +7,8 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
   title: 'Sensual',
   sections: [
     {
-      title: 'Sensual - front facing',
+      title: 'Isolations',
       variations: [
-        {
-          description:
-            'Neck bend. Lasts 2 beats, usually 5-6. Can do step-tap on 7-8.',
-          startHold: FigureHold.LR__R_WRShoulder,
-          endHold: FigureHold.Open,
-          labels: [FigureLabel.PeriodTwoBeats],
-          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
-        },
         {
           description:
             "Sensual diagonal lifting-lowering of woman's shoulders, lift up sequence is ML-MR-ML-nothing. Block with MLKnee.",
@@ -49,7 +41,8 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
         },
         {
-          description: '- As any of above two, but each movement is 1 beat.',
+          description:
+            '- As above (either WLShoulder or WRShoulder), but each movement is 1 beat.',
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodTwoBeats],
@@ -92,18 +85,22 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
+          videos: [
+            FigureVideo.V_002_Pokreti_01,
+            FigureVideo.V_002_Pokreti_02,
+            FigureVideo.V_002_03
+          ]
         },
         {
           description:
-            "Sensual large circle with woman's chest in CCW direction, starting with MR-WB. Block with MLKnee.",
+            '- As above, but chest movement is in CCW direction, starting with MR-WB.',
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
         },
         {
-          description: '- As above two, but small circle.',
+          description: '- As above (either CW or CCW), but small circle.',
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFourBeats],
@@ -111,19 +108,33 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            'Lateral movement of WChest with WShoulder lifts. To ML on 1-2, MR on 3-4. On 5-8 we continue with WUpperBody CCW with WB bend.',
+            '- As above (large CCW circle), but only half of it in 2 beats. Next 1 beat is continued into bending WUpperPart to ML. Last 1 beat is straightening the woman.',
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
-          labels: [FigureLabel.PeriodOneToEight],
-          videos: [
-            FigureVideo.V_002_Pokreti_01,
-            FigureVideo.V_002_Pokreti_02,
-            FigureVideo.V_002_02
-          ]
-        },
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_002_03]
+        }
+      ]
+    },
+    {
+      title: 'Neck movements',
+      variations: [
         {
           description:
-            'Frontal wave entering. In 2 beats, orient woman to ML. Next 2 beats start wave to MR.',
+            'Neck bend. Lasts 2 beats, usually 5-6. Can do step-tap on 7-8.',
+          startHold: FigureHold.LR__R_WRShoulder,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.PeriodTwoBeats],
+          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
+        }
+      ]
+    },
+    {
+      title: 'Front facing waves',
+      variations: [
+        {
+          description:
+            'Frontal wave entering. In 2 beats, orient woman to ML (this is actually a lateral wave to ML). Next 2 beats start wave to MR.',
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodOneToFour],
@@ -152,6 +163,46 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_01]
+        }
+      ]
+    },
+    {
+      title: 'Figures',
+      variations: [
+        {
+          description:
+            'Lateral movement of WChest with WShoulder lifts. To ML on 1-2, MR on 3-4. On 5-8 we continue with WUpperBody CCW with WB bend.',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [
+            FigureVideo.V_002_Pokreti_01,
+            FigureVideo.V_002_Pokreti_02,
+            FigureVideo.V_002_02
+          ]
+        },
+        {
+          description:
+            'Basic for 2 beats. Then vertical CW circle led with hips, starting with down and ML, 4 beats. 1 beat to lift WRShoulder and move WChest to ML. 1 beat to straighten the woman.',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_002_02]
+        },
+        {
+          description:
+            'Lateral wave to ML in 2 beats, then to MR in another 2 beats. Next 3 beats is a frontal wave (starting towards me) with sitting down. Last 1 beat is stepping a bit forward and lifting ourselves up.',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_002_02]
+        },
+        {
+          description: '- As above, but hold is open palm on palm.',
+          startHold: FigureHold.OpenPalmOnPalm,
+          endHold: FigureHold.OpenPalmOnPalm,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_002_03]
         }
       ]
     },

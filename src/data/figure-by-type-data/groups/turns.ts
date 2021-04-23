@@ -150,6 +150,18 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_001_Pokreti]
         },
         {
+          description: '- As above, but at the end taking RR above LL.',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.RROverLL,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees360
+          ],
+          videos: [FigureVideo.V_002_02]
+        },
+        {
           description: '- As above, but putting MRWrist on WLWrist at the end.',
           startHold: FigureHold.Open,
           endHold: FigureHold.LR__MRWrist_WLWrist,
@@ -212,6 +224,21 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnManDegrees180
           ],
           videos: [FigureVideo.V_001_Pokreti]
+        },
+        {
+          description: '- As above, but closed position.',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees180,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees180
+          ],
+          videos: [FigureVideo.V_002_03]
         }
       ]
     },
@@ -247,7 +274,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Hand behind back (woman)',
+      title: 'Hand behind back (woman) - entrance',
       variations: [
         {
           description: 'W CCW RL above WHead, LD waist height.',
@@ -262,6 +289,24 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_001_03]
         },
         {
+          description:
+            'W CW RR over WHead, LL waist height, at the end RR over WHead again, and we let go of RR.',
+          startHold: FigureHold.RROverLL,
+          endHold: FigureHold.R_WLShoulder__LL_WRWaistBehindBack,
+          labels: [
+            FigureLabel.PeriodOneToFour,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_002_02]
+        }
+      ]
+    },
+    {
+      title: 'Hand behind back (woman) - exit',
+      variations: [
+        {
           description: 'W CW RL above WHead, LD waist height.',
           startHold: FigureHold.RL__LR_WLWaistBehindBack,
           endHold: FigureHold.Open,
@@ -272,6 +317,19 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_001_03]
+        },
+        {
+          description:
+            'W CW LL in contact, DD nothing. At the end LL over MHead.',
+          startHold: FigureHold.RL__LR_WLWaistBehindBack,
+          endHold: FigureHold.SemiClosed,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_002_02]
         }
       ]
     }

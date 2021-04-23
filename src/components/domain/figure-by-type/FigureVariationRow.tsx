@@ -9,6 +9,7 @@ import {
   Theme
 } from '@material-ui/core';
 import {
+  cyan,
   grey,
   green,
   lightBlue,
@@ -87,7 +88,9 @@ function stylesCallback(
     container: {
       display: 'grid',
       gridTemplateColumns: '3fr 1fr 2fr 1fr',
-      columnGap: 10
+      columnGap: 10,
+      backgroundColor: (props) =>
+        props.variation.isNew === true ? cyan[300] : undefined
     },
     holdChip: createChipStyles(theme, holdChipColor),
     holdChipAvatar: createChipAvatarStyles(theme, holdChipColor),

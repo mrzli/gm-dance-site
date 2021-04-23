@@ -7,7 +7,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
   title: 'Back turned',
   sections: [
     {
-      title: 'Woman in front, back turned',
+      title: 'Woman in front, back turned - entrances',
       variations: [
         {
           description:
@@ -33,7 +33,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanCcw,
             FigureLabel.TurnWomanDegrees180
           ],
-          videos: [FigureVideo.V_001_03]
+          videos: [FigureVideo.V_001_03, FigureVideo.V_002_03]
         },
         {
           description:
@@ -47,7 +47,12 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees180
           ],
           videos: [FigureVideo.V_001_03]
-        },
+        }
+      ]
+    },
+    {
+      title: 'Woman in front, back turned - exits',
+      variations: [
         {
           description:
             'Exit from woman in front, back turned. Before the start of the figure LL is straitened to MLeft. We push straitened LL to MRight on 5-6. On 7 we raise LL and step forward. On 8 we step in from of the woman and turn, taking her in closed hold.',
@@ -59,7 +64,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
             FigureLabel.TurnManCw,
             FigureLabel.TurnManDegrees180
           ],
-          videos: [FigureVideo.V_001_03]
+          videos: [FigureVideo.V_001_03, FigureVideo.V_002_03]
         },
         {
           description:
@@ -86,13 +91,25 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees540
           ],
           videos: [FigureVideo.V_002_Pokreti_04]
-        },
+        }
+      ]
+    },
+    {
+      title: 'Woman in front, back turned - moves',
+      variations: [
         {
           description: 'Basic with woman in front, back turned.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_001_03]
+        },
+        {
+          description: '- As above, but sensual movement of LL to MR then ML',
+          startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_03]
         },
         {
           description: 'Slow with woman in front, back turned.',
@@ -108,27 +125,32 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_001_03]
-        },
+        }
+      ]
+    },
+    {
+      title: 'Woman in front, back turned - waves',
+      variations: [
         {
           description: 'Sensual, normal front wave.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFourBeats],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
         },
         {
           description: 'Sensual, front wave with sit.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
         },
         {
           description: 'Sensual, intermittent front wave.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFourBeats],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
         }
       ]
     },
