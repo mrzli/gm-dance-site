@@ -54,18 +54,6 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
           videos: [FigureVideo.V_001_02]
         },
         {
-          description: 'W CCW, LR shoulder height, RL nothing.',
-          startHold: FigureHold.L90__LR_WLShoulder__RL,
-          endHold: FigureHold.Closed,
-          labels: [
-            FigureLabel.PeriodFiveToEight,
-            FigureLabel.TurnWomanTurn,
-            FigureLabel.TurnWomanCcw,
-            FigureLabel.TurnWomanDegrees270
-          ],
-          videos: [FigureVideo.V_001_02]
-        },
-        {
           description:
             'W CCW, LL above WHead, RR shoulder to waist height. Change to normal hold at the end.',
           startHold: FigureHold.R90__LL__RR_WRShoulder,
