@@ -9,14 +9,17 @@ export enum FigureHold {
   LR__R_WRShoulder = 'LR__R_WRShoulder',
   LR__RL_WRWaistBehindBack = 'LR__RL_WRWaistBehindBack',
   RL__LR_WLWaistBehindBack = 'RL__LR_WLWaistBehindBack',
+  RL__LR_WLAroundElbow = 'RL__LR_WLAroundElbow',
   LLOverRR = 'LLOverRR',
   RR = 'RR',
   RROverLL = 'RROverLL',
   L_WRWaist__R_WLWaist = 'L_WRWaist__R_WLWaist',
   L_WRHip__R_WLHip = 'L_WRHip__R_WLHip',
   R_WLShoulder__LL_WRWaistBehindBack = 'R_WLShoulder__LL_WRWaistBehindBack',
+  R_WRShoulder__LR_MRWaistBehindBack = 'R_WRShoulder__LR_MRWaistBehindBack',
   R90__LR__RL_WRWaist = 'R90__LR__RL_WRWaist',
   R90__L_WLShoulder__RL_WRWaist = 'R90__L_WLShoulder__RL_WRWaist',
+  R90__LL__RR_WRShoulder = 'R90__LL__RR_WRShoulder',
   R90WOnML__L_WLFrontRibs__R_WBack = 'R90WOnML__L_WLFrontRibs__R_WBack',
   L90__LR_WLShoulder__RL = 'L90__LR_WLShoulder__RL',
   RLHipToHip__LL__RR_WRShoulder = 'RLHipToHip__LL__RR_WRShoulder',
@@ -37,6 +40,7 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
   [FigureHold.LR__R_WRShoulder, 'LR R-WRShoulder'],
   [FigureHold.LR__RL_WRWaistBehindBack, 'LR RL-WRWaistBehindBack'],
   [FigureHold.RL__LR_WLWaistBehindBack, 'RL LR-WLWaistBehindBack'],
+  [FigureHold.RL__LR_WLAroundElbow, 'RL LR-WLAroundElbow'],
   [FigureHold.LLOverRR, 'LL>RR'],
   [FigureHold.RR, 'RR'],
   [FigureHold.RROverLL, 'RR>LL'],
@@ -46,8 +50,13 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
     FigureHold.R_WLShoulder__LL_WRWaistBehindBack,
     'R-WLShoulder LL-WRWaistBehindBack'
   ],
+  [
+    FigureHold.R_WRShoulder__LR_MRWaistBehindBack,
+    'R-WRShoulder LR-MRWaistBehindBack'
+  ],
   [FigureHold.R90__LR__RL_WRWaist, 'R90 LR RL-WRWaist'],
   [FigureHold.R90__L_WLShoulder__RL_WRWaist, 'R90 L-WLShoulder RL-WRWaist'],
+  [FigureHold.R90__LL__RR_WRShoulder, 'R90 LL RR-WRShoulder'],
   [
     FigureHold.R90WOnML__L_WLFrontRibs__R_WBack,
     'R90WOnML L-WLFrontRibs R-WBack'

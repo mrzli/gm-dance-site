@@ -4,7 +4,7 @@ import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-l
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
-  title: 'Turns / hand behind back',
+  title: 'Turns / turn related position',
   sections: [
     {
       title: 'Simple turns (woman)',
@@ -247,6 +247,32 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
       variations: [
         {
           description:
+            'W CCW both above WHead. WLElbow ends up being wedged between LR.',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.RL__LR_WLAroundElbow,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_002_04]
+        },
+        {
+          description:
+            '- As above, for the first 2 beats. When woman is turned to us again (on about beat 3), release RL and launch WLHand with LR pushing downwards. At the end again take RL.',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.Open,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_001_03]
+        },
+        {
+          description:
             'W CCW both above WHead, changing hands to normal hold at the end.',
           startHold: FigureHold.LLOverRR,
           endHold: FigureHold.LRAndRLClose,
@@ -257,24 +283,11 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_001_01, FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description:
-            'W CCW both above WHead. When woman is turned to us again (on about 7), release RL and launch WLHand with LR pushing downwards. At the end again take RL.',
-          startHold: FigureHold.Open,
-          endHold: FigureHold.Open,
-          labels: [
-            FigureLabel.PeriodFiveToEight,
-            FigureLabel.TurnWomanTurn,
-            FigureLabel.TurnWomanCcw,
-            FigureLabel.TurnWomanDegrees360
-          ],
-          videos: [FigureVideo.V_001_03]
         }
       ]
     },
     {
-      title: 'Hand behind back (woman) - entrance',
+      title: 'Turns one hand above head, other waist height (woman)',
       variations: [
         {
           description: 'W CCW RL above WHead, LD waist height.',
@@ -304,7 +317,25 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Hand behind back (woman) - exit',
+      title: 'Turns one hand above head, other waist height (man)',
+      variations: [
+        {
+          description:
+            'M CW RL above MHead, LR waist height. At the end RL over WHead, and we release RL.',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.RL__LR_WLWaistBehindBack,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees360
+          ],
+          videos: [FigureVideo.V_002_04]
+        }
+      ]
+    },
+    {
+      title: 'Hand behind back (woman)',
       variations: [
         {
           description: 'W CW RL above WHead, LD waist height.',
@@ -330,6 +361,31 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_002_02]
+        }
+      ]
+    },
+    {
+      title: 'Hand behind back (man)',
+      variations: [
+        {
+          description: 'Separation, MRHand slides down to WRHand.',
+          startHold: FigureHold.R_WRShoulder__LR_MRWaistBehindBack,
+          endHold: FigureHold.RR,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_04]
+        }
+      ]
+    },
+    {
+      title: 'Elbow wedge',
+      variations: [
+        {
+          description:
+            'Stylized leading of WLHand. Sequence: 1 ML, 2MR, 3-4 ML, 5 MD, 6-8 again to ML continued into CCW windmill with MLHand. We release RL when starting the windmill (around beat 6 when we are on ML).',
+          startHold: FigureHold.RL__LR_WLAroundElbow,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_002_04]
         }
       ]
     }

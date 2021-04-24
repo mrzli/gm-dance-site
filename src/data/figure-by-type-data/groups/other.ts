@@ -11,11 +11,11 @@ export const FIGURE_BY_TYPE_OTHER: FigureByTypeSectionGroupData = {
       variations: [
         {
           description:
-            "Throwing woman's hands starting down and to the outside, and putting my hands on her shoulders.",
+            "Throwing woman's hands starting down and to the outside, and putting my hands on her back.",
           startHold: FigureHold.LRAndRLClose,
           endHold: FigureHold.Closed,
-          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_Pokreti_02]
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_002_Pokreti_02, FigureVideo.V_002_04]
         },
         {
           description: '- As above, but putting my hands on her waist.',
