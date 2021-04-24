@@ -3,8 +3,8 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
-export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_SAME_ORIENTATION: FigureByTypeSectionGroupData = {
-  title: '90 degrees or same orientation',
+export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupData = {
+  title: '90 degrees or aligned',
   sections: [
     {
       title: 'Entrances',
