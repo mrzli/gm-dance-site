@@ -55,7 +55,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
       variations: [
         {
           description:
-            'Exit from woman in front, back turned. Before the start of the figure LL is straitened to MLeft. We push straitened LL to MRight on 5-6. On 7 we raise LL and step forward. On 8 we step in from of the woman and turn, taking her in closed hold.',
+            'Exit from woman in front, back turned. Before the start of the figure LL is straightened to MLeft. We push straitened LL to MRight on 5-6. On 7 we raise LL and step forward. On 8 we step in from of the woman and turn, taking her in closed hold.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.Closed,
           labels: [
@@ -105,13 +105,6 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_001_03]
         },
         {
-          description: '- As above, but sensual movement of LL to MR then ML',
-          startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
-          endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
-          labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_03]
-        },
-        {
           description: 'Slow with woman in front, back turned.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
@@ -151,6 +144,14 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
+        },
+        {
+          description:
+            'Just basic, but also sensual movement of LL to MR then ML',
+          startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_03]
         }
       ]
     }

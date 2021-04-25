@@ -29,43 +29,6 @@ export const FIGURE_BY_TYPE_BACK_TURNED_MEN: FigureByTypeSectionGroupData = {
           endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
           labels: [FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description:
-            'Exit from man in front, back turned. As preparation we actually move slightly away from woman, and lift the hands from our body, as compared to normal man-in-front position. We release LL at the beginning. Simultaneous W CW and M CW LL over WHead, RR nothing. At the end we take LL above RR. Men step in step-tap-step-tap sequence.',
-          startHold: FigureHold.MWithBack__LL__RR,
-          endHold: FigureHold.LLOverRR,
-          labels: [
-            FigureLabel.PeriodOneToFour,
-            FigureLabel.TurnWomanTurn,
-            FigureLabel.TurnWomanCw,
-            FigureLabel.TurnWomanDegrees360,
-            FigureLabel.TurnManTurn,
-            FigureLabel.TurnManCw,
-            FigureLabel.TurnManDegrees180
-          ],
-          videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description: 'Sensual, normal front wave.',
-          startHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          labels: [FigureLabel.PeriodFourBeats],
-          videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description: 'Sensual, front wave with sitting.',
-          startHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description: 'Sensual, intermittent front wave.',
-          startHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          labels: [FigureLabel.PeriodFourBeats],
-          videos: [FigureVideo.V_002_Pokreti_04]
         }
       ]
     },
