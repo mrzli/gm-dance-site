@@ -3,11 +3,11 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
-export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
-  title: 'Back turned',
+export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
+  title: 'Women in front, back turned',
   sections: [
     {
-      title: 'Woman in front, back turned - entrances',
+      title: 'Entrances',
       variations: [
         {
           description:
@@ -51,7 +51,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Woman in front, back turned - exits',
+      title: 'Exits',
       variations: [
         {
           description:
@@ -95,7 +95,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Woman in front, back turned - moves',
+      title: 'Moves',
       variations: [
         {
           description: 'Basic with woman in front, back turned.',
@@ -129,91 +129,28 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Woman in front, back turned - sensual',
+      title: 'Sensual',
       variations: [
         {
-          description: 'Sensual, normal front wave.',
+          description: 'Normal front wave.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
         },
         {
-          description: 'Sensual, front wave with sit.',
+          description: 'Front wave with sit.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
         },
         {
-          description: 'Sensual, intermittent front wave.',
+          description: 'Intermittent front wave.',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
-        }
-      ]
-    },
-    {
-      title: 'Man in front, back turned',
-      variations: [
-        {
-          description:
-            'Entering into man in front, back turned. M CW LR above MHead, RL waist height. In step-tap-step-tap sequence.',
-          startHold: FigureHold.Open,
-          endHold: FigureHold.MWithBack__LROverRL,
-          labels: [
-            FigureLabel.PeriodFiveToEight,
-            FigureLabel.TurnManTurn,
-            FigureLabel.TurnManCw,
-            FigureLabel.TurnManDegrees180
-          ],
-          videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description:
-            'Setting up proper man in front, back turned. During all 4 beats I am pulling woman on to my back. On beat 1 move LR over the front of RL, so that MLHand is under MRElbow and put LR on MRStomach and RL on MLChest. On beat 2 I release LR and RL, and take LL at MLChest and RR and MRStomach. On beats 3-4 I lift LL and RR or myself and put them, respectively, on MLStomach and MRChest.',
-          startHold: FigureHold.MWithBack__LROverRL,
-          endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description:
-            'Exit from man in front, back turned. As preparation we actually move slightly away from woman, and lift the hands from our body, as compared to normal man-in-front position. We release LL at the beginning. Simultaneous W CW and M CW LL over WHead, RR nothing. At the end we take LL above RR. Men step in step-tap-step-tap sequence.',
-          startHold: FigureHold.MWithBack__LL__RR,
-          endHold: FigureHold.LLOverRR,
-          labels: [
-            FigureLabel.PeriodOneToFour,
-            FigureLabel.TurnWomanTurn,
-            FigureLabel.TurnWomanCw,
-            FigureLabel.TurnWomanDegrees360,
-            FigureLabel.TurnManTurn,
-            FigureLabel.TurnManCw,
-            FigureLabel.TurnManDegrees180
-          ],
-          videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description: 'Sensual, normal front wave.',
-          startHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          labels: [FigureLabel.PeriodFourBeats],
-          videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description: 'Sensual, front wave with sitting.',
-          startHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description: 'Sensual, intermittent front wave.',
-          startHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
-          labels: [FigureLabel.PeriodFourBeats],
-          videos: [FigureVideo.V_002_Pokreti_04]
         }
       ]
     }
