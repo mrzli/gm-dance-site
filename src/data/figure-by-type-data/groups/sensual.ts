@@ -224,13 +224,6 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_001_01]
         },
         {
-          description: 'Stylized CW windmill in contact with WRWrist.',
-          startHold: FigureHold.SemiClosed,
-          endHold: FigureHold.SemiClosed,
-          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_001_02]
-        },
-        {
           description:
             'Stylistic swaying left-right. Can be 4 beats or 8 beats (simply repeated twice).',
           startHold: FigureHold.SemiClosed,
@@ -239,12 +232,11 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_001_02]
         },
         {
-          description:
-            'RL over MHead into LR_RL-MLShoulderWLHandBehindMNeck, then we release RL, and step into semi-closed hold. Can be performed after W CW.',
-          startHold: FigureHold.Open,
+          description: 'Stylized CW windmill in contact with WRWrist.',
+          startHold: FigureHold.SemiClosed,
           endHold: FigureHold.SemiClosed,
-          labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_001_03]
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_001_02]
         },
         {
           description: 'RL windmill over WHead.',
@@ -260,6 +252,14 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.Open,
           labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_01]
+        },
+        {
+          description:
+            'RL over MHead into LR_RL-MLShoulderWLHandBehindMNeck, then we release RL, and step into semi-closed hold. Can be performed after W CW.',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.SemiClosed,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_001_03]
         }
       ]
     }

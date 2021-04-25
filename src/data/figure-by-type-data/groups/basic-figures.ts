@@ -13,29 +13,29 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
           description: 'Basic.',
           startHold: FigureHold.Open,
           endHold: FigureHold.Open,
-          labels: [],
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_001_Pokreti]
+        },
+        {
+          description: 'Slow.',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_001_Pokreti]
         },
         {
           description: 'Forward-backward.',
           startHold: FigureHold.Open,
           endHold: FigureHold.Open,
-          labels: [],
+          labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_001_Pokreti]
         },
         {
           description: '- As above, but in semi-closed hold.',
           startHold: FigureHold.SemiClosed,
           endHold: FigureHold.SemiClosed,
-          labels: [],
+          labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_001_02]
-        },
-        {
-          description: 'Slow.',
-          startHold: FigureHold.Open,
-          endHold: FigureHold.Open,
-          labels: [],
-          videos: [FigureVideo.V_001_Pokreti]
         }
       ]
     },
@@ -46,14 +46,14 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
           description: 'Pull woman to yourself / move into a closed hold.',
           startHold: FigureHold.Open,
           endHold: FigureHold.Closed,
-          labels: [],
+          labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_001_Pokreti]
         },
         {
           description: 'Push woman from yourself / push yourself from woman.',
           startHold: FigureHold.Closed,
           endHold: FigureHold.Open,
-          labels: [],
+          labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_001_Pokreti]
         },
         {

@@ -68,7 +68,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            'Exit from woman in front, back turned. W CW LL over WHead, DD nothing. At the end, we release LL into DL',
+            'Exit from woman in front, back turned. W CW LL over WHead, RR nothing. At the end, we release LL into RL',
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.Open,
           labels: [
@@ -129,7 +129,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Woman in front, back turned - waves',
+      title: 'Woman in front, back turned - sensual',
       variations: [
         {
           description: 'Sensual, normal front wave.',
@@ -159,7 +159,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED: FigureByTypeSectionGroupData = {
       variations: [
         {
           description:
-            'Entering into man in front, back turned. M CW LD above MHead, DL waist height. In step-tap-step-tap sequence.',
+            'Entering into man in front, back turned. M CW LR above MHead, RL waist height. In step-tap-step-tap sequence.',
           startHold: FigureHold.Open,
           endHold: FigureHold.MWithBack__LROverRL,
           labels: [

@@ -42,18 +42,6 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
       title: 'Exits',
       variations: [
         {
-          description: 'W CCW, LR shoulder height, RL nothing.',
-          startHold: FigureHold.L90__LR_WLShoulder__RL,
-          endHold: FigureHold.LRPalmOnPalm,
-          labels: [
-            FigureLabel.PeriodFiveToEight,
-            FigureLabel.TurnWomanTurn,
-            FigureLabel.TurnWomanCcw,
-            FigureLabel.TurnWomanDegrees270
-          ],
-          videos: [FigureVideo.V_001_02]
-        },
-        {
           description:
             'W CCW, LL above WHead, RR shoulder to waist height. Change to normal hold at the end.',
           startHold: FigureHold.R90__LL__RR_WRShoulder,
@@ -66,6 +54,20 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
             FigureLabel.TurnWomanDegrees270
           ],
           videos: [FigureVideo.V_002_04]
+        },
+        {
+          description: 'W CW, and small M CW to face the woman.',
+          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
+          endHold: FigureHold.LLOverRR,
+          labels: [
+            FigureLabel.PeriodOneToFour,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees270,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees90
+          ],
+          videos: [FigureVideo.V_001_01]
         },
         {
           description:
@@ -99,23 +101,21 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
           videos: [FigureVideo.V_002_01]
         },
         {
-          description: 'W CW, and small M CW to face the woman.',
-          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
-          endHold: FigureHold.LLOverRR,
+          description: 'W CCW, LR shoulder height, RL nothing.',
+          startHold: FigureHold.L90__LR_WLShoulder__RL,
+          endHold: FigureHold.LRPalmOnPalm,
           labels: [
-            FigureLabel.PeriodOneToFour,
+            FigureLabel.PeriodFiveToEight,
             FigureLabel.TurnWomanTurn,
-            FigureLabel.TurnWomanCw,
-            FigureLabel.TurnWomanDegrees270,
-            FigureLabel.TurnManCw,
-            FigureLabel.TurnManDegrees90
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees270
           ],
-          videos: [FigureVideo.V_001_01]
+          videos: [FigureVideo.V_001_02]
         }
       ]
     },
     {
-      title: 'Walks',
+      title: 'Moves',
       variations: [
         {
           description: 'Hip to hip walk.',
@@ -131,16 +131,11 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
           endHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
           labels: [FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_04]
-        }
-      ]
-    },
-    {
-      title: '90 degrees moves',
-      variations: [
+        },
         {
           description: 'W CW, LR shoulder height, RL waist height.',
           startHold: FigureHold.R90__LR__RL_WRWaist,
-          endHold: FigureHold.R90__L_WLShoulder__RL_WRWaist,
+          endHold: FigureHold.L90__LR_WLShoulder__RL,
           labels: [
             FigureLabel.PeriodOneToFour,
             FigureLabel.TurnWomanTurn,
@@ -160,7 +155,12 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
             FigureLabel.TurnManDegrees90
           ],
           videos: [FigureVideo.V_002_04]
-        },
+        }
+      ]
+    },
+    {
+      title: 'Sensual',
+      variations: [
         {
           description: 'Sensual, normal front wave.',
           startHold: FigureHold.R90__L_WLShoulder__RL_WRWaist,

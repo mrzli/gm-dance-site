@@ -22,18 +22,6 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_001_Pokreti]
         },
         {
-          description: 'W CW LR above WHead, RL nothing.',
-          startHold: FigureHold.LRPalmOnPalm,
-          endHold: FigureHold.Open,
-          labels: [
-            FigureLabel.PeriodOneToFour,
-            FigureLabel.TurnWomanTurn,
-            FigureLabel.TurnWomanCw,
-            FigureLabel.TurnWomanDegrees360
-          ],
-          videos: [FigureVideo.V_001_02]
-        },
-        {
           description: 'W CCW LR above WHead, RL nothing.',
           startHold: FigureHold.Open,
           endHold: FigureHold.Open,
@@ -59,7 +47,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            'W CCW LR above WHead, RL nothing, while we turn we put MRHand on WBack.',
+            '- As above (first one), but while we turn we put MRHand on WBack.',
           startHold: FigureHold.Open,
           endHold: FigureHold.SemiClosed,
           labels: [
@@ -81,6 +69,18 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_001_Pokreti]
+        },
+        {
+          description: 'W CW LR above WHead, RL nothing.',
+          startHold: FigureHold.LRPalmOnPalm,
+          endHold: FigureHold.Open,
+          labels: [
+            FigureLabel.PeriodOneToFour,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_001_02]
         }
       ]
     },
@@ -125,7 +125,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_001_Pokreti]
         },
         {
-          description: '- As above but we tank Right in Right at the end.',
+          description: '- As above but we take RR at the end.',
           startHold: FigureHold.Open,
           endHold: FigureHold.RR,
           labels: [
@@ -290,7 +290,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
       title: 'Turns one hand above head, other waist height (woman)',
       variations: [
         {
-          description: 'W CCW RL above WHead, LD waist height.',
+          description: 'W CCW RL above WHead, LR waist height.',
           startHold: FigureHold.Open,
           endHold: FigureHold.RL__LR_WLWaistBehindBack,
           labels: [
@@ -338,7 +338,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
       title: 'Hand behind back (woman)',
       variations: [
         {
-          description: 'W CW RL above WHead, LD waist height.',
+          description: 'W CW RL above WHead, LR waist height.',
           startHold: FigureHold.RL__LR_WLWaistBehindBack,
           endHold: FigureHold.Open,
           labels: [
@@ -351,8 +351,8 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            'W CW LL in contact, DD nothing. At the end LL over MHead.',
-          startHold: FigureHold.RL__LR_WLWaistBehindBack,
+            'W CW LL in contact, RR nothing. At the end LL over MHead.',
+          startHold: FigureHold.R_WLShoulder__LL_WRWaistBehindBack,
           endHold: FigureHold.SemiClosed,
           labels: [
             FigureLabel.PeriodFiveToEight,
