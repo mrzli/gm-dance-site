@@ -75,7 +75,7 @@
         ]
       },
       {
-        "description": "M CW L iznad DL u 5-8, DL otpustimo kad zasmeta u okretu",
+        "description": "M CW MLRuka iznad DL u 5-8, DL otpustimo kad zasmeta u okretu",
         "startHold": "O",
         "endHold": "O",
         "note": "",
@@ -441,6 +441,15 @@
         "note": "",
         "videos": [
           "001 - 02"
+        ]
+      },
+      {
+        "description": "DL luk prema unutra pa gore preko MGlave, onda puštamo DL i hvatamo ženu sa D za leđa, u 5-8",
+        "startHold": "O",
+        "endHold": "PZ",
+        "note": "Nastavak figure iznad.",
+        "videos": [
+          "001 - 03"
         ]
       },
       {
@@ -1137,6 +1146,15 @@
         ]
       },
       {
+        "description": "Ž CCW 450s DL iznad ŽGlave, LD ništa, u 5-8, pred kraj izbacimo DL za završno zakretanje Ž, ŽDRuka ide na MLeđa, MLRuka iznad ŽDRuke na ŽDRame, i MDRuka na ŽLStruk",
+        "startHold": "O",
+        "endHold": "L90_L-ŽDRame_D-ŽLStruk",
+        "note": "",
+        "videos": [
+          "020 - 03"
+        ]
+      },
+      {
         "description": "Ž CW 270s LD u visini vrata, DL ništa, u 1-4, na kraju prihvaćamo DL",
         "startHold": "O",
         "endHold": "L90_LD-ŽLRame_DL",
@@ -1341,15 +1359,6 @@
         "note": "",
         "videos": [
           "005 - 10"
-        ]
-      },
-      {
-        "description": "Ž CCW 450s DL iznad ŽGlave, LD ništa, u 5-8, pred kraj izbacimo DL za završno zakretanje Ž, ŽDRuka ide na MLeđa, MLRuka iznad ŽDRuke na ŽDRame, i MDRuka na ŽLStruk",
-        "startHold": "O",
-        "endHold": "L90_L-ŽDRame_D-ŽLStruk",
-        "note": "",
-        "videos": [
-          "020 - 03"
         ]
       }
     ]
@@ -1843,7 +1852,7 @@
         ]
       },
       {
-        "description": "Z - dijegonalno podizanje/spuštanje nasuprotnih Ž ramena",
+        "description": "Z - dijagonalno podizanje/spuštanje nasuprotnih Ž ramena",
         "startHold": "Z",
         "endHold": "Z",
         "note": "",
@@ -3230,21 +3239,21 @@
     "startHold": "DL_LD-ŽLStrukIzaLeđa",
     "figures": [
       {
+        "description": "DL_LD-ŽLStrukIzaLeđa - Ž CW DL iznad ŽGlave, LD u visini struka, u 1-4",
+        "startHold": "DL_LD-ŽLStrukIzaLeđa",
+        "endHold": "O",
+        "note": "",
+        "videos": [
+          "001 - 03"
+        ]
+      },
+      {
         "description": "DL_LD-ŽLStrukIzaLeđa - 5-8, odmah na početku puštam LD, Ž CCW DL iznad ŽGlave, LD ništa",
         "startHold": "DL_LD-ŽLStrukIzaLeđa",
         "endHold": "O",
         "note": "",
         "videos": [
           "030 - 01"
-        ]
-      },
-      {
-        "description": "DL_LD-ŽLStrukIzaLeđa - Ž CW DL iznad ŽGlave, LD u visini struka, u 1-4, nakon toga u 5-8 nastavljamo DL putanju da ide preko MGlave, onda puštamo DL i hvatamo ženu sa D za leđa",
-        "startHold": "DL_LD-ŽLStrukIzaLeđa",
-        "endHold": "PZ",
-        "note": "",
-        "videos": [
-          "001 - 03"
         ]
       },
       {
@@ -3754,7 +3763,7 @@
         ]
       },
       {
-        "description": "DD>LL - Ž CW DD iznad ŽGlave, LL u visini struka, u 1-4, na kraju jo DD preko ŽGlave i puštamo DD",
+        "description": "DD>LL - Ž CW DD iznad ŽGlave, LL u visini struka, u 1-4, na kraju još DD preko ŽGlave i puštamo DD",
         "startHold": "DD>LL",
         "endHold": "D-ŽLRame_LL-ŽDStrukIzaLeđa",
         "note": "",
@@ -4363,7 +4372,7 @@
     "startHold": "D-ŽLRame_LL-ŽDStrukIzaLeđa",
     "figures": [
       {
-        "description": "D-ŽLRame_LL-ŽDStrukIzaLeđa - Ž CCW LL u kontaktu, DD ništa, u 5-8, pred kraj DD preko MGlave",
+        "description": "D-ŽLRame_LL-ŽDStrukIzaLeđa - Ž CCW LL u kontaktu, DD ništa, u 5-8, pred kraj LL preko MGlave",
         "startHold": "D-ŽLRame_LL-ŽDStrukIzaLeđa",
         "endHold": "PZ",
         "note": "",
@@ -4487,15 +4496,6 @@
         ]
       },
       {
-        "description": "D90_LD_DL-ŽDStruk - Ž CW 180s u 1-4",
-        "startHold": "D90_L-ŽLRame_DL-ŽDStruk",
-        "endHold": "D90_L-ŽLRame_DL-ŽDStruk",
-        "note": "",
-        "videos": [
-          "001 - 02"
-        ]
-      },
-      {
         "description": "D90_L-ŽLRame_DL-ŽDStruk - val",
         "startHold": "D90_L-ŽLRame_DL-ŽDStruk",
         "endHold": "D90_L-ŽLRame_DL-ŽDStruk",
@@ -4574,6 +4574,15 @@
         "note": "",
         "videos": [
           "003 - 16"
+        ]
+      },
+      {
+        "description": "D90_LD_DL-ŽDStruk - Ž CW 180s u 1-4",
+        "startHold": "D90_L-ŽLRame_DL-ŽDStruk",
+        "endHold": "L90_LD-ŽLRame_DL",
+        "note": "",
+        "videos": [
+          "001 - 02"
         ]
       }
     ]
@@ -4778,7 +4787,7 @@
     "startHold": "D90_LL_DD-ŽDRame",
     "figures": [
       {
-        "description": "D90_LL_DD-ŽDRame - u mjestu Ž CW 270s LL iznad ŽGlave, DD ostaje u kontaktu, u 1-4,",
+        "description": "D90_LL_DD-ŽDRame - u mjestu Ž CW 270s LL iznad ŽGlave, DD ostaje u kontaktu, u 1-4",
         "startHold": "D90_LL_DD-ŽDRame",
         "endHold": "LL>DD",
         "note": "",
@@ -5898,7 +5907,7 @@
         ]
       },
       {
-        "description": "ŽLeđima_LL_D-ŽDPrednjaRebra - guramo ispružene LD u D u 5-6, u 7 dižemo i puštamo LD i zakoračimo naprijed, u 8 zakoračimo ispred Ž i uhvatimo ju u Z držanje",
+        "description": "ŽLeđima_LL_D-ŽDPrednjaRebra - guramo ispružene LL u MDesno u 5-6, u 7 dižemo i puštamo LL i zakoračimo naprijed, u 8 zakoračimo ispred Ž i uhvatimo ju u Z držanje",
         "startHold": "ŽLeđima_LL_D-ŽDPrednjaRebra",
         "endHold": "Z",
         "note": "Ispravljamo LD skroz u L prije početka",
@@ -5952,7 +5961,7 @@
         ]
       },
       {
-        "description": "ŽLeđima_LL_D-ŽDPrednjaRebra - vodimo Ž kukove svojim u CW počevši sa D pa naprijed u 5-8",
+        "description": "ŽLeđima_LL_D-ŽDPrednjaRebra - vodimo Ž kukove svojim u CW počevši sa MLijevo pa MNaprijed u 5-8",
         "startHold": "ŽLeđima_LL_D-ŽDPrednjaRebra",
         "endHold": "ŽLeđima_LL_D-ŽDPrednjaRebra",
         "note": "",
