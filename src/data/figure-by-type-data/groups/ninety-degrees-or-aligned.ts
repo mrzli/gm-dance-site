@@ -4,7 +4,7 @@ import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-l
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupData = {
-  title: '90 degrees or aligned',
+  groupTitle: '90 degrees or aligned',
   sections: [
     {
       title: 'Entrances',

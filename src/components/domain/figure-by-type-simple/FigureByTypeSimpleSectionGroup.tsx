@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react';
 import { FigureByTypeSectionGroupData } from '../../../types/domain/figure-by-type/figure-by-type-section-group-data';
 import { Typography } from '@material-ui/core';
 import { FigureByTypeSimpleSection } from './FigureByTypeSimpleSection';
-import { padNonNegativeInteger } from '../../../utils/generic';
+import { getSectionGroupTitle } from '../util/by-type-util';
 
 interface FigureByTypeSimpleSectionGroupProps {
   readonly data: FigureByTypeSectionGroupData;
@@ -24,7 +24,7 @@ export function FigureByTypeSimpleSectionGroup({
   return (
     <div style={SECTIONS_CONTAINER_STYLE}>
       <Typography variant={'h6'} style={{ marginBottom: 10 }}>
-        {`${padNonNegativeInteger(groupIndex + 1, 2)} - ${data.title}`}
+        {getSectionGroupTitle(groupIndex, data.groupTitle)}
       </Typography>
       {data.sections.map((section, index) => {
         return (

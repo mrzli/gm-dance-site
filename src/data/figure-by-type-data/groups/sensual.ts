@@ -4,7 +4,7 @@ import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-l
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
-  title: 'Sensual',
+  groupTitle: 'Sensual',
   sections: [
     {
       title: 'Isolations',

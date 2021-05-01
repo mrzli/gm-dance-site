@@ -2,7 +2,10 @@ import React, { CSSProperties } from 'react';
 import { FigureByTypeSectionData } from '../../../types/domain/figure-by-type/figure-by-type-section-data';
 import { Typography } from '@material-ui/core';
 import { FigureByTypeSimpleVariationRow } from './FigureByTypeSimpleVariationRow';
-import { padNonNegativeInteger } from '../../../utils/generic';
+import { getSectionTitle } from '../util/by-type-util';
+import { FigureByTypeVariation } from '../../../types/domain/figure-by-type/figure-by-type-variation';
+import { FigureByTypeVariationSimple } from '../../../types/domain/figure-by-type/figure-by-type-variation-simple';
+import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 interface FigureByTypeSimpleSectionProps {
   readonly data: FigureByTypeSectionData;
@@ -27,6 +30,8 @@ export function FigureByTypeSimpleSection({
   groupIndex,
   sectionIndex
 }: FigureByTypeSimpleSectionProps): React.ReactElement {
+  const variations = getSimpleVariations(data.variations);
+
   return (
     <div style={VARIATIONS_CONTAINER_STYLE}>
       <Typography
@@ -35,9 +40,9 @@ export function FigureByTypeSimpleSection({
           marginBottom: 6
         }}
       >
-        {getTitle(groupIndex, sectionIndex, data.title)}
+        {getSectionTitle(groupIndex, sectionIndex, data.title)}
       </Typography>
-      {data.variations.map((variation, index) => {
+      {variations.map((variation, index) => {
         return (
           <>
             <FigureByTypeSimpleVariationRow key={index} variation={variation} />
@@ -51,13 +56,36 @@ export function FigureByTypeSimpleSection({
   );
 }
 
-function getTitle(
-  groupIndex: number,
-  sectionIndex: number,
-  title: string
-): string {
-  const groupString = padNonNegativeInteger(groupIndex + 1, 2);
-  const sectionString = padNonNegativeInteger(sectionIndex + 1, 2);
+function getSimpleVariations(
+  variations: readonly FigureByTypeVariation[]
+): readonly FigureByTypeVariationSimple[] {
+  const mapBySimpleText = variations.reduce((acc, variation) => {
+    if (variation.simpleText === undefined) {
+      return acc;
+    }
 
-  return `${groupString}.${sectionString} - ${title}`;
+    const key = variation.simpleText;
+    if (acc.has(key)) {
+      const existingVariations = acc.get(
+        key
+      ) as readonly FigureByTypeVariation[];
+      const updatedVariations = existingVariations.concat(variation);
+      acc.set(key, updatedVariations);
+    } else {
+      acc.set(key, [variation]);
+    }
+
+    return acc;
+  }, new Map<string, readonly FigureByTypeVariation[]>());
+
+  return Array.from(mapBySimpleText.entries()).map((simpleVariationPair) => {
+    const simpleVariationList = simpleVariationPair[1];
+    const videos = simpleVariationList.reduce((acc, variation) => {
+      variation.videos.forEach((v) => {
+        acc.add(v);
+      });
+      return acc;
+    }, new Set<FigureVideo>());
+    return { description: simpleVariationPair[0], videos: Array.from(videos) };
+  });
 }

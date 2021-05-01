@@ -3,14 +3,18 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 
+const BASIC_SIMPLE_TEXT = 'Basic; Slow; F/B (C/SC)';
+const BASIC_POSITIONS_SIMPLE_TEXT = 'Pull/Push; WLHand/WRHand throw back';
+
 export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = {
-  title: 'Basic figures',
+  groupTitle: 'Basic figures',
   sections: [
     {
       title: 'Basic steps',
       variations: [
         {
           description: 'Basic.',
+          simpleText: BASIC_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodFourBeats],
@@ -18,6 +22,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: 'Slow.',
+          simpleText: BASIC_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodFourBeats],
@@ -25,6 +30,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: 'Forward-backward.',
+          simpleText: BASIC_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodOneToEight],
@@ -32,6 +38,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: '- As above, but in semi-closed hold.',
+          simpleText: BASIC_SIMPLE_TEXT,
           startHold: FigureHold.SemiClosed,
           endHold: FigureHold.SemiClosed,
           labels: [FigureLabel.PeriodOneToEight],
@@ -44,6 +51,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
       variations: [
         {
           description: 'Pull woman to yourself / move into a closed hold.',
+          simpleText: BASIC_POSITIONS_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFourBeats],
@@ -51,6 +59,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: 'Push woman from yourself / push yourself from woman.',
+          simpleText: BASIC_POSITIONS_SIMPLE_TEXT,
           startHold: FigureHold.Closed,
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodFourBeats],
@@ -58,6 +67,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: 'WLHand throw back.',
+          simpleText: BASIC_POSITIONS_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.SemiClosed,
           labels: [FigureLabel.PeriodOneToFour],
@@ -65,6 +75,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: 'WRHand throw back.',
+          simpleText: BASIC_POSITIONS_SIMPLE_TEXT,
           startHold: FigureHold.SemiClosed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],

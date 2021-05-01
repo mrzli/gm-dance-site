@@ -4,7 +4,7 @@ import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-l
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 export const FIGURE_BY_TYPE_BACK_TURNED_MEN: FigureByTypeSectionGroupData = {
-  title: 'Men in front, back turned',
+  groupTitle: 'Men in front, back turned',
   sections: [
     {
       title: 'Entrances',
