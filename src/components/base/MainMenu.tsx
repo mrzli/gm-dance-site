@@ -10,7 +10,7 @@ interface MainMenuProps {
 }
 
 const LIST_ITEM_STYLES: CSSProperties = {
-  width: 200,
+  width: 300,
   cursor: 'pointer'
 };
 

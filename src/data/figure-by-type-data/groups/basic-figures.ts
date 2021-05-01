@@ -3,8 +3,7 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 
-const BASIC_SIMPLE_TEXT = 'Basic; Slow; F/B (C/SC)';
-const BASIC_POSITIONS_SIMPLE_TEXT = 'Pull/Push; WLHand/WRHand throw back';
+const BASIC_SIMPLE_TEXT = 'Basic * Slow * F/B (C/SC)';
 
 export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = {
   groupTitle: 'Basic figures',
@@ -51,7 +50,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
       variations: [
         {
           description: 'Pull woman to yourself / move into a closed hold.',
-          simpleText: BASIC_POSITIONS_SIMPLE_TEXT,
+          simpleText: 'Pull/Push',
           startHold: FigureHold.Open,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFourBeats],
@@ -59,7 +58,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: 'Push woman from yourself / push yourself from woman.',
-          simpleText: BASIC_POSITIONS_SIMPLE_TEXT,
+          simpleText: 'Pull/Push',
           startHold: FigureHold.Closed,
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodFourBeats],
@@ -67,7 +66,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: 'WLHand throw back.',
-          simpleText: BASIC_POSITIONS_SIMPLE_TEXT,
+          simpleText: 'WLHand/WRHand throw back',
           startHold: FigureHold.Open,
           endHold: FigureHold.SemiClosed,
           labels: [FigureLabel.PeriodOneToFour],
@@ -75,7 +74,7 @@ export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = 
         },
         {
           description: 'WRHand throw back.',
-          simpleText: BASIC_POSITIONS_SIMPLE_TEXT,
+          simpleText: 'WLHand/WRHand throw back',
           startHold: FigureHold.SemiClosed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
