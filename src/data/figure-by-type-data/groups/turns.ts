@@ -8,7 +8,7 @@ const W_SIMPLE_TURN_SIMPLE_TEXT =
 const M_SIMPLE_TURN_SIMPLE_TEXT = 'M inner turn, outer hand; CCW; CW';
 const M_SIMPLE_TURN_OVER_HAND_SIMPLE_TEXT =
   'M inner, MOuterHand above inner pair; CCW ->(O/RR); CW ->(O/RR>LL/MRWrist on WLWrist)';
-const SIMULTANEOUS_TURNS_SIMPLE_TEXT = 'Simultaneous * Together; CCW (SC/C)';
+const SIMULTANEOUS_TURNS_SIMPLE_TEXT = 'Simultaneous *** Together; CCW (SC/C)';
 const W_BOTH_TURNS_SIMPLE_TEXT =
   'W inner both; ; CCW inner above (O)->(wedge/throw), outer above (LL>RR)->(O)';
 const W_ONE_ONE_TURNS_SIMPLE_TEXT =
@@ -409,7 +409,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
       variations: [
         {
           description: 'Separation, MRHand slides down to WRHand.',
-          simpleText: 'Separate RR slide down',
+          simpleText: 'Separate RR slide down hand',
           startHold: FigureHold.R_WRShoulder__LR_MRWaistBehindBack,
           endHold: FigureHold.RR,
           labels: [FigureLabel.PeriodOneToFour],

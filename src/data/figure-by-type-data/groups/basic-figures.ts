@@ -3,7 +3,7 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 
-const BASIC_SIMPLE_TEXT = 'Basic * Slow * F/B (C/SC)';
+const BASIC_SIMPLE_TEXT = 'Basic *** Slow *** F/B (C/SC)';
 
 export const FIGURE_BY_TYPE_GROUP_BASIC_FIGURES: FigureByTypeSectionGroupData = {
   groupTitle: 'Basic figures',
