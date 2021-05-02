@@ -5,10 +5,10 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 
 const WIF_ENTER_SIMPLE_TEXT =
   'Enter - throw hand/turn on 6/turn on 6 with over WHead';
-const WIF_EXIT_PUSH_MR_SIMPLE_TEXT = 'LL push MR, go under';
+const WIF_EXIT_PUSH_MR_SIMPLE_TEXT = 'LL push MR, under WArm';
 const WIF_EXIT_TURN_SIMPLE_TEXT = '1.5 W turn ->(O/SC)';
 const WIF_SIMPLE_MOVES_SIMPLE_TEXT =
-  'Basic (normal/sensual hand movement) *** Slow *** Hip (CW)';
+  'Basic (normal/sensual hand movement) *** Slow *** Hip circle (CW)';
 const WIF_WAVES_SIMPLE_TEXT = 'Wave normal/sit/intermittent';
 
 export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {

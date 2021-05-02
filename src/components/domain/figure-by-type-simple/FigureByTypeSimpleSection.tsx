@@ -80,12 +80,15 @@ function getSimpleVariations(
 
   return Array.from(mapBySimpleText.entries()).map((simpleVariationPair) => {
     const simpleVariationList = simpleVariationPair[1];
-    const videos = simpleVariationList.reduce((acc, variation) => {
+    const videosSet = simpleVariationList.reduce((acc, variation) => {
       variation.videos.forEach((v) => {
         acc.add(v);
       });
       return acc;
     }, new Set<FigureVideo>());
-    return { description: simpleVariationPair[0], videos: Array.from(videos) };
+    const videos = Array.from(videosSet).sort((video1, video2) =>
+      video1.localeCompare(video2)
+    );
+    return { description: simpleVariationPair[0], videos };
   });
 }

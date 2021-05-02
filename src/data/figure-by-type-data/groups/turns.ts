@@ -10,11 +10,11 @@ const M_SIMPLE_TURN_OVER_HAND_SIMPLE_TEXT =
   'M inner, MOuterHand above inner pair; CCW ->(O/RR); CW ->(O/RR>LL/MRWrist on WLWrist)';
 const SIMULTANEOUS_TURNS_SIMPLE_TEXT = 'Simultaneous *** Together; CCW (SC/C)';
 const W_BOTH_TURNS_SIMPLE_TEXT =
-  'W inner both; ; CCW inner above (O)->(wedge/throw), outer above (LL>RR)->(O)';
+  'W inner, both; ; CCW inner above (O)->(wedge/throw), outer above (LL>RR)->(O)';
 const W_ONE_ONE_TURNS_SIMPLE_TEXT =
-  'W inner one-one; CW outer above (RR>LL)->(R-WLShoulder_LLBehind); CCW inner above (O)->(LRBehind)';
+  'W inner, one-one; CW outer above (RR>LL)->(R-WLShoulder_LLBehind); CCW inner above (O)->(LRBehind)';
 const M_ONE_ONE_TURNS_SIMPLE_TEXT =
-  'M inner one-one; ; CW inner above (O)->(R-WRShoulder_LRBehind)';
+  'M inner, one-one; ; CW inner above (O)->(R-WRShoulder_LRBehind)';
 const W_HAND_BEHIND_BACK_UNWIND_SIMPLE_TEXT =
   'W unwind; CW (LRBehind)->(O); CCW (LLBehind)->(SC)';
 
@@ -423,7 +423,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
         {
           description:
             'Stylized leading of WLHand. Sequence: 1 ML, 2MR, 3-4 ML, 5 MD, 6-8 again to ML continued into CCW windmill with MLHand. We release RL when starting the windmill (around beat 6 when we are on ML).',
-          simpleText: 'Wedge; LRLLRL-Windmill;',
+          simpleText: 'Wedge, LRLLRL-Windmill',
           startHold: FigureHold.RL__LR_WLAroundElbow,
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodOneToEight],
