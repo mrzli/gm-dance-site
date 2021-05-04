@@ -13,7 +13,7 @@ const WIF_WAVES_SIMPLE_TEXT = 'Wave normal/sit/intermittent';
 const WIF_HIPS_SIMPLE_TEXT = 'Hip circle (CW)';
 
 export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
-  groupTitle: 'Women in front, back turned',
+  groupTitle: 'Woman in front, back turned',
   sections: [
     {
       title: 'Entrances',

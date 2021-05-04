@@ -12,11 +12,11 @@ const SIMULTANEOUS_TURNS_SIMPLE_TEXT = 'Simultaneous *** Together; CCW (SC/C)';
 const W_BOTH_TURNS_SIMPLE_TEXT =
   'W inner, both; ; CCW inner above (O)->(wedge/throw), outer above (LL>RR)->(O)';
 const W_ONE_ONE_TURNS_SIMPLE_TEXT =
-  'W inner, one-one; CW outer above (RR>LL)->(R-WLShoulder_LLBehind); CCW inner above (O)->(LRBehind)';
+  'W inner, one-one; CW outer above (RR>LL)->(LLBehind R-WLShoulder); CCW inner above (O)->(LRBehind)';
 const M_ONE_ONE_TURNS_SIMPLE_TEXT =
   'M inner, one-one; ; CW inner above (O)->(R-WRShoulder_LRBehind)';
 const W_HAND_BEHIND_BACK_UNWIND_SIMPLE_TEXT =
-  'W unwind; CW (LRBehind)->(O); CCW (LLBehind L-WLShoulder/LLBehind L-WLHip)->(SC)';
+  'W unwind; CW (LRBehind)->(O); CCW (LLBehind R-WLShoulder/LLBehind R-WLHip)->(SC)';
 
 export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
   groupTitle: 'Turns / turn related position',

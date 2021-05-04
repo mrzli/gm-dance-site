@@ -6,10 +6,10 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 const MIF_ENTER_SIMPLE_TEXT = 'Step-tap-step-tap enter *** Hands on body setup';
 const MIF_EXIT_SIMPLE_TEXT = 'Step-tap-step-tap exit';
 const MIF_WAVES_SIMPLE_TEXT = 'Wave normal/sit/intermittent';
-const MIF_HIPS_SIMPLE_TEXT = '';
+const MIF_HIPS_SIMPLE_TEXT = 'Hip Circle (CCW)';
 
 export const FIGURE_BY_TYPE_BACK_TURNED_MEN: FigureByTypeSectionGroupData = {
-  groupTitle: 'Men in front, back turned',
+  groupTitle: 'Man in front, back turned',
   sections: [
     {
       title: 'Entrances',

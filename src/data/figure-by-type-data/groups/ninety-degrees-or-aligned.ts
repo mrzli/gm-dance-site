@@ -3,6 +3,8 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
+const ENTER_INTO_R90_SIMPLE_TEXT =
+  'Into R90; outer above (O)->(R90_LR_RL-Waist), (SpreadOutRL)->(R90_L-WLWrist_RL-WRWaist)';
 const COMPLEX_EXIT_FROM_R90_SIMPLE_TEXT = 'R90 complex exit';
 const HIP_WALK_SIMPLE_TEXT = 'Hip walk (1 step per 1/2 beats)';
 const SEPARATED_ALIGNED_WALK_SIMPLE_TEXT =
@@ -17,7 +19,7 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
       variations: [
         {
           description: 'W CCW, LR above WHead, RL waist height.',
-          simpleText: 'Into R90, outer above (O)->(R90_LR_RL-Waist)',
+          simpleText: ENTER_INTO_R90_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.R90__LR__RL_WRWaist,
           labels: [
@@ -27,6 +29,20 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
             FigureLabel.TurnWomanDegrees270
           ],
           videos: [FigureVideo.V_001_02]
+        },
+        {
+          description:
+            'W CCW led with RL waist height, LR nothing, at the end we take WLWrist with MLHand',
+          simpleText: ENTER_INTO_R90_SIMPLE_TEXT,
+          startHold: FigureHold.SpreadOutRL,
+          endHold: FigureHold.R90__L_WLWrist__RL_WRWaist,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_003_01]
         },
         {
           description:
@@ -82,19 +98,18 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
           videos: [FigureVideo.V_002_04]
         },
         {
-          description: 'W CW, and small M CW to face the woman.',
-          simpleText: 'Aligned exit (RLHipByHip_LL_RR)->(LL>RR)',
-          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
-          endHold: FigureHold.LLOverRR,
+          description:
+            'W CW, at the beginning we release RL, LL waist height (at the beginning of the movement we drop LL down so woman can turn), at the end we put MRHand on WLHip.',
+          simpleText: 'R90 L-WLWrist unwind',
+          startHold: FigureHold.R90__L_WLWrist__RL_WRWaist,
+          endHold: FigureHold.LL_WRWaistBehindBack__R_WLHip,
           labels: [
             FigureLabel.PeriodOneToFour,
             FigureLabel.TurnWomanTurn,
             FigureLabel.TurnWomanCw,
-            FigureLabel.TurnWomanDegrees270,
-            FigureLabel.TurnManCw,
-            FigureLabel.TurnManDegrees90
+            FigureLabel.TurnWomanDegrees270
           ],
-          videos: [FigureVideo.V_001_01]
+          videos: [FigureVideo.V_003_01]
         },
         {
           description:
@@ -143,18 +158,19 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
           videos: [FigureVideo.V_001_02]
         },
         {
-          description:
-            'W CW, at the beginning we release RL, LL waist height (at the beginning of the movement we drop LL down so woman can turn), at the end we put MRHand on WLHip.',
-          simpleText: 'R90 L-WLWrist unwind',
-          startHold: FigureHold.R90__L_WLWrist__RL_WRWaist,
-          endHold: FigureHold.LL_WRWaistBehindBack__R_WLHip,
+          description: 'W CW, and small M CW to face the woman.',
+          simpleText: 'Aligned exit (RLHipByHip_LL_RR)->(LL>RR)',
+          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
+          endHold: FigureHold.LLOverRR,
           labels: [
             FigureLabel.PeriodOneToFour,
             FigureLabel.TurnWomanTurn,
             FigureLabel.TurnWomanCw,
-            FigureLabel.TurnWomanDegrees270
+            FigureLabel.TurnWomanDegrees270,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees90
           ],
-          videos: [FigureVideo.V_003_01]
+          videos: [FigureVideo.V_001_01]
         },
         {
           description:
@@ -179,23 +195,6 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
       title: 'Moves',
       variations: [
         {
-          description: 'Hip to hip walk.',
-          simpleText: HIP_WALK_SIMPLE_TEXT,
-          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
-          endHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
-          labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_001_01]
-        },
-        {
-          description:
-            '- As above, but twice as slow. Each step is 2 beats. Two steps total.',
-          simpleText: HIP_WALK_SIMPLE_TEXT,
-          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
-          endHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
-          labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_04]
-        },
-        {
           description: 'W CW, LR shoulder height, RL waist height.',
           simpleText: 'R90 to L90',
           startHold: FigureHold.R90__LR__RL_WRWaist,
@@ -219,6 +218,23 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
             FigureLabel.TurnManCw,
             FigureLabel.TurnManDegrees90
           ],
+          videos: [FigureVideo.V_002_04]
+        },
+        {
+          description: 'Hip to hip walk.',
+          simpleText: HIP_WALK_SIMPLE_TEXT,
+          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
+          endHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_001_01]
+        },
+        {
+          description:
+            '- As above, but twice as slow. Each step is 2 beats. Two steps total.',
+          simpleText: HIP_WALK_SIMPLE_TEXT,
+          startHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
+          endHold: FigureHold.RLHipToHip__LL__RR_WRShoulder,
+          labels: [FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_04]
         },
         {
