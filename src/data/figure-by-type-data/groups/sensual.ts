@@ -266,7 +266,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
         },
         {
           description: 'Stylized CW windmill in contact with WRWrist.',
-          simpleText: STYLISTIC_FOOTWORK_SIMPLE_TEXT,
+          simpleText: 'Basic 5-8 CW windmill LR wrist-on-wrist',
           startHold: FigureHold.SemiClosed,
           endHold: FigureHold.SemiClosed,
           labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],

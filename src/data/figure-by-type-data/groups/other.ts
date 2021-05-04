@@ -43,6 +43,34 @@ export const FIGURE_BY_TYPE_OTHER: FigureByTypeSectionGroupData = {
       ]
     },
     {
+      title: 'Spread out',
+      variations: [
+        {
+          description:
+            'Small moves with LR to ML, then MR, then on beat 3 throw LR to down and WBack and step back, beat 4 tap',
+          simpleText: 'Spread out',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.SpreadOutRL,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_01]
+        },
+        {
+          description:
+            'W CCW led with RL waist height, LR nothing, at the end we take WLWrist with MLHand',
+          simpleText: 'Wind into R90 from spread out, take wrist',
+          startHold: FigureHold.SpreadOutRL,
+          endHold: FigureHold.R90__L_WLWrist__RL_WRWaist,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_003_01]
+        }
+      ]
+    },
+    {
       title: 'Hip/waist leading',
       variations: [
         {

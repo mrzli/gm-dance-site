@@ -4,7 +4,7 @@ import { FigureVideo } from './enums/figure-video';
 
 export interface FigureByTypeVariation {
   readonly description: string;
-  readonly simpleText?: string;
+  readonly simpleText: string;
   readonly startHold: FigureHold;
   readonly endHold: FigureHold;
   readonly labels: readonly FigureLabel[];
