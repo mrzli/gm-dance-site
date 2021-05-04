@@ -6,6 +6,7 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 const MIF_ENTER_SIMPLE_TEXT = 'Step-tap-step-tap enter *** Hands on body setup';
 const MIF_EXIT_SIMPLE_TEXT = 'Step-tap-step-tap exit';
 const MIF_WAVES_SIMPLE_TEXT = 'Wave normal/sit/intermittent';
+const MIF_HIPS_SIMPLE_TEXT = '';
 
 export const FIGURE_BY_TYPE_BACK_TURNED_MEN: FigureByTypeSectionGroupData = {
   groupTitle: 'Men in front, back turned',
@@ -25,7 +26,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_MEN: FigureByTypeSectionGroupData = {
             FigureLabel.TurnManCw,
             FigureLabel.TurnManDegrees180
           ],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_003_01]
         },
         {
           description:
@@ -34,7 +35,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_MEN: FigureByTypeSectionGroupData = {
           startHold: FigureHold.MWithBack__LROverRL,
           endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
           labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_003_01]
         }
       ]
     },
@@ -56,7 +57,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_MEN: FigureByTypeSectionGroupData = {
             FigureLabel.TurnManCw,
             FigureLabel.TurnManDegrees180
           ],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_003_01]
         }
       ]
     },
@@ -90,6 +91,15 @@ export const FIGURE_BY_TYPE_BACK_TURNED_MEN: FigureByTypeSectionGroupData = {
           endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
           labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_002_Pokreti_04]
+        },
+        {
+          description:
+            'W Hip CCW, led by our hips, starting with MLeft then MBack.',
+          simpleText: MIF_HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
+          endHold: FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_003_01]
         }
       ]
     }

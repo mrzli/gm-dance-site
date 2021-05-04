@@ -8,8 +8,9 @@ const WIF_ENTER_SIMPLE_TEXT =
 const WIF_EXIT_PUSH_MR_SIMPLE_TEXT = 'LL push MR, under WArm';
 const WIF_EXIT_TURN_SIMPLE_TEXT = '1.5 W turn ->(O/SC)';
 const WIF_SIMPLE_MOVES_SIMPLE_TEXT =
-  'Basic (normal/sensual hand movement) *** Slow *** Hip circle (CW)';
+  'Basic (normal/sensual hand movement) *** Slow';
 const WIF_WAVES_SIMPLE_TEXT = 'Wave normal/sit/intermittent';
+const WIF_HIPS_SIMPLE_TEXT = 'Hip circle (CW)';
 
 export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
   groupTitle: 'Women in front, back turned',
@@ -135,15 +136,6 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_002_Pokreti_04]
-        },
-        {
-          description:
-            'W Hip CW, led by our hips, starting with MLeft then MForward.',
-          simpleText: WIF_SIMPLE_MOVES_SIMPLE_TEXT,
-          startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
-          endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
-          labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_001_03]
         }
       ]
     },
@@ -173,6 +165,15 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
+        },
+        {
+          description:
+            'W Hip CW, led by our hips, starting with MLeft then MForward.',
+          simpleText: WIF_HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_001_03]
         }
       ]
     }

@@ -16,8 +16,9 @@ export enum FigureHold {
   RROverLL = 'RROverLL',
   L_WRWaist__R_WLWaist = 'L_WRWaist__R_WLWaist',
   L_WRHip__R_WLHip = 'L_WRHip__R_WLHip',
-  R_WLShoulder__LL_WRWaistBehindBack = 'R_WLShoulder__LL_WRWaistBehindBack',
-  R_WRShoulder__LR_MRWaistBehindBack = 'R_WRShoulder__LR_MRWaistBehindBack',
+  LR_MRWaistBehindBack__R_WRShoulder = 'LR_MRWaistBehindBack__R_WRShoulder',
+  LL_WRWaistBehindBack__R_WLShoulder = 'LL_WRWaistBehindBack__R_WLShoulder',
+  LL_WRWaistBehindBack__R_WLHip = 'LL_WRWaistBehindBack__R_WLHip',
   R90__LR__RL_WRWaist = 'R90__LR__RL_WRWaist',
   R90__L_WLShoulder__RL_WRWaist = 'R90__L_WLShoulder__RL_WRWaist',
   R90__L_WLWrist__RL_WRWaist = 'R90__L_WLWrist__RL_WRWaist',
@@ -25,6 +26,9 @@ export enum FigureHold {
   R90WOnML__L_WLFrontRibs__R_WBack = 'R90WOnML__L_WLFrontRibs__R_WBack',
   L90__LR_WLShoulder__RL = 'L90__LR_WLShoulder__RL',
   RLHipToHip__LL__RR_WRShoulder = 'RLHipToHip__LL__RR_WRShoulder',
+  RLHipToHip__WL_MBack_Over_R_WBack = 'RLHipToHip__WL_MBack_Over_R_WBack',
+  RLHipToHip__RL = 'RLHipToHip__RL',
+  LRHipToHip__LR = 'LRHipToHip__LR',
   WWithBack__LL__R_WRFrontRibs = 'WWithBack__LL__R_WRFrontRibs',
   MWithBack__LROverRL = 'MWithBack__LROverRL',
   MWithBack__LL__RR = 'MWithBack__LL__RR',
@@ -50,13 +54,14 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
   [FigureHold.L_WRWaist__R_WLWaist, 'L-WRWaist R-WLWaist'],
   [FigureHold.L_WRHip__R_WLHip, 'L-WRHip R-WLHip'],
   [
-    FigureHold.R_WLShoulder__LL_WRWaistBehindBack,
-    'R-WLShoulder LL-WRWaistBehindBack'
+    FigureHold.LR_MRWaistBehindBack__R_WRShoulder,
+    'LR-MRWaistBehindBack R-WRShoulder'
   ],
   [
-    FigureHold.R_WRShoulder__LR_MRWaistBehindBack,
-    'R-WRShoulder LR-MRWaistBehindBack'
+    FigureHold.LL_WRWaistBehindBack__R_WLShoulder,
+    'LL-WRWaistBehindBack R-WLShoulder'
   ],
+  [FigureHold.LL_WRWaistBehindBack__R_WLHip, 'LL-WRWaistBehindBack R-WLHip'],
   [FigureHold.R90__LR__RL_WRWaist, 'R90 LR RL-WRWaist'],
   [FigureHold.R90__L_WLShoulder__RL_WRWaist, 'R90 L-WLShoulder RL-WRWaist'],
   [FigureHold.R90__L_WLWrist__RL_WRWaist, 'R90 L-WLWrist RL-WRWaist'],
@@ -67,6 +72,9 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
   ],
   [FigureHold.L90__LR_WLShoulder__RL, 'L90 LR-WLShoulder RL'],
   [FigureHold.RLHipToHip__LL__RR_WRShoulder, 'RLHipToHip LL RR-WRShoulder'],
+  [FigureHold.RLHipToHip__WL_MBack_Over_R_WBack, 'RLHipToHip WL-MBack>R-WBack'],
+  [FigureHold.RLHipToHip__RL, 'RLHipToHip RL'],
+  [FigureHold.LRHipToHip__LR, 'LRHipToHip LR'],
   [FigureHold.WWithBack__LL__R_WRFrontRibs, 'WWithBack LL R-WRFrontRibs'],
   [FigureHold.MWithBack__LROverRL, 'MWithBack LR>RL'],
   [FigureHold.MWithBack__LL__RR, 'MWithBack LL RR'],

@@ -4,7 +4,7 @@ import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-l
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 const W_SIMPLE_TURN_SIMPLE_TEXT =
-  'W inner; CW (outer/inner hand); CCW (O/SC)->(O/SC)';
+  'W inner; CW (outer/inner hand); CCW single/double (O/SC)->(O/SC)';
 const M_SIMPLE_TURN_SIMPLE_TEXT = 'M inner turn, outer hand; CCW; CW';
 const M_SIMPLE_TURN_OVER_HAND_SIMPLE_TEXT =
   'M inner, MOuterHand above inner pair; CCW ->(O/RR); CW ->(O/RR>LL/MRWrist on WLWrist)';
@@ -16,7 +16,7 @@ const W_ONE_ONE_TURNS_SIMPLE_TEXT =
 const M_ONE_ONE_TURNS_SIMPLE_TEXT =
   'M inner, one-one; ; CW inner above (O)->(R-WRShoulder_LRBehind)';
 const W_HAND_BEHIND_BACK_UNWIND_SIMPLE_TEXT =
-  'W unwind; CW (LRBehind)->(O); CCW (LLBehind)->(SC)';
+  'W unwind; CW (LRBehind)->(O); CCW (LLBehind L-WLShoulder/LLBehind L-WLHip)->(SC)';
 
 export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
   groupTitle: 'Turns / turn related position',
@@ -89,6 +89,19 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_001_Pokreti]
+        },
+        {
+          description: '- As above, but double turn O->O.',
+          simpleText: W_SIMPLE_TURN_SIMPLE_TEXT,
+          startHold: FigureHold.Open,
+          endHold: FigureHold.Open,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees720
+          ],
+          videos: [FigureVideo.V_003_01]
         },
         {
           description: 'W CW LR above WHead, RL nothing.',
@@ -317,7 +330,11 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanCcw,
             FigureLabel.TurnWomanDegrees360
           ],
-          videos: [FigureVideo.V_001_01, FigureVideo.V_002_Pokreti_04]
+          videos: [
+            FigureVideo.V_001_01,
+            FigureVideo.V_002_Pokreti_04,
+            FigureVideo.V_003_01
+          ]
         }
       ]
     },
@@ -342,7 +359,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             'W CW RR over WHead, LL waist height, at the end RR over WHead again, and we let go of RR.',
           simpleText: W_ONE_ONE_TURNS_SIMPLE_TEXT,
           startHold: FigureHold.RROverLL,
-          endHold: FigureHold.R_WLShoulder__LL_WRWaistBehindBack,
+          endHold: FigureHold.LL_WRWaistBehindBack__R_WLShoulder,
           labels: [
             FigureLabel.PeriodOneToFour,
             FigureLabel.TurnWomanTurn,
@@ -361,7 +378,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             'M CW RL above MHead, LR waist height. At the end RL over WHead, and we release RL.',
           simpleText: M_ONE_ONE_TURNS_SIMPLE_TEXT,
           startHold: FigureHold.Open,
-          endHold: FigureHold.R_WRShoulder__LR_MRWaistBehindBack,
+          endHold: FigureHold.LR_MRWaistBehindBack__R_WRShoulder,
           labels: [
             FigureLabel.PeriodFiveToEight,
             FigureLabel.TurnManTurn,
@@ -392,7 +409,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
           description:
             'W CCW LL in contact, RR nothing. At the end LL over MHead.',
           simpleText: W_HAND_BEHIND_BACK_UNWIND_SIMPLE_TEXT,
-          startHold: FigureHold.R_WLShoulder__LL_WRWaistBehindBack,
+          startHold: FigureHold.LL_WRWaistBehindBack__R_WLShoulder,
           endHold: FigureHold.SemiClosed,
           labels: [
             FigureLabel.PeriodFiveToEight,
@@ -401,6 +418,19 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_002_02]
+        },
+        {
+          description: '- As above, but MRHand is on WLHip.',
+          simpleText: W_HAND_BEHIND_BACK_UNWIND_SIMPLE_TEXT,
+          startHold: FigureHold.LL_WRWaistBehindBack__R_WLHip,
+          endHold: FigureHold.SemiClosed,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_003_01]
         }
       ]
     },
@@ -410,7 +440,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
         {
           description: 'Separation, MRHand slides down to WRHand.',
           simpleText: 'Separate RR slide down hand',
-          startHold: FigureHold.R_WRShoulder__LR_MRWaistBehindBack,
+          startHold: FigureHold.LR_MRWaistBehindBack__R_WRShoulder,
           endHold: FigureHold.RR,
           labels: [FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_04]

@@ -5,6 +5,8 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 
 const COMPLEX_EXIT_FROM_R90_SIMPLE_TEXT = 'R90 complex exit';
 const HIP_WALK_SIMPLE_TEXT = 'Hip walk (1 step per 1/2 beats)';
+const SEPARATED_ALIGNED_WALK_SIMPLE_TEXT =
+  'Separated aligned walk one direction/another direction (hold RL/LR/WLBack-MRBack)';
 const R90_FRONT_WAVE_SIMPLE_TEXT = 'Wave normal/sit';
 
 export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupData = {
@@ -41,6 +43,23 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
             FigureLabel.TurnManDegrees90
           ],
           videos: [FigureVideo.V_001_01, FigureVideo.V_002_04]
+        },
+        {
+          description:
+            'M+W CW, near the end we release MLHand and let W turn more, keeping contact with MRHand and WLHand.',
+          simpleText: 'Together turn to LRHipByHip align',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.RLHipToHip__WL_MBack_Over_R_WBack,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees360,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees180
+          ],
+          videos: [FigureVideo.V_003_01]
         }
       ]
     },
@@ -122,6 +141,37 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
             FigureLabel.TurnWomanDegrees270
           ],
           videos: [FigureVideo.V_001_02]
+        },
+        {
+          description:
+            'W CW, at the beginning we release RL, LL waist height (at the beginning of the movement we drop LL down so woman can turn), at the end we put MRHand on WLHip.',
+          simpleText: 'R90 L-WLWrist unwind',
+          startHold: FigureHold.R90__L_WLWrist__RL_WRWaist,
+          endHold: FigureHold.LL_WRWaistBehindBack__R_WLHip,
+          labels: [
+            FigureLabel.PeriodOneToFour,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees270
+          ],
+          videos: [FigureVideo.V_003_01]
+        },
+        {
+          description:
+            'Exit from separated aligned walk, holding hands. On beat 3 throw holding hands in direction opposite of movement. Get in contact with LR.',
+          simpleText: 'Separated aligned walk exit',
+          startHold: FigureHold.RLHipToHip__RL,
+          endHold: FigureHold.Open,
+          labels: [
+            FigureLabel.PeriodOneToFour,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees180,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees180
+          ],
+          videos: [FigureVideo.V_003_01]
         }
       ]
     },
@@ -170,6 +220,55 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
             FigureLabel.TurnManDegrees90
           ],
           videos: [FigureVideo.V_002_04]
+        },
+        {
+          description:
+            'Separated aligned walk, holding hands. On beat 3 throw holding hands in direction opposite of movement.',
+          simpleText: SEPARATED_ALIGNED_WALK_SIMPLE_TEXT,
+          startHold: FigureHold.RLHipToHip__RL,
+          endHold: FigureHold.LRHipToHip__LR,
+          labels: [
+            FigureLabel.PeriodOneToFour,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees180,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees180
+          ],
+          videos: [FigureVideo.V_003_01]
+        },
+        {
+          description: '- As above, but opposite direction.',
+          simpleText: SEPARATED_ALIGNED_WALK_SIMPLE_TEXT,
+          startHold: FigureHold.LRHipToHip__LR,
+          endHold: FigureHold.RLHipToHip__RL,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees180,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCcw,
+            FigureLabel.TurnManDegrees180
+          ],
+          videos: [FigureVideo.V_003_01]
+        },
+        {
+          description: '- As first, but hands on backs.',
+          simpleText: SEPARATED_ALIGNED_WALK_SIMPLE_TEXT,
+          startHold: FigureHold.RLHipToHip__WL_MBack_Over_R_WBack,
+          endHold: FigureHold.LRHipToHip__LR,
+          labels: [
+            FigureLabel.PeriodOneToFour,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees180,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees180
+          ],
+          videos: [FigureVideo.V_003_01]
         }
       ]
     },
