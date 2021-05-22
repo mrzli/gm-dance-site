@@ -6,7 +6,11 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 const ISOLATION_SHOULDER_SIMPLE_TEXT = 'Shoulders; up/down; arc (1/2 beats)';
 const ISOLATION_CHEST_SIMPLE_TEXT =
   'Chest; L/R; B/F (1/2 beats); CW/CCW (large/small); Half CCW + tilt';
-const NECK_SIMPLE_TEXT = 'Neck ML->MR';
+const HIPS_SIMPLE_TEXT =
+  'Sensual circle with hips, led with hands/hips, CW/CCW *** Vertical 8 *** Half CCW + vertical 8';
+const KNEE_SIMPLE_TEXT =
+  'Sensual circle with hips, led with knee, CW *** Half CCW + tilt';
+const NECK_SIMPLE_TEXT = 'W neck ML->MR';
 const FRONT_WAVE_SIMPLE_TEXT = 'Enter; exit simple/sit tilt/sit yaw';
 const FIGURE_LATERAL_SIMPLE_TEXT = 'L,R, to me, sit, up (C/PalmOnPalm)';
 const STYLISTIC_FOOTWORK_SIMPLE_TEXT = 'Push into ground *** Swaying';
@@ -138,16 +142,169 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
       ]
     },
     {
+      title: 'Hip movements',
+      variations: [
+        {
+          description: 'Sensual CW with WHips, starting with ML-WB.',
+          simpleText: HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description: 'Sensual CCW with WHips, starting with MR-WB.',
+          simpleText: HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description: '- As above two, but led with MHips.',
+          simpleText: HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description:
+            "Sensual horizontal '8' with WHips. First 2 beats movement of WHips to up and ML, second 2 beats to up and MR.",
+          simpleText: HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description:
+            "Sensual combination WHips CCW circle plus horizontal '8'. Circle starts with MR-WB, and finished on ML after 2 beats. Next 2 beats is the second part of the horizontal '8', the one starting with MR and up.",
+          simpleText: HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.L_WRHip__R_WLHip,
+          endHold: FigureHold.L_WRHip__R_WLHip,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_002_Pokreti_02]
+        }
+      ]
+    },
+    {
+      title: 'Knee movements',
+      variations: [
+        {
+          description:
+            'Sensual CW of WHips led with MDKnee, starting with ML-WB.',
+          simpleText: KNEE_SIMPLE_TEXT,
+          startHold: FigureHold.ClosedMRKneeBetween,
+          endHold: FigureHold.ClosedMRKneeBetween,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_02]
+        },
+        {
+          description:
+            'Sensual CCW of WHips led with MDKnee, starting with MR-WB, but only half of it in 2 beats. Next 1 beat is continued into bending WUpperPart to ML. Last 1 beat is straightening the woman.',
+          simpleText: KNEE_SIMPLE_TEXT,
+          startHold: FigureHold.ClosedMRKneeBetween,
+          endHold: FigureHold.ClosedMRKneeBetween,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_02]
+        }
+      ]
+    },
+    {
       title: 'Neck movements',
       variations: [
         {
           description:
-            'Neck bend. Lasts 2 beats, usually 5-6. Can do step-tap on 7-8.',
+            'W neck bend, ML->MR. Lasts 2 beats, usually 5-6. Can do step-tap on 7-8.',
           simpleText: NECK_SIMPLE_TEXT,
           startHold: FigureHold.LR__R_WRShoulder,
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodTwoBeats],
           videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
+        }
+      ]
+    },
+    {
+      title: 'Hand movements',
+      variations: [
+        {
+          description: 'Stylized CW windmill in contact with WRWrist.',
+          simpleText: 'Basic 5-8 CW windmill LR wrist-on-wrist',
+          startHold: FigureHold.SemiClosed,
+          endHold: FigureHold.SemiClosed,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_001_02]
+        },
+        {
+          description: 'RL windmill over WHead.',
+          simpleText: 'RL windmill over WHead',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.LR__R_WRShoulder,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_Pokreti_01]
+        },
+        {
+          description:
+            'RL CCW windmill, 2 turns. At the end we take RL normally.',
+          simpleText: 'RL wrist windmill (2 turns)',
+          startHold: FigureHold.LR__MRWrist_WLWrist,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_01]
+        },
+        {
+          description:
+            'RL over MHead into LR_RL-MLShoulderWLHandBehindMNeck, then we release RL, and step into semi-closed hold. Can be performed after W CW.',
+          simpleText: 'RL under chin over MHead',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.SemiClosed,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_001_03]
+        }
+      ]
+    },
+    {
+      title: 'Lean back',
+      variations: [
+        {
+          description:
+            'WUpperBody leaning to WBack in 1-4, we also drop down a bit on 3-4. At 5-8 we push WHips with MLHand and go up.',
+          simpleText: 'W lean back with drop, exit with hip push',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_003_02]
+        }
+      ]
+    },
+    {
+      title: 'Body movements',
+      variations: [
+        {
+          description: 'Small movement with feet going push-tap-step-tap.',
+          simpleText: STYLISTIC_FOOTWORK_SIMPLE_TEXT,
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_001_01]
+        },
+        {
+          description: '- As above, but in opposite direction.',
+          simpleText: STYLISTIC_FOOTWORK_SIMPLE_TEXT,
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_001_01]
+        },
+        {
+          description:
+            'Stylistic swaying left-right. Can be 4 beats or 8 beats (simply repeated twice).',
+          simpleText: STYLISTIC_FOOTWORK_SIMPLE_TEXT,
+          startHold: FigureHold.SemiClosed,
+          endHold: FigureHold.SemiClosed,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_001_02]
         }
       ]
     },
@@ -233,70 +390,6 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.OpenPalmOnPalm,
           labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_002_03]
-        }
-      ]
-    },
-    {
-      title: 'Stylistic',
-      variations: [
-        {
-          description: 'Small movement with feet going push-tap-step-tap.',
-          simpleText: STYLISTIC_FOOTWORK_SIMPLE_TEXT,
-          startHold: FigureHold.Closed,
-          endHold: FigureHold.Closed,
-          labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_001_01]
-        },
-        {
-          description: '- As above, but in opposite direction.',
-          simpleText: STYLISTIC_FOOTWORK_SIMPLE_TEXT,
-          startHold: FigureHold.Closed,
-          endHold: FigureHold.Closed,
-          labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_001_01]
-        },
-        {
-          description:
-            'Stylistic swaying left-right. Can be 4 beats or 8 beats (simply repeated twice).',
-          simpleText: STYLISTIC_FOOTWORK_SIMPLE_TEXT,
-          startHold: FigureHold.SemiClosed,
-          endHold: FigureHold.SemiClosed,
-          labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_001_02]
-        },
-        {
-          description: 'Stylized CW windmill in contact with WRWrist.',
-          simpleText: 'Basic 5-8 CW windmill LR wrist-on-wrist',
-          startHold: FigureHold.SemiClosed,
-          endHold: FigureHold.SemiClosed,
-          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_001_02]
-        },
-        {
-          description: 'RL windmill over WHead.',
-          simpleText: 'RL windmill over WHead',
-          startHold: FigureHold.Open,
-          endHold: FigureHold.LR__R_WRShoulder,
-          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_Pokreti_01]
-        },
-        {
-          description:
-            'RL CCW windmill, 2 turns. At the end we take RL normally.',
-          simpleText: 'RL wrist windmill (2 turns)',
-          startHold: FigureHold.LR__MRWrist_WLWrist,
-          endHold: FigureHold.Open,
-          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_01]
-        },
-        {
-          description:
-            'RL over MHead into LR_RL-MLShoulderWLHandBehindMNeck, then we release RL, and step into semi-closed hold. Can be performed after W CW.',
-          simpleText: 'RL under chin over MHead',
-          startHold: FigureHold.Open,
-          endHold: FigureHold.SemiClosed,
-          labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_001_03]
         }
       ]
     }
