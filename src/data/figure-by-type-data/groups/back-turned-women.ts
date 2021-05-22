@@ -9,7 +9,8 @@ const WIF_EXIT_PUSH_MR_SIMPLE_TEXT = 'LL push MR, under WArm';
 const WIF_EXIT_TURN_SIMPLE_TEXT = '1.5 W turn ->(O/SC)';
 const WIF_SIMPLE_MOVES_SIMPLE_TEXT =
   'Basic (normal/sensual hand movement) *** Slow';
-const WIF_WAVES_SIMPLE_TEXT = 'Wave normal/sit/intermittent';
+const WIF_WAVES_SIMPLE_TEXT =
+  'Wave normal/sit enter/sit exit/sit exit bend/intermittent';
 const WIF_HIPS_SIMPLE_TEXT = 'Hip circle (CW)';
 
 export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
@@ -30,7 +31,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanCcw,
             FigureLabel.TurnWomanDegrees180
           ],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_003_03]
         },
         {
           description:
@@ -81,6 +82,23 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
         },
         {
           description:
+            '- Similar to above. But in 2 beats we move MRLeg over MLLeg, and grab WLWrist with MRHand. In next 2 beats with throw WLHand to MB and turn simultaneously.',
+          simpleText: WIF_EXIT_PUSH_MR_SIMPLE_TEXT,
+          startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          endHold: FigureHold.Open,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees450,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees270
+          ],
+          videos: [FigureVideo.V_003_03]
+        },
+        {
+          description:
             'Exit from woman in front, back turned. W CW LL over WHead, RR nothing. At the end, we release LL into RL',
           simpleText: WIF_EXIT_TURN_SIMPLE_TEXT,
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
@@ -118,7 +136,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_001_03]
+          videos: [FigureVideo.V_001_03, FigureVideo.V_003_03]
         },
         {
           description:
@@ -135,7 +153,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [FigureLabel.PeriodFourBeats],
-          videos: [FigureVideo.V_002_Pokreti_04]
+          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_003_03]
         }
       ]
     },
@@ -151,12 +169,41 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
         },
         {
-          description: 'Front wave with sit.',
+          description: 'Front wave with sit - enter.',
           simpleText: WIF_WAVES_SIMPLE_TEXT,
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
-          labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_03]
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [
+            FigureVideo.V_002_Pokreti_04,
+            FigureVideo.V_002_03,
+            FigureVideo.V_003_03
+          ]
+        },
+        {
+          description: 'Front wave with sit - exit.',
+          simpleText: WIF_WAVES_SIMPLE_TEXT,
+          startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [
+            FigureVideo.V_002_Pokreti_04,
+            FigureVideo.V_002_03,
+            FigureVideo.V_003_03
+          ]
+        },
+        {
+          description:
+            'Front wave with sit - exit. Here W bends to WFront in hips. In 1 beat we straighten from sit. Continuing the motion in 1 beat woman bends forward. Next 2 beats we straighten the woman back from the bend.',
+          simpleText: WIF_WAVES_SIMPLE_TEXT,
+          startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [
+            FigureVideo.V_002_Pokreti_04,
+            FigureVideo.V_002_03,
+            FigureVideo.V_003_03
+          ]
         },
         {
           description: 'Intermittent front wave.',

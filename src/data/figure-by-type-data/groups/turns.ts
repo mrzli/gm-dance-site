@@ -433,6 +433,25 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_002_04]
         }
       ]
+    },
+    {
+      title: 'Special turns',
+      variations: [
+        {
+          description:
+            'W CW, below MDHand. Beat 1 straighten RL diagonally ML and up, and also press her shoulder and back down and MB (towards me). Next 3 beats she makes a full turn, and MROuterPalm remains on her side, and I push her to MR and her weight is on MR.',
+          simpleText: 'W CW below MDHand',
+          startHold: FigureHold.LR__R_WRShoulder,
+          endHold: FigureHold.LR__R_WRSideOuterPalm,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees360
+          ],
+          videos: [FigureVideo.V_003_03]
+        }
+      ]
     }
   ]
 };

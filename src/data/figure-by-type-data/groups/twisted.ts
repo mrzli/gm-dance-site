@@ -5,6 +5,8 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 
 const W_HAND_BEHIND_BACK_UNWIND_SIMPLE_TEXT =
   'W unwind; CW (LRBehind)->(O); CCW (LLBehind R-WLShoulder/LLBehind R-WLHip)->(SC)';
+const PALM_ON_SIDE_SIMPLE_TEXT = 'Palm on side - basic';
+const M_HAND_BEHIND_NECK = 'M hand behind neck - basic';
 
 export const FIGURE_BY_TYPE_GROUP_TWISTED: FigureByTypeSectionGroupData = {
   groupTitle: 'Twisted positions',
@@ -51,6 +53,23 @@ export const FIGURE_BY_TYPE_GROUP_TWISTED: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_003_01]
+        },
+        {
+          description: 'Basic.',
+          simpleText: PALM_ON_SIDE_SIMPLE_TEXT,
+          startHold: FigureHold.LR__R_WRSideOuterPalm,
+          endHold: FigureHold.LR__R_WRSideOuterPalm,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_03]
+        },
+        {
+          description:
+            'Push W to MR in 2 beats, also MRLeg over MLLeg and MRHand on MRWrist. Next 2 beats slide MRHand to MRShoulder.',
+          simpleText: PALM_ON_SIDE_SIMPLE_TEXT,
+          startHold: FigureHold.LR__R_WRSideOuterPalm,
+          endHold: FigureHold.LR__R_WRShoulder,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_003_03]
         }
       ]
     },
@@ -72,18 +91,10 @@ export const FIGURE_BY_TYPE_GROUP_TWISTED: FigureByTypeSectionGroupData = {
       variations: [
         {
           description: 'Basic.',
-          simpleText: 'Basic',
+          simpleText: M_HAND_BEHIND_NECK,
           startHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
           endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
           labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_003_02]
-        },
-        {
-          description: 'M neck bend.',
-          simpleText: 'M neck bend MR->ML',
-          startHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
-          endHold: FigureHold.Open,
-          labels: [FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_003_02]
         }
       ]

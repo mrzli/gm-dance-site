@@ -10,7 +10,7 @@ const HIPS_SIMPLE_TEXT =
   'Sensual circle with hips, led with hands/hips, CW/CCW *** Vertical 8 *** Half CCW + vertical 8';
 const KNEE_SIMPLE_TEXT =
   'Sensual circle with hips, led with knee, CW *** Half CCW + tilt';
-const NECK_SIMPLE_TEXT = 'W neck ML->MR';
+const NECK_SIMPLE_TEXT = 'W/M neck ML->MR 2/4 beats';
 const FRONT_WAVE_SIMPLE_TEXT = 'Enter; exit simple/sit tilt/sit yaw';
 const FIGURE_LATERAL_SIMPLE_TEXT = 'L,R, to me, sit, up (C/PalmOnPalm)';
 const BODY_SIMPLE_TEXT = 'Push into ground *** Swaying SC *** Swaying C';
@@ -29,6 +29,31 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodTwoBeats],
           videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description:
+            '- As above, but lasts 4 beats. M can also do CW circle with hips, starting with MR-MB.',
+          simpleText: NECK_SIMPLE_TEXT,
+          startHold: FigureHold.LR__R_WRShoulder,
+          endHold: FigureHold.LR__R_WLShoulder,
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_003_03]
+        },
+        {
+          description: 'M neck bend, ML->MR. 4 beats.',
+          simpleText: NECK_SIMPLE_TEXT,
+          startHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_003_02]
+        },
+        {
+          description: '- As above, but 2 beats.',
+          simpleText: NECK_SIMPLE_TEXT,
+          startHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
+          endHold: FigureHold.SemiClosed,
+          labels: [FigureLabel.PeriodTwoBeats],
+          videos: [FigureVideo.V_003_03]
         }
       ]
     },
@@ -173,6 +198,14 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.LR__R_WRShoulder,
           labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_003_03]
+        },
+        {
+          description: 'LR windmill over MHead.',
+          simpleText: 'LR windmill over MHead',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
+          labels: [FigureLabel.MovementStanding, FigureLabel.PeriodTwoBeats],
+          videos: [FigureVideo.V_003_03]
         },
         {
           description:
