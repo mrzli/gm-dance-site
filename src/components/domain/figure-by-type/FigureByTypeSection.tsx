@@ -3,6 +3,9 @@ import { FigureByTypeSectionData } from '../../../types/domain/figure-by-type/fi
 import { Typography } from '@material-ui/core';
 import { FigureVariationRow } from './FigureVariationRow';
 import { padNonNegativeInteger } from '../../../utils/generic';
+import { FigureByTypeVariation } from '../../../types/domain/figure-by-type/figure-by-type-variation';
+import { FigureByTypeVariationExplicit } from '../../../types/domain/figure-by-type/figure-by-type-variation-explicit';
+import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-hold';
 
 interface FigureByTypeSectionProps {
   readonly data: FigureByTypeSectionData;
@@ -38,9 +41,10 @@ export function FigureByTypeSection({
         {getTitle(groupIndex, sectionIndex, data.title)}
       </Typography>
       {data.variations.map((variation, index) => {
+        const explicitVariation = getExplicitVariationData(variation);
         return (
           <>
-            <FigureVariationRow key={index} variation={variation} />
+            <FigureVariationRow key={index} variation={explicitVariation} />
             {index !== data.variations.length - 1 ? (
               <hr style={HR_STYLE} />
             ) : undefined}
@@ -60,4 +64,16 @@ function getTitle(
   const sectionString = padNonNegativeInteger(sectionIndex + 1, 2);
 
   return `${groupString}.${sectionString} - ${title}`;
+}
+
+function getExplicitVariationData(
+  variation: FigureByTypeVariation
+): FigureByTypeVariationExplicit {
+  return {
+    ...variation,
+    startHold: variation.startHold ?? FigureHold.Unknown,
+    endHold: variation.endHold ?? FigureHold.Unknown,
+    labels: variation.labels ?? [],
+    isNew: variation.isNew ?? false
+  };
 }

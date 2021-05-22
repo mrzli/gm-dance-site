@@ -1,6 +1,5 @@
 import React from 'react';
 import chroma from 'chroma-js';
-import { FigureByTypeVariation } from '../../../types/domain/figure-by-type/figure-by-type-variation';
 import {
   Avatar,
   Chip,
@@ -26,9 +25,10 @@ import {
 import { MAP_FIGURE_HOLD_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-hold';
 import { MAP_FIGURE_VIDEO_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-video';
 import { ClassNameMap, CSSProperties } from '@material-ui/styles';
+import { FigureByTypeVariationExplicit } from '../../../types/domain/figure-by-type/figure-by-type-variation-explicit';
 
 interface FigureVariationRowProps {
-  readonly variation: FigureByTypeVariation;
+  readonly variation: FigureByTypeVariationExplicit;
 }
 
 type ClassKey =
@@ -90,7 +90,7 @@ function stylesCallback(
       gridTemplateColumns: '3fr 1fr 2fr 1fr',
       columnGap: 10,
       backgroundColor: (props) =>
-        props.variation.isNew === true ? cyan[300] : undefined
+        props.variation.isNew ? cyan[300] : undefined
     },
     holdChip: createChipStyles(theme, holdChipColor),
     holdChipAvatar: createChipAvatarStyles(theme, holdChipColor),

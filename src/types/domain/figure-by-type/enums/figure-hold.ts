@@ -1,4 +1,5 @@
 export enum FigureHold {
+  Unknown = 'Unknown',
   Open = 'Open',
   OpenPalmOnPalm = 'OpenPalmOnPalm',
   Closed = 'Closed',
@@ -38,6 +39,7 @@ export enum FigureHold {
 }
 
 export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
+  [FigureHold.Unknown, 'Unknown'],
   [FigureHold.Open, 'Open'],
   [FigureHold.OpenPalmOnPalm, 'OpenPalmOnPalm'],
   [FigureHold.Closed, 'Closed'],
