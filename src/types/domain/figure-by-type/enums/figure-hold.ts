@@ -5,6 +5,7 @@ export enum FigureHold {
   Closed = 'Closed',
   ClosedMRKneeBetween = 'ClosedMRKneeBetween',
   SemiClosed = 'SemiClosed',
+  SpreadOutLR = 'SpreadOutLR',
   SpreadOutRL = 'SpreadOutRL',
   LRPalmOnPalm = 'LRPalmOnPalm',
   LRAndRLClose = 'LRAndRLClose',
@@ -13,6 +14,7 @@ export enum FigureHold {
   LR__R_WRShoulder = 'LR__R_WRShoulder',
   LR__R_WRSideOuterPalm = 'LR__R_WRSideOuterPalm',
   LR__RL_WRWaistBehindBack = 'LR__RL_WRWaistBehindBack',
+  LR_StraightUp__R_WLShoulderBlade = 'LR_StraightUp__R_WLShoulderBlade',
   RL__LR_WLWaistBehindBack = 'RL__LR_WLWaistBehindBack',
   RL__LR_WLAroundElbow = 'RL__LR_WLAroundElbow',
   RL_Nothing__LR_MLShoulderBehindNeck = 'RL_Nothing__LR_MLShoulderBehindNeck',
@@ -21,6 +23,8 @@ export enum FigureHold {
   RROverLL = 'RROverLL',
   L_WRWaist__R_WLWaist = 'L_WRWaist__R_WLWaist',
   L_WRHip__R_WLHip = 'L_WRHip__R_WLHip',
+  L_WRShoulder__R_WLWaist = 'L_WRShoulder__R_WLWaist',
+  L_WRWrist__R_WLShoulderBlade = 'L_WRWrist__R_WLShoulderBlade',
   LR_MRWaistBehindBack__R_WRShoulder = 'LR_MRWaistBehindBack__R_WRShoulder',
   LL_WRWaistBehindBack__R_WLShoulder = 'LL_WRWaistBehindBack__R_WLShoulder',
   LL_WRWaistBehindBack__R_WLHip = 'LL_WRWaistBehindBack__R_WLHip',
@@ -30,6 +34,8 @@ export enum FigureHold {
   R90__LL__RR_WRShoulder = 'R90__LL__RR_WRShoulder',
   R90WOnML__L_WLFrontRibs__R_WBack = 'R90WOnML__L_WLFrontRibs__R_WBack',
   L90__LR_WLShoulder__RL = 'L90__LR_WLShoulder__RL',
+  L90__LR_StraightUp__R_WLWaist = 'L90__LR_StraightUp__R_WLWaist',
+  L90__L_WBack__R_WLWaist = 'L90__L_WBack__R_WLWaist',
   RLHipToHip__LL__RR_WRShoulder = 'RLHipToHip__LL__RR_WRShoulder',
   RLHipToHip__WL_MBack_Over_R_WBack = 'RLHipToHip__WL_MBack_Over_R_WBack',
   RLHipToHip__RL = 'RLHipToHip__RL',
@@ -43,10 +49,11 @@ export enum FigureHold {
 export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
   [FigureHold.Unknown, 'Unknown'],
   [FigureHold.Open, 'Open'],
-  [FigureHold.OpenPalmOnPalm, 'OpenPalmOnPalm'],
+  [FigureHold.OpenPalmOnPalm, 'Open PalmOnPalm'],
   [FigureHold.Closed, 'Closed'],
-  [FigureHold.ClosedMRKneeBetween, 'ClosedMRKneeBetween'],
+  [FigureHold.ClosedMRKneeBetween, 'Closed MRKneeBetween'],
   [FigureHold.SemiClosed, 'SemiClosed'],
+  [FigureHold.SpreadOutLR, 'SpreadOut LR'],
   [FigureHold.SpreadOutRL, 'SpreadOut RL'],
   [FigureHold.LRPalmOnPalm, 'LR-PalmOnPalm'],
   [FigureHold.LRAndRLClose, 'LR+RL-Close'],
@@ -55,6 +62,10 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
   [FigureHold.LR__R_WRShoulder, 'LR R-WRShoulder'],
   [FigureHold.LR__R_WRSideOuterPalm, 'LR R-WRSideOuterPalm'],
   [FigureHold.LR__RL_WRWaistBehindBack, 'LR RL-WRWaistBehindBack'],
+  [
+    FigureHold.LR_StraightUp__R_WLShoulderBlade,
+    'LR-StraightUp R-WLShoulderBlade'
+  ],
   [FigureHold.RL__LR_WLWaistBehindBack, 'RL LR-WLWaistBehindBack'],
   [FigureHold.RL__LR_WLAroundElbow, 'RL LR-WLAroundElbow'],
   [
@@ -66,6 +77,8 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
   [FigureHold.RROverLL, 'RR>LL'],
   [FigureHold.L_WRWaist__R_WLWaist, 'L-WRWaist R-WLWaist'],
   [FigureHold.L_WRHip__R_WLHip, 'L-WRHip R-WLHip'],
+  [FigureHold.L_WRShoulder__R_WLWaist, 'L-WRShoulder R-WLWaist'],
+  [FigureHold.L_WRWrist__R_WLShoulderBlade, 'L-WRWrist R-WLShoulderBlade'],
   [
     FigureHold.LR_MRWaistBehindBack__R_WRShoulder,
     'LR-MRWaistBehindBack R-WRShoulder'
@@ -84,6 +97,8 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
     'R90WOnML L-WLFrontRibs R-WBack'
   ],
   [FigureHold.L90__LR_WLShoulder__RL, 'L90 LR-WLShoulder RL'],
+  [FigureHold.L90__LR_StraightUp__R_WLWaist, 'L90 LR-StraightUp R-WLWaist'],
+  [FigureHold.L90__L_WBack__R_WLWaist, 'L90 L-WBack R-WLWaist'],
   [FigureHold.RLHipToHip__LL__RR_WRShoulder, 'RLHipToHip LL RR-WRShoulder'],
   [FigureHold.RLHipToHip__WL_MBack_Over_R_WBack, 'RLHipToHip WL-MBack>R-WBack'],
   [FigureHold.RLHipToHip__RL, 'RLHipToHip RL'],

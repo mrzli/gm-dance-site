@@ -48,7 +48,11 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanCcw,
             FigureLabel.TurnWomanDegrees360
           ],
-          videos: [FigureVideo.V_001_Pokreti, FigureVideo.V_001_01]
+          videos: [
+            FigureVideo.V_001_Pokreti,
+            FigureVideo.V_001_01,
+            FigureVideo.V_003_04
+          ]
         },
         {
           description: '- As above, but starting from semi-closed position.',
