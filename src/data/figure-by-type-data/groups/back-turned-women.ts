@@ -5,7 +5,8 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 
 const WIF_ENTER_SIMPLE_TEXT =
   'Enter - throw hand/turn on 6/turn on 6 with over WHead';
-const WIF_EXIT_PUSH_MR_SIMPLE_TEXT = 'LL push MR, under WArm';
+const WIF_EXIT_PUSH_MR_SIMPLE_TEXT =
+  'LL push MR, under WArm/cross leg and throw hand to turn';
 const WIF_EXIT_TURN_SIMPLE_TEXT = '1.5 W turn ->(O/SC)';
 const WIF_SIMPLE_MOVES_SIMPLE_TEXT =
   'Basic (normal/sensual hand movement) *** Slow';
@@ -82,7 +83,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            '- Similar to above. But in 2 beats we move MRLeg over MLLeg, and grab WLWrist with MRHand. In next 2 beats with throw WLHand to MB and turn simultaneously.',
+            '- Similar to above. But in 2 beats we move MRLeg over MLLeg, and grab WLWrist with MRHand. In next 2 beats we throw WLHand to MB and turn simultaneously.',
           simpleText: WIF_EXIT_PUSH_MR_SIMPLE_TEXT,
           startHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           endHold: FigureHold.Open,

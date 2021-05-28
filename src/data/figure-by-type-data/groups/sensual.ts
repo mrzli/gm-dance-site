@@ -3,7 +3,7 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
-const NECK_SIMPLE_TEXT = 'W/M neck ML->MR 2/4 beats';
+const NECK_SIMPLE_TEXT = 'W/M neck ML->MR 2/4 beats; W or W/O hip circle';
 const SHOULDER_SIMPLE_TEXT = 'Shoulders; up/down; arc (1/2 beats)';
 const CHEST_SIMPLE_TEXT =
   'Chest; L/R; B/F (1/2 beats); CW/CCW (large/small); Half CCW + tilt';
@@ -11,7 +11,7 @@ const HIPS_SIMPLE_TEXT =
   'Sensual circle with hips, led with hands/hips, CW/CCW *** Vertical 8 *** Half CCW + vertical 8';
 const KNEE_SIMPLE_TEXT =
   'Sensual circle with hips, led with knee, CW *** Half CCW + tilt';
-const BODY_SIMPLE_TEXT = 'Push into ground *** Swaying SC *** Swaying C';
+const BODY_SIMPLE_TEXT = 'Push into ground *** Swaying SC *** Swaying L-R C';
 const FRONT_WAVE_SIMPLE_TEXT = 'Enter; exit simple/sit tilt/sit yaw';
 const FIGURE_LATERAL_SIMPLE_TEXT = 'L,R, to me, sit, up (C/PalmOnPalm)';
 const FIGURE_L90_W_LEAN_BACK_AND_SIT = 'L90 W lean and sit';

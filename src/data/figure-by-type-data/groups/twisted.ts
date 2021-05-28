@@ -5,12 +5,26 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 
 const W_HAND_BEHIND_BACK_UNWIND_SIMPLE_TEXT =
   'W unwind; CW (LRBehind)->(O); CCW (LLBehind R-WLShoulder/LLBehind R-WLHip)->(SC)';
-const PALM_ON_SIDE_SIMPLE_TEXT = 'Palm on side - basic';
+const PALM_ON_SIDE_SIMPLE_TEXT =
+  'Palm on side - basic *** Cross legs and grab MRWrist then slide back up the arm';
 const M_HAND_BEHIND_NECK = 'M hand behind neck - basic';
 
 export const FIGURE_BY_TYPE_GROUP_TWISTED: FigureByTypeSectionGroupData = {
   groupTitle: 'Twisted positions',
   sections: [
+    {
+      title: 'Hand behind neck (man)',
+      variations: [
+        {
+          description: 'Basic.',
+          simpleText: M_HAND_BEHIND_NECK,
+          startHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
+          endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_02]
+        }
+      ]
+    },
     {
       title: 'Hand behind back (woman)',
       variations: [
@@ -83,19 +97,6 @@ export const FIGURE_BY_TYPE_GROUP_TWISTED: FigureByTypeSectionGroupData = {
           endHold: FigureHold.RR,
           labels: [FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_04]
-        }
-      ]
-    },
-    {
-      title: 'Hand behind neck (man)',
-      variations: [
-        {
-          description: 'Basic.',
-          simpleText: M_HAND_BEHIND_NECK,
-          startHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
-          endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
-          labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_003_02]
         }
       ]
     },
