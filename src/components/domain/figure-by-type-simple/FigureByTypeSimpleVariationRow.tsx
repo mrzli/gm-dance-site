@@ -70,7 +70,17 @@ function stylesCallback(
   });
 }
 
-export function FigureByTypeSimpleVariationRow(
+const STYLES_DESCRIPTION: CSSProperties = {
+  gridRowStart: 1,
+  gridColumnStart: 1
+};
+
+const STYLES_VIDEOS: CSSProperties = {
+  gridRowStart: 1,
+  gridColumnStart: 2
+};
+
+function FigureByTypeSimpleVariationRowInternal(
   props: FigureByTypeSimpleVariationRowProps
 ): React.ReactElement {
   const classes: ClassNameMap<ClassKey> = useStyles(props, stylesCallback);
@@ -79,10 +89,8 @@ export function FigureByTypeSimpleVariationRow(
 
   return (
     <div className={classes.container}>
-      <div style={{ gridRowStart: 1, gridColumnStart: 1 }}>
-        {variation.description}
-      </div>
-      <div style={{ gridRowStart: 1, gridColumnStart: 2 }}>
+      <div style={STYLES_DESCRIPTION}>{variation.description}</div>
+      <div style={STYLES_VIDEOS}>
         {variation.videos.map((video, index) => {
           return (
             <Chip
@@ -99,3 +107,7 @@ export function FigureByTypeSimpleVariationRow(
     </div>
   );
 }
+
+export const FigureByTypeSimpleVariationRow = React.memo(
+  FigureByTypeSimpleVariationRowInternal
+);

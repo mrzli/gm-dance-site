@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, useCallback, useState } from 'react';
 import { FigureByTypeSectionGroupData } from '../../../types/domain/figure-by-type/figure-by-type-section-group-data';
 import { Typography } from '@material-ui/core';
 import { FigureByTypeSimpleSection } from './FigureByTypeSimpleSection';
@@ -24,8 +24,26 @@ export function FigureByTypeSimpleSectionGroup({
   groupIndex,
   visibilityType
 }: FigureByTypeSimpleSectionGroupProps): React.ReactElement {
+  const [isMouseOver, setIsMouseOver] = useState<boolean>(false);
+
+  const onMouseEnterCallback = useCallback(() => {
+    setIsMouseOver(true);
+  }, [setIsMouseOver]);
+
+  const onMouseLeaveCallback = useCallback(() => {
+    setIsMouseOver(false);
+  }, [setIsMouseOver]);
+
+  const finalVisibilityType = isMouseOver
+    ? FigureByTypeSimpleVisibilityType.All
+    : visibilityType;
+
   return (
-    <div style={SECTIONS_CONTAINER_STYLE}>
+    <div
+      style={SECTIONS_CONTAINER_STYLE}
+      onMouseEnter={onMouseEnterCallback}
+      onMouseLeave={onMouseLeaveCallback}
+    >
       <Typography
         variant={'h6'}
         style={{
@@ -34,7 +52,7 @@ export function FigureByTypeSimpleSectionGroup({
             FigureByTypeSimpleVisibilityType.All,
             FigureByTypeSimpleVisibilityType.DownToSectionGroups,
             FigureByTypeSimpleVisibilityType.DownToSections
-          ].includes(visibilityType)
+          ].includes(finalVisibilityType)
             ? 'visible'
             : 'hidden'
         }}
@@ -48,7 +66,7 @@ export function FigureByTypeSimpleSectionGroup({
             data={section}
             groupIndex={groupIndex}
             sectionIndex={index}
-            visibilityType={visibilityType}
+            visibilityType={finalVisibilityType}
           />
         );
       })}

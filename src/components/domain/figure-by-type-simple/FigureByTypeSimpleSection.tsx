@@ -27,7 +27,7 @@ const HR_STYLE: CSSProperties = {
   margin: 0
 };
 
-export function FigureByTypeSimpleSection({
+function FigureByTypeSimpleSectionInternal({
   data,
   groupIndex,
   sectionIndex,
@@ -104,3 +104,7 @@ function getSimpleVariations(
     return { description: simpleVariationPair[0], videos };
   });
 }
+
+export const FigureByTypeSimpleSection = React.memo(
+  FigureByTypeSimpleSectionInternal
+);
