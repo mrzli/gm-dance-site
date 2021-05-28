@@ -3,10 +3,12 @@ import { FigureByTypeSectionGroupData } from '../../../types/domain/figure-by-ty
 import { Typography } from '@material-ui/core';
 import { FigureByTypeSimpleSection } from './FigureByTypeSimpleSection';
 import { getSectionGroupTitle } from '../util/by-type-util';
+import { FigureByTypeSimpleVisibilityType } from '../../../types/domain/figure-by-type/enums/figure-by-type-simple-visibility-type';
 
 interface FigureByTypeSimpleSectionGroupProps {
   readonly data: FigureByTypeSectionGroupData;
   readonly groupIndex: number;
+  readonly visibilityType: FigureByTypeSimpleVisibilityType;
 }
 
 const SECTIONS_CONTAINER_STYLE: CSSProperties = {
@@ -19,11 +21,24 @@ const SECTIONS_CONTAINER_STYLE: CSSProperties = {
 
 export function FigureByTypeSimpleSectionGroup({
   data,
-  groupIndex
+  groupIndex,
+  visibilityType
 }: FigureByTypeSimpleSectionGroupProps): React.ReactElement {
   return (
     <div style={SECTIONS_CONTAINER_STYLE}>
-      <Typography variant={'h6'} style={{ marginBottom: 10 }}>
+      <Typography
+        variant={'h6'}
+        style={{
+          marginBottom: 10,
+          visibility: [
+            FigureByTypeSimpleVisibilityType.All,
+            FigureByTypeSimpleVisibilityType.DownToSectionGroups,
+            FigureByTypeSimpleVisibilityType.DownToSections
+          ].includes(visibilityType)
+            ? 'visible'
+            : 'hidden'
+        }}
+      >
         {getSectionGroupTitle(groupIndex, data.groupTitle)}
       </Typography>
       {data.sections.map((section, index) => {
@@ -33,6 +48,7 @@ export function FigureByTypeSimpleSectionGroup({
             data={section}
             groupIndex={groupIndex}
             sectionIndex={index}
+            visibilityType={visibilityType}
           />
         );
       })}

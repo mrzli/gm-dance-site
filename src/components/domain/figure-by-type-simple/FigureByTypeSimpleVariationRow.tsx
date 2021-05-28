@@ -13,9 +13,11 @@ import { useStyles } from '../../../utils/ui-hooks';
 import { MAP_FIGURE_VIDEO_TO_TEXT } from '../../../types/domain/figure-by-type/enums/figure-video';
 import { ClassNameMap, CSSProperties } from '@material-ui/styles';
 import { FigureByTypeVariationSimple } from '../../../types/domain/figure-by-type/figure-by-type-variation-simple';
+import { FigureByTypeSimpleVisibilityType } from '../../../types/domain/figure-by-type/enums/figure-by-type-simple-visibility-type';
 
 interface FigureByTypeSimpleVariationRowProps {
   readonly variation: FigureByTypeVariationSimple;
+  readonly visibilityType: FigureByTypeSimpleVisibilityType;
 }
 
 type ClassKey = 'container' | 'videoChip' | 'videoChipAvatar';
@@ -57,7 +59,11 @@ function stylesCallback(
     container: {
       display: 'grid',
       gridTemplateColumns: '4fr 2fr',
-      columnGap: 10
+      columnGap: 10,
+      visibility: (props) =>
+        [FigureByTypeSimpleVisibilityType.All].includes(props.visibilityType)
+          ? 'visible'
+          : 'hidden'
     },
     videoChip: createChipStyles(theme, videoChipColor),
     videoChipAvatar: createChipAvatarStyles(theme, videoChipColor)

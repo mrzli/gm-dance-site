@@ -8,8 +8,8 @@ const W_SIMPLE_TURNS_SIMPLE_TEXT =
 const M_SIMPLE_TURNS_SIMPLE_TEXT = 'M inner turn, outer hand; CCW; CW';
 const M_SIMPLE_TURNS_OVER_HAND_SIMPLE_TEXT =
   'M inner, MOuterHand above inner pair; CCW ->(O/RR); CW ->(O/RR>LL/MRWrist on WLWrist)';
-const SIMULTANEOUS_TURNS_SIMPLE_TEXT =
-  'Simultaneous *** Throw; ; CW *** Together; CCW (SC/C)';
+const SIMULTANEOUS_TURNS_SIMPLE_TEXT = 'Simultaneous *** Together; CCW (SC/C)';
+const THROW_TURNS_SIMPLE_TEXT = 'Throw hand, no M turn; ; W CCW ';
 const W_BOTH_TURNS_SIMPLE_TEXT =
   'W inner, both; ; CCW inner above (O)->(wedge/throw), outer above (LL>RR)->(O)';
 const W_ONE_ONE_TURNS_SIMPLE_TEXT =
@@ -234,7 +234,7 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Simple turns (simultaneous/throw/together)',
+      title: 'Simultaneous/throw/together',
       variations: [
         {
           description:
@@ -272,8 +272,8 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            '- As above, but man does not turn, and instead does push-tap-step-tap.',
-          simpleText: W_SIMPLE_TURNS_SIMPLE_TEXT,
+            '- As above, but man does not turn, and instead does push-tap-step-tap, steps in front of the woman into a closed position.',
+          simpleText: THROW_TURNS_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.Closed,
           labels: [
@@ -370,6 +370,24 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
       ]
     },
     {
+      title: 'Turns hand neck height (man)',
+      variations: [
+        {
+          description: 'M CW spin, LR neck height, RL nothing.',
+          simpleText: M_NECK_TURN_SIMPLE_TEXT,
+          startHold: FigureHold.Open,
+          endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
+          labels: [
+            FigureLabel.PeriodTwoBeats,
+            FigureLabel.TurnManSpin,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees360
+          ],
+          videos: [FigureVideo.V_003_02]
+        }
+      ]
+    },
+    {
       title: 'Turns one hand above head, other waist height (woman)',
       variations: [
         {
@@ -398,24 +416,6 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_002_02]
-        }
-      ]
-    },
-    {
-      title: 'Turns hand neck height (man)',
-      variations: [
-        {
-          description: 'M CW spin, LR neck height, RL nothing.',
-          simpleText: M_NECK_TURN_SIMPLE_TEXT,
-          startHold: FigureHold.Open,
-          endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
-          labels: [
-            FigureLabel.PeriodTwoBeats,
-            FigureLabel.TurnManSpin,
-            FigureLabel.TurnManCw,
-            FigureLabel.TurnManDegrees360
-          ],
-          videos: [FigureVideo.V_003_02]
         }
       ]
     },

@@ -6,11 +6,13 @@ import { getSectionTitle } from '../util/by-type-util';
 import { FigureByTypeVariation } from '../../../types/domain/figure-by-type/figure-by-type-variation';
 import { FigureByTypeVariationSimple } from '../../../types/domain/figure-by-type/figure-by-type-variation-simple';
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
+import { FigureByTypeSimpleVisibilityType } from '../../../types/domain/figure-by-type/enums/figure-by-type-simple-visibility-type';
 
 interface FigureByTypeSimpleSectionProps {
   readonly data: FigureByTypeSectionData;
   readonly groupIndex: number;
   readonly sectionIndex: number;
+  readonly visibilityType: FigureByTypeSimpleVisibilityType;
 }
 
 const VARIATIONS_CONTAINER_STYLE: CSSProperties = {
@@ -28,7 +30,8 @@ const HR_STYLE: CSSProperties = {
 export function FigureByTypeSimpleSection({
   data,
   groupIndex,
-  sectionIndex
+  sectionIndex,
+  visibilityType
 }: FigureByTypeSimpleSectionProps): React.ReactElement {
   const variations = getSimpleVariations(data.variations);
 
@@ -37,19 +40,28 @@ export function FigureByTypeSimpleSection({
       <Typography
         style={{
           fontWeight: 'bold',
-          marginBottom: 6
+          marginBottom: 6,
+          visibility: [
+            FigureByTypeSimpleVisibilityType.All,
+            FigureByTypeSimpleVisibilityType.DownToSections
+          ].includes(visibilityType)
+            ? 'visible'
+            : 'hidden'
         }}
       >
         {getSectionTitle(groupIndex, sectionIndex, data.title)}
       </Typography>
       {variations.map((variation, index) => {
         return (
-          <>
-            <FigureByTypeSimpleVariationRow key={index} variation={variation} />
+          <React.Fragment key={index}>
+            <FigureByTypeSimpleVariationRow
+              variation={variation}
+              visibilityType={visibilityType}
+            />
             {index !== data.variations.length - 1 ? (
               <hr style={HR_STYLE} />
             ) : undefined}
-          </>
+          </React.Fragment>
         );
       })}
     </div>
