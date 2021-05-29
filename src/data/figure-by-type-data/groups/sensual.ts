@@ -308,20 +308,6 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Lean back',
-      variations: [
-        {
-          description:
-            'WUpperBody leaning to WBack in 1-4, we also drop down a bit on 3-4. At 5-8 we push WHips with MLHand and go up.',
-          simpleText: 'W lean back with drop, exit with hip push',
-          startHold: FigureHold.Closed,
-          endHold: FigureHold.Closed,
-          labels: [FigureLabel.PeriodOneToEight],
-          videos: [FigureVideo.V_003_02]
-        }
-      ]
-    },
-    {
       title: 'Body movements',
       variations: [
         {
@@ -398,6 +384,20 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_01]
+        }
+      ]
+    },
+    {
+      title: 'Lean back',
+      variations: [
+        {
+          description:
+            'WUpperBody leaning to WBack in 1-4, we also drop down a bit on 3-4. At 5-8 we push WHips with MLHand and go up.',
+          simpleText: 'W lean back with drop, exit with hip push',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodOneToEight],
+          videos: [FigureVideo.V_003_02]
         }
       ]
     },
