@@ -3,7 +3,7 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
-const NECK_SIMPLE_TEXT = 'W/M neck ML->MR 2/4 beats; W or W/O hip circle';
+const NECK_SIMPLE_TEXT = 'W/M neck ML->MR 2/4 beats; with/without hip circle';
 const SHOULDER_SIMPLE_TEXT = 'Shoulders; up/down; arc (1/2 beats)';
 const CHEST_SIMPLE_TEXT =
   'Chest; L/R; B/F (1/2 beats); CW/CCW (large/small); Half CCW + tilt';
@@ -193,6 +193,15 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           videos: [FigureVideo.V_001_02]
         },
         {
+          description:
+            'RL CCW windmill, 2 turns. At the end we take RL normally.',
+          simpleText: 'RL wrist windmill (2 turns)',
+          startHold: FigureHold.LR__MRWrist_WLWrist,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_01]
+        },
+        {
           description: 'RL windmill over WHead.',
           simpleText: 'RL windmill over WHead',
           startHold: FigureHold.Open,
@@ -207,15 +216,6 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
           labels: [FigureLabel.MovementStanding, FigureLabel.PeriodTwoBeats],
           videos: [FigureVideo.V_003_03]
-        },
-        {
-          description:
-            'RL CCW windmill, 2 turns. At the end we take RL normally.',
-          simpleText: 'RL wrist windmill (2 turns)',
-          startHold: FigureHold.LR__MRWrist_WLWrist,
-          endHold: FigureHold.Open,
-          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_01]
         },
         {
           description:

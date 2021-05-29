@@ -3,8 +3,9 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
-const WIF_ENTER_SIMPLE_TEXT =
-  'Enter - throw hand/turn on 6/turn on 6 with over WHead';
+const WIF_ENTER_THROW_HAND_SIMPLE_TEXT = 'Enter - throw hand';
+const WIF_ENTER_TURN_SIMPLE_TEXT =
+  'Enter - turn on 6/turn on 6 with over WHead';
 const WIF_EXIT_PUSH_MR_SIMPLE_TEXT =
   'LL push MR, under WArm/cross leg and throw hand to turn';
 const WIF_EXIT_TURN_SIMPLE_TEXT = '1.5 W turn ->(O/SC)';
@@ -23,7 +24,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
         {
           description:
             'Entering into woman in front, back turned. Throwing WRHand to WB with MLHand in 2 beats. In 2 beats leading W CCW with MLHand on WRUpperHand. Taking LL at the end.',
-          simpleText: WIF_ENTER_SIMPLE_TEXT,
+          simpleText: WIF_ENTER_THROW_HAND_SIMPLE_TEXT,
           startHold: FigureHold.Closed,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [
@@ -37,7 +38,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
         {
           description:
             'Entering into woman in front, back turned. W CCW, LR over WHead, RL waist height, on 5-6. We stop the woman with MRHand on WRHip on 6. We release both hands on 7, take LL and put MRHand on WRFrontRibs on 8.',
-          simpleText: WIF_ENTER_SIMPLE_TEXT,
+          simpleText: WIF_ENTER_TURN_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [
@@ -51,7 +52,7 @@ export const FIGURE_BY_TYPE_BACK_TURNED_WOMEN: FigureByTypeSectionGroupData = {
         {
           description:
             '- As above, except on 7 we move LR over WHead, and on 8 we release MLHand and slide it down WLShoulder and WLHand and take LL.',
-          simpleText: WIF_ENTER_SIMPLE_TEXT,
+          simpleText: WIF_ENTER_TURN_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.WWithBack__LL__R_WRFrontRibs,
           labels: [

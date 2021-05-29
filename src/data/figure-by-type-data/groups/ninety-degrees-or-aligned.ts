@@ -4,7 +4,8 @@ import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-l
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 const ENTER_INTO_R90_SIMPLE_TEXT =
-  'Into R90; outer above (O)->(R90_LR_RL-WRWaist/R90_L-WLShoulder_RL-WRWaist), (SpreadOutRL)->(R90_L-WLWrist_RL-WRWaist)';
+  'Into R90; outer above (O)->(R90 normal/R90 hand on WLShoulder), (SpreadOutRL)->(R90 wrist)';
+const R90_UNWIND_SIMPLE_TEXT = 'R90 normal/wrist unwind';
 const COMPLEX_EXIT_FROM_R90_SIMPLE_TEXT = 'R90 complex exit';
 const HIP_WALK_SIMPLE_TEXT = 'Hip walk (1 step per 1/2 beats)';
 const SEPARATED_ALIGNED_WALK_SIMPLE_TEXT =
@@ -84,7 +85,7 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
         variations: [
           {
             description: 'W CW, RL in contact, LR nothing.',
-            simpleText: 'R90 simple unwind',
+            simpleText: R90_UNWIND_SIMPLE_TEXT,
             startHold: FigureHold.R90__L_WLShoulder__RL_WRWaist,
             endHold: FigureHold.Open,
             labels: [
@@ -98,7 +99,7 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
           {
             description:
               'W CW, at the beginning we release RL, LL waist height (at the beginning of the movement we drop LL down so woman can turn), at the end we put MRHand on WLHip.',
-            simpleText: 'R90 L-WLWrist unwind',
+            simpleText: R90_UNWIND_SIMPLE_TEXT,
             startHold: FigureHold.R90__L_WLWrist__RL_WRWaist,
             endHold: FigureHold.LL_WRWaistBehindBack__R_WLHip,
             labels: [
