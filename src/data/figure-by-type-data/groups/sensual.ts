@@ -13,8 +13,8 @@ const KNEE_SIMPLE_TEXT =
   'Sensual circle with hips, led with knee, CW *** Half CCW + tilt';
 const BODY_SIMPLE_TEXT = 'Push into ground *** Swaying SC *** Swaying L-R C';
 const FRONT_WAVE_SIMPLE_TEXT = 'Enter; exit simple/sit tilt/sit yaw';
-const FIGURE_LATERAL_SIMPLE_TEXT = 'L,R, to me, sit, up (C/PalmOnPalm)';
 const FIGURE_L90_W_LEAN_BACK_AND_SIT = 'L90 W lean and sit';
+const FIGURE_LATERAL_SIMPLE_TEXT = 'L,R, to me, sit, up (C/PalmOnPalm)';
 
 export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
   groupTitle: 'Sensual',
@@ -185,6 +185,22 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
       title: 'Hand movements',
       variations: [
         {
+          description: 'RL windmill over WHead.',
+          simpleText: 'RL windmill over WHead',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.LR__R_WRShoulder,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_003_03]
+        },
+        {
+          description: 'LR windmill over MHead.',
+          simpleText: 'LR windmill over MHead',
+          startHold: FigureHold.Open,
+          endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
+          labels: [FigureLabel.MovementStanding, FigureLabel.PeriodTwoBeats],
+          videos: [FigureVideo.V_003_03]
+        },
+        {
           description: 'Stylized CW windmill in contact with WRWrist.',
           simpleText: 'Basic 5-8 CW windmill LR wrist-on-wrist',
           startHold: FigureHold.SemiClosed,
@@ -200,22 +216,6 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.Open,
           labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_01]
-        },
-        {
-          description: 'RL windmill over WHead.',
-          simpleText: 'RL windmill over WHead',
-          startHold: FigureHold.Open,
-          endHold: FigureHold.LR__R_WRShoulder,
-          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_003_03]
-        },
-        {
-          description: 'LR windmill over MHead.',
-          simpleText: 'LR windmill over MHead',
-          startHold: FigureHold.Open,
-          endHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
-          labels: [FigureLabel.MovementStanding, FigureLabel.PeriodTwoBeats],
-          videos: [FigureVideo.V_003_03]
         },
         {
           description:
@@ -388,7 +388,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
       ]
     },
     {
-      title: 'Lean back',
+      title: 'Lean',
       variations: [
         {
           description:
@@ -398,6 +398,40 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_003_02]
+        },
+        {
+          description:
+            'Enter woman L90 lean and sit. First pull woman toward yourself and W CCW both above WHead. RR continues over MHead, and WRHand remains on MBack. LL is led flowing from the turn into an a sort of CCW windmill arc straight to above woman. We out MRHand on WLWaist.',
+          simpleText: FIGURE_L90_W_LEAN_BACK_AND_SIT,
+          startHold: FigureHold.LLOverRR,
+          endHold: FigureHold.L90__LR_StraightUp__R_WLWaist,
+          labels: [
+            FigureLabel.PeriodFiveToEight,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCcw,
+            FigureLabel.TurnWomanDegrees360,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees90
+          ],
+          videos: [FigureVideo.V_003_04]
+        },
+        {
+          description:
+            'Continued from entrance L90 lean and sit. LL continues to flow to WBack and pulls WUpperBody back. Almost immediately we release LL and put MLHand on WBack. Movement to WBack lasts for 2 beats. In the next 2 beats we straighten the woman back.',
+          simpleText: FIGURE_L90_W_LEAN_BACK_AND_SIT,
+          startHold: FigureHold.L90__LR_StraightUp__R_WLWaist,
+          endHold: FigureHold.L90__L_WBack__R_WLWaist,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_04]
+        },
+        {
+          description:
+            'Woman L90 sit. Push WHips with MRHand down to a sit position in 1 beat. In 3 beats pull WHips with MRHand to straighten the woman up, and orient her to face the man.',
+          simpleText: FIGURE_L90_W_LEAN_BACK_AND_SIT,
+          startHold: FigureHold.L90__L_WBack__R_WLWaist,
+          endHold: FigureHold.L_WRShoulder__R_WLWaist,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_003_04]
         }
       ]
     },
@@ -442,40 +476,6 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.OpenPalmOnPalm,
           labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_002_03]
-        },
-        {
-          description:
-            'Enter woman L90 lean and sit. First pull woman toward yourself and W CCW both above WHead. RR continues over MHead, and WRHand remains on MBack. LL is led flowing from the turn into an a sort of CCW windmill arc straight to above woman. We out MRHand on WLWaist.',
-          simpleText: FIGURE_L90_W_LEAN_BACK_AND_SIT,
-          startHold: FigureHold.LLOverRR,
-          endHold: FigureHold.L90__LR_StraightUp__R_WLWaist,
-          labels: [
-            FigureLabel.PeriodFiveToEight,
-            FigureLabel.TurnWomanTurn,
-            FigureLabel.TurnWomanCcw,
-            FigureLabel.TurnWomanDegrees360,
-            FigureLabel.TurnManCw,
-            FigureLabel.TurnManDegrees90
-          ],
-          videos: [FigureVideo.V_003_04]
-        },
-        {
-          description:
-            'Continued from entrance L90 lean and sit. LL continues to flow to WBack and pulls WUpperBody back. Almost immediately we release LL and put MLHand on WBack. Movement to WBack lasts for 2 beats. In the next 2 beats we straighten the woman back.',
-          simpleText: FIGURE_L90_W_LEAN_BACK_AND_SIT,
-          startHold: FigureHold.L90__LR_StraightUp__R_WLWaist,
-          endHold: FigureHold.L90__L_WBack__R_WLWaist,
-          labels: [FigureLabel.PeriodOneToFour],
-          videos: [FigureVideo.V_003_04]
-        },
-        {
-          description:
-            'Woman L90 sit. Push WHips with MRHand down to a sit position in 1 beat. In 3 beats pull WHips with MRHand to straighten the woman up, and orient her to face the man.',
-          simpleText: FIGURE_L90_W_LEAN_BACK_AND_SIT,
-          startHold: FigureHold.L90__L_WBack__R_WLWaist,
-          endHold: FigureHold.L_WRShoulder__R_WLWaist,
-          labels: [FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_003_04]
         }
       ]
     }
