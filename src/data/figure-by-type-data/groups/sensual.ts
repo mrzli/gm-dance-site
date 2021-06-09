@@ -8,11 +8,12 @@ const SHOULDER_SIMPLE_TEXT = 'Shoulders; up/down; arc (1/2 beats)';
 const CHEST_SIMPLE_TEXT =
   'Chest; L/R; B/F (1/2 beats); CW/CCW (large/small); Half CCW + tilt';
 const HIPS_SIMPLE_TEXT =
-  'Sensual circle with hips, led with hands/hips, CW/CCW *** Vertical 8 *** Half CCW + vertical 8';
+  'Sensual circle with hips, led with hands/hips, CW/CCW *** Vertical 8 *** Half CCW + vertical 8 *** Horizontal 8; 1/2 beats per move';
 const KNEE_SIMPLE_TEXT =
   'Sensual circle with hips, led with knee, CW *** Half CCW + tilt';
 const BODY_SIMPLE_TEXT = 'Push into ground *** Swaying SC *** Swaying L-R C';
-const FRONT_WAVE_SIMPLE_TEXT = 'Enter; exit simple/sit tilt/sit yaw';
+const FRONT_WAVE_SIMPLE_TEXT =
+  'Enter; exit simple/sit tilt/sit yaw *** Front direction wave sit';
 const FIGURE_L90_W_LEAN_BACK_AND_SIT = 'L90 W lean and sit';
 const FIGURE_LATERAL_SIMPLE_TEXT = 'L,R, to me, sit, up (C/PalmOnPalm)';
 
@@ -130,7 +131,11 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodOneToFour, FigureLabel.PeriodFiveToEight],
-          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
+          videos: [
+            FigureVideo.V_002_Pokreti_01,
+            FigureVideo.V_002_Pokreti_02,
+            FigureVideo.V_003_05
+          ]
         },
         {
           description: '- As above, but each movement is 1 beat.',
@@ -138,7 +143,11 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           startHold: FigureHold.Closed,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodTwoBeats],
-          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
+          videos: [
+            FigureVideo.V_002_Pokreti_01,
+            FigureVideo.V_002_Pokreti_02,
+            FigureVideo.V_003_05
+          ]
         },
         {
           description:
@@ -266,7 +275,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            "Sensual horizontal '8' with WHips. First 2 beats movement of WHips to up and ML, second 2 beats to up and MR.",
+            "Sensual vertical '8' with WHips. First 2 beats movement of WHips to up and ML, second 2 beats to up and MR.",
           simpleText: HIPS_SIMPLE_TEXT,
           startHold: FigureHold.L_WRHip__R_WLHip,
           endHold: FigureHold.L_WRHip__R_WLHip,
@@ -275,12 +284,39 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            "Sensual combination WHips CCW circle plus horizontal '8'. Circle starts with MR-WB, and finished on ML after 2 beats. Next 2 beats is the second part of the horizontal '8', the one starting with MR and up.",
+            "Sensual combination WHips CCW circle plus vertical '8'. Circle starts with MR-WB, and finished on ML after 2 beats. Next 2 beats is the second part of the horizontal '8', the one starting with MR and up.",
           simpleText: HIPS_SIMPLE_TEXT,
           startHold: FigureHold.L_WRHip__R_WLHip,
           endHold: FigureHold.L_WRHip__R_WLHip,
           labels: [FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description:
+            "Horizontal '8' with M+WHips, woman mirrors our moves. Sequence is MLHips forward, then back, then MRHips forward then back. Contact is on forward, on beats 1 and 3.",
+          simpleText: HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_003_05]
+        },
+        {
+          description:
+            '- As above, but hip contacts are ML-MR-ML on beats 1-2-3.',
+          simpleText: HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_05]
+        },
+        {
+          description:
+            '- As above, but hip contacts are MR-ML-MR on beats 1-2-3.',
+          simpleText: HIPS_SIMPLE_TEXT,
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_003_05]
         }
       ]
     },
@@ -384,6 +420,14 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_002_Pokreti_04, FigureVideo.V_002_01]
+        },
+        {
+          description: 'Frontal wave, front facing. With sitting. In 4 beats.',
+          simpleText: FRONT_WAVE_SIMPLE_TEXT,
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.ClosedWithSit,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_05]
         }
       ]
     },
@@ -398,6 +442,15 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_003_02]
+        },
+        {
+          description:
+            'Rising from sitting position with leaning WBack in 4 beats.',
+          simpleText: 'Rise with WBack lean from sit',
+          startHold: FigureHold.ClosedWithSit,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_003_05]
         },
         {
           description:
@@ -476,6 +529,24 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
           endHold: FigureHold.OpenPalmOnPalm,
           labels: [FigureLabel.PeriodOneToEight],
           videos: [FigureVideo.V_002_03]
+        },
+        {
+          description:
+            'Walking MB and leading woman into simple waves, each wave 2 beats.',
+          simpleText: 'MB walk with W waves',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodFourBeats],
+          videos: [FigureVideo.V_003_05]
+        },
+        {
+          description:
+            'Lateral wave to ML in 2 beats, the to MR with diagonal positioning in 2 beats',
+          simpleText: 'Lateral wave ML-MR to diagonal',
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_003_05]
         }
       ]
     }

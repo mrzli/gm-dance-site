@@ -7,6 +7,7 @@ export enum FigureLabel {
   PeriodFiveToEight = 'PeriodFiveToEight',
   PeriodTwoBeats = 'PeriodTwoBeats',
   PeriodFourBeats = 'PeriodFourBeats',
+  PeriodFiveToEightAndOneToFour = 'PeriodFiveToEightAndOneToFour',
 
   TurnWomanTurn = 'TurnWomanTurn',
   TurnWomanSpin = 'TurnWomanSpin',

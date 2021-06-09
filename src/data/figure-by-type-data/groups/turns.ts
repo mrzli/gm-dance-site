@@ -8,7 +8,8 @@ const W_SIMPLE_TURNS_SIMPLE_TEXT =
 const M_SIMPLE_TURNS_SIMPLE_TEXT = 'M inner turn, outer hand; CCW; CW';
 const M_SIMPLE_TURNS_OVER_HAND_SIMPLE_TEXT =
   'M inner, MOuterHand above inner pair; CCW ->(O/RR); CW ->(O/RR>LL/MRWrist on WLWrist)';
-const SIMULTANEOUS_TURNS_SIMPLE_TEXT = 'Simultaneous *** Together; CCW (SC/C)';
+const SIMULTANEOUS_TURNS_SIMPLE_TEXT =
+  'Simultaneous *** Together; CW (SC/C); CW 8 beats starting at 5, no stopping';
 const THROW_TURNS_SIMPLE_TEXT = 'Throw hand, no M turn; ; W CCW ';
 const W_BOTH_TURNS_SIMPLE_TEXT =
   'W inner, both; ; CCW inner above (O)->(wedge/throw), outer above (LL>RR)->(O)';
