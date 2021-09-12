@@ -316,6 +316,23 @@ export const FIGURE_BY_TYPE_GROUP_TURNS: FigureByTypeSectionGroupData = {
             FigureLabel.TurnManDegrees180
           ],
           videos: [FigureVideo.V_002_03]
+        },
+        {
+          description:
+            '- As above, but closed position, and continuous for 8 beats.',
+          simpleText: SIMULTANEOUS_TURNS_SIMPLE_TEXT,
+          startHold: FigureHold.Closed,
+          endHold: FigureHold.Closed,
+          labels: [
+            FigureLabel.PeriodFiveToEightAndOneToFour,
+            FigureLabel.TurnWomanTurn,
+            FigureLabel.TurnWomanCw,
+            FigureLabel.TurnWomanDegrees720,
+            FigureLabel.TurnManTurn,
+            FigureLabel.TurnManCw,
+            FigureLabel.TurnManDegrees720
+          ],
+          videos: [FigureVideo.V_003_05]
         }
       ]
     },

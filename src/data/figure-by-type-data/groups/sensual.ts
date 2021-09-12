@@ -3,10 +3,14 @@ import { FigureHold } from '../../../types/domain/figure-by-type/enums/figure-ho
 import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-label';
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
-const NECK_SIMPLE_TEXT = 'W/M neck ML->MR 2/4 beats; with/without hip circle';
+const W_NECK_SIMPLE_TEXT =
+  'W neck ML->MR 2/4 beats; with/without hip circle *** W neck MR->ML 2 beats in WCrouch';
+const M_NECK_SIMPLE_TEXT = 'M neck ML->MR 2/4 beats';
 const SHOULDER_SIMPLE_TEXT = 'Shoulders; up/down; arc (1/2 beats)';
 const CHEST_SIMPLE_TEXT =
   'Chest; L/R; B/F (1/2 beats); CW/CCW (large/small); Half CCW + tilt';
+const WINDMILL_LR_SIMPLE_TEXT = 'LR wrist windmill, basic 5-8/slow 5-8+1-2';
+const RL_ELBOW_OVER_SIMPLE_TEXT = 'RL elbow over WLHand ->(Open/LL>RR)';
 const HIPS_SIMPLE_TEXT =
   'Sensual circle with hips, led with hands/hips, CW/CCW *** Vertical 8 *** Half CCW + vertical 8 *** Horizontal 8; 1/2 beats per move';
 const KNEE_SIMPLE_TEXT =
@@ -25,25 +29,33 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
       variations: [
         {
           description:
-            'W neck bend, ML->MR. Lasts 2 beats, usually 5-6. Can do step-tap on 7-8.',
-          simpleText: NECK_SIMPLE_TEXT,
-          startHold: FigureHold.LR__R_WRShoulder,
-          endHold: FigureHold.Open,
-          labels: [FigureLabel.PeriodTwoBeats],
-          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
-        },
-        {
-          description:
-            '- As above, but lasts 4 beats. M can also do CW circle with hips, starting with MR-MB.',
-          simpleText: NECK_SIMPLE_TEXT,
+            'W neck bend, ML->MR. 4 beats. M can also do CW circle with hips, starting with MR-MB.',
+          simpleText: W_NECK_SIMPLE_TEXT,
           startHold: FigureHold.LR__R_WRShoulder,
           endHold: FigureHold.LR__R_WLShoulder,
           labels: [FigureLabel.PeriodFourBeats],
           videos: [FigureVideo.V_003_03]
         },
         {
+          description:
+            '- As above, but lasts 2 beats, usually 5-6. Can do step-tap on 7-8.',
+          simpleText: W_NECK_SIMPLE_TEXT,
+          startHold: FigureHold.LR__R_WRShoulder,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.PeriodTwoBeats],
+          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_Pokreti_02]
+        },
+        {
+          description: '- As above, but lasts 2 beats, in WCrouched position.',
+          simpleText: W_NECK_SIMPLE_TEXT,
+          startHold: FigureHold.WCrouched__L_WLShoulder__R_WLShoulderBlade,
+          endHold: FigureHold.WCrouched__L_WRShoulder__R_WLShoulderBlade,
+          labels: [FigureLabel.PeriodTwoBeats],
+          videos: [FigureVideo.V_003_06]
+        },
+        {
           description: 'M neck bend, ML->MR. 4 beats.',
-          simpleText: NECK_SIMPLE_TEXT,
+          simpleText: M_NECK_SIMPLE_TEXT,
           startHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
           endHold: FigureHold.Open,
           labels: [FigureLabel.PeriodFiveToEight],
@@ -51,7 +63,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
         },
         {
           description: '- As above, but 2 beats.',
-          simpleText: NECK_SIMPLE_TEXT,
+          simpleText: M_NECK_SIMPLE_TEXT,
           startHold: FigureHold.RL_Nothing__LR_MLShoulderBehindNeck,
           endHold: FigureHold.SemiClosed,
           labels: [FigureLabel.PeriodTwoBeats],
@@ -211,11 +223,23 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
         },
         {
           description: 'Stylized CW windmill in contact with WRWrist.',
-          simpleText: 'Basic 5-8 CW windmill LR wrist-on-wrist',
+          simpleText: WINDMILL_LR_SIMPLE_TEXT,
           startHold: FigureHold.SemiClosed,
           endHold: FigureHold.SemiClosed,
           labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],
           videos: [FigureVideo.V_001_02]
+        },
+        {
+          description:
+            '- As above, but in 6 beats, over WHead, while doing slow step.',
+          simpleText: WINDMILL_LR_SIMPLE_TEXT,
+          startHold: FigureHold.SemiClosed,
+          endHold: FigureHold.L_WLShoulder__R_WLShoulderBlade,
+          labels: [
+            FigureLabel.MovementMoving,
+            FigureLabel.PeriodFiveToEightAndOneToTwo
+          ],
+          videos: [FigureVideo.V_003_06]
         },
         {
           description:
@@ -237,8 +261,17 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            'RL elbow over WLHand. We let go of RL and take LL over RR.',
-          simpleText: 'RL elbow over WLHand into LL>RR',
+            'RL elbow over WLHand. We let go of RL and again take RL.',
+          simpleText: RL_ELBOW_OVER_SIMPLE_TEXT,
+          startHold: FigureHold.Open,
+          endHold: FigureHold.Open,
+          labels: [FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_06]
+        },
+        {
+          description:
+            '- As above, but at the end we switch hands and take LL over RR.',
+          simpleText: RL_ELBOW_OVER_SIMPLE_TEXT,
           startHold: FigureHold.Open,
           endHold: FigureHold.LLOverRR,
           labels: [FigureLabel.PeriodOneToFour],
@@ -446,7 +479,7 @@ export const FIGURE_BY_TYPE_SENSUAL: FigureByTypeSectionGroupData = {
         {
           description:
             'Rising from sitting position with leaning WBack in 4 beats.',
-          simpleText: 'Rise with WBack lean from sit',
+          simpleText: 'Rise from sit with WBack lean',
           startHold: FigureHold.ClosedWithSit,
           endHold: FigureHold.Closed,
           labels: [FigureLabel.PeriodFiveToEight],

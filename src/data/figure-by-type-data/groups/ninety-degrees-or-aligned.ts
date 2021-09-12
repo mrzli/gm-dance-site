@@ -6,6 +6,7 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 const ENTER_INTO_R90_SIMPLE_TEXT =
   'Into R90; outer above (O)->(R90 normal/R90 hand on WLShoulder), (SpreadOutRL)->(R90 wrist)';
 const R90_UNWIND_SIMPLE_TEXT = 'R90 normal/wrist unwind';
+const L90_UNWIND_SIMPLE_TEXT = 'L90 exit LR above 1/2 turns';
 const COMPLEX_EXIT_FROM_R90_SIMPLE_TEXT = 'R90 complex exit';
 const HIP_WALK_SIMPLE_TEXT = 'Hip walk (1 step per 1/2 beats)';
 const SEPARATED_ALIGNED_WALK_SIMPLE_TEXT =
@@ -30,7 +31,7 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
               FigureLabel.TurnWomanCcw,
               FigureLabel.TurnWomanDegrees270
             ],
-            videos: [FigureVideo.V_001_02]
+            videos: [FigureVideo.V_001_02, FigureVideo.V_003_06]
           },
           {
             description: '- As above, but at the end LR over WHead.',
@@ -160,7 +161,7 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
           },
           {
             description: 'W CCW, LR shoulder height, RL nothing.',
-            simpleText: 'L90 exit LR above',
+            simpleText: L90_UNWIND_SIMPLE_TEXT,
             startHold: FigureHold.L90__LR_WLShoulder__RL,
             endHold: FigureHold.LRPalmOnPalm,
             labels: [
@@ -170,6 +171,19 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
               FigureLabel.TurnWomanDegrees270
             ],
             videos: [FigureVideo.V_001_02]
+          },
+          {
+            description: '- As above, but double turn on exit.',
+            simpleText: L90_UNWIND_SIMPLE_TEXT,
+            startHold: FigureHold.L90__LR_WLShoulder__RL,
+            endHold: FigureHold.Open,
+            labels: [
+              FigureLabel.PeriodFiveToEight,
+              FigureLabel.TurnWomanTurn,
+              FigureLabel.TurnWomanCcw,
+              FigureLabel.TurnWomanDegrees630
+            ],
+            videos: [FigureVideo.V_003_06]
           },
           {
             description: 'W CW, and small M CW to face the woman.',
@@ -219,7 +233,7 @@ export const FIGURE_BY_TYPE_NINETY_DEGREES_OR_ALIGNED: FigureByTypeSectionGroupD
               FigureLabel.TurnWomanCw,
               FigureLabel.TurnWomanDegrees180
             ],
-            videos: [FigureVideo.V_001_02]
+            videos: [FigureVideo.V_001_02, FigureVideo.V_003_06]
           },
           {
             description:

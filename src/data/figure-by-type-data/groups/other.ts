@@ -5,6 +5,7 @@ import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-v
 
 const SPREAD_OUT_SIMPLE_TEXT = 'MR,ML, throw LR spread out RL';
 const HIPS_SIMPLE_TEXT = 'Turn from hips; ; CCW';
+const CROUCH_SIMPLE_TEXT = 'WCrouch D/U';
 const HAND_DIVES_SIMPLE_TEXT = 'Hand dives enter/exit, turn sides L/R';
 const HAND_CIRCLE_SIMPLE_TEXT = 'Hand circle';
 
@@ -41,6 +42,27 @@ export const FIGURE_BY_TYPE_OTHER: FigureByTypeSectionGroupData = {
             FigureLabel.TurnWomanDegrees360
           ],
           videos: [FigureVideo.V_001_01]
+        }
+      ]
+    },
+    {
+      title: 'Crouch',
+      variations: [
+        {
+          description: 'Push woman down to a crouch.',
+          simpleText: CROUCH_SIMPLE_TEXT,
+          startHold: FigureHold.L_WLShoulder__R_WLShoulderBlade,
+          endHold: FigureHold.WCrouched__L_WLShoulder__R_WLShoulderBlade,
+          labels: [FigureLabel.PeriodTwoBeats],
+          videos: [FigureVideo.V_003_06]
+        },
+        {
+          description: 'Pull woman up from a crouch.',
+          simpleText: CROUCH_SIMPLE_TEXT,
+          startHold: FigureHold.WCrouched__L_WRShoulder__R_WLShoulderBlade,
+          endHold: FigureHold.L_WRShoulder__R_WLShoulderBlade,
+          labels: [FigureLabel.PeriodTwoBeats],
+          videos: [FigureVideo.V_003_06]
         }
       ]
     },

@@ -4,7 +4,7 @@ import { FigureLabel } from '../../../types/domain/figure-by-type/enums/figure-l
 import { FigureVideo } from '../../../types/domain/figure-by-type/enums/figure-video';
 
 const RAISING_THROWING_HANDS_SIMPLE_TEXT =
-  'Throw ->(MHands on back/on waist) *** Raising ->(WHands on MShoulders)';
+  'Throw ->(MHands on back/on waist) *** Raising moving/standing still ->(WHands on MShoulders/gliding WLHand down to SC)';
 
 export const FIGURE_BY_TYPE_WOMAN_HANDS: FigureByTypeSectionGroupData = {
   groupTitle: 'Woman hands',
@@ -31,12 +31,45 @@ export const FIGURE_BY_TYPE_WOMAN_HANDS: FigureByTypeSectionGroupData = {
         },
         {
           description:
-            'Raising WHands starting down and to the outside on 1-4. Putting her hands on my shoulder on 5-8.',
+            'Raising WHands starting down and to the outside on 1-4.',
           simpleText: RAISING_THROWING_HANDS_SIMPLE_TEXT,
           startHold: FigureHold.LRAndRLClose,
-          endHold: FigureHold.Closed,
-          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToEight],
+          endHold: FigureHold.L_WRWristStraightUp__R_WLWristStraightUp,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodOneToFour],
           videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_01]
+        },
+        {
+          description: '- As above, but standing still.',
+          simpleText: RAISING_THROWING_HANDS_SIMPLE_TEXT,
+          startHold: FigureHold.LRAndRLClose,
+          endHold: FigureHold.L_WRWristStraightUp__R_WLWristStraightUp,
+          labels: [FigureLabel.MovementStanding, FigureLabel.PeriodOneToFour],
+          videos: [FigureVideo.V_003_06]
+        },
+        {
+          description: 'Putting WHands from straight up to my shoulder on 5-8.',
+          simpleText: RAISING_THROWING_HANDS_SIMPLE_TEXT,
+          startHold: FigureHold.L_WRWristStraightUp__R_WLWristStraightUp,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_01]
+        },
+        {
+          description: 'Putting WHands from straight up to my shoulder on 5-8.',
+          simpleText: RAISING_THROWING_HANDS_SIMPLE_TEXT,
+          startHold: FigureHold.L_WRWristStraightUp__R_WLWristStraightUp,
+          endHold: FigureHold.Closed,
+          labels: [FigureLabel.MovementMoving, FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_002_Pokreti_01, FigureVideo.V_002_01]
+        },
+        {
+          description:
+            'Gliding WLHand down, 1 beat on WRHand, 1 beat on chest, 1 beat on WLSide, then we throw WLHand and enter into semi-closed position.',
+          simpleText: RAISING_THROWING_HANDS_SIMPLE_TEXT,
+          startHold: FigureHold.L_WRWristStraightUp__R_WLWristStraightUp,
+          endHold: FigureHold.SemiClosed,
+          labels: [FigureLabel.MovementStanding, FigureLabel.PeriodFiveToEight],
+          videos: [FigureVideo.V_003_06]
         }
       ]
     },

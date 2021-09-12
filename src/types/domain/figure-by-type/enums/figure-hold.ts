@@ -26,6 +26,9 @@ export enum FigureHold {
   L_WRHip__R_WLHip = 'L_WRHip__R_WLHip',
   L_WRShoulder__R_WLWaist = 'L_WRShoulder__R_WLWaist',
   L_WRWrist__R_WLShoulderBlade = 'L_WRWrist__R_WLShoulderBlade',
+  L_WRWristStraightUp__R_WLWristStraightUp = 'L_WRWristStraightUp__R_WLWristStraightUp',
+  L_WRShoulder__R_WLShoulderBlade = 'L_WRShoulder__R_WLShoulderBlade',
+  L_WLShoulder__R_WLShoulderBlade = 'L_WLShoulder__R_WLShoulderBlade',
   LR_MRWaistBehindBack__R_WRShoulder = 'LR_MRWaistBehindBack__R_WRShoulder',
   LL_WRWaistBehindBack__R_WLShoulder = 'LL_WRWaistBehindBack__R_WLShoulder',
   LL_WRWaistBehindBack__R_WLHip = 'LL_WRWaistBehindBack__R_WLHip',
@@ -44,7 +47,9 @@ export enum FigureHold {
   WWithBack__LL__R_WRFrontRibs = 'WWithBack__LL__R_WRFrontRibs',
   MWithBack__LROverRL = 'MWithBack__LROverRL',
   MWithBack__LL__RR = 'MWithBack__LL__RR',
-  MWithBack__LL_MLStomach__RR_MRChest = 'MWithBack__LL_MLStomach__RR_MRChest'
+  MWithBack__LL_MLStomach__RR_MRChest = 'MWithBack__LL_MLStomach__RR_MRChest',
+  WCrouched__L_WRShoulder__R_WLShoulderBlade = 'WCrouched__L_WRShoulder__R_WLShoulderBlade',
+  WCrouched__L_WLShoulder__R_WLShoulderBlade = 'WCrouched__L_WLShoulder__R_WLShoulderBlade'
 }
 
 export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
@@ -82,6 +87,18 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
   [FigureHold.L_WRShoulder__R_WLWaist, 'L-WRShoulder R-WLWaist'],
   [FigureHold.L_WRWrist__R_WLShoulderBlade, 'L-WRWrist R-WLShoulderBlade'],
   [
+    FigureHold.L_WRWristStraightUp__R_WLWristStraightUp,
+    'L-WRWristStraightUp R-WLWristStraightUp'
+  ],
+  [
+    FigureHold.L_WRShoulder__R_WLShoulderBlade,
+    'L-WRShoulder R-WLShoulderBlade'
+  ],
+  [
+    FigureHold.L_WLShoulder__R_WLShoulderBlade,
+    'L-WLShoulder R-WLShoulderBlade'
+  ],
+  [
     FigureHold.LR_MRWaistBehindBack__R_WRShoulder,
     'LR-MRWaistBehindBack R-WRShoulder'
   ],
@@ -111,5 +128,13 @@ export const MAP_FIGURE_HOLD_TO_TEXT = new Map<FigureHold, string>([
   [
     FigureHold.MWithBack__LL_MLStomach__RR_MRChest,
     'MWithBack LL-MLStomach RR-MRChest'
+  ],
+  [
+    FigureHold.WCrouched__L_WRShoulder__R_WLShoulderBlade,
+    'WCrouched L-WRShoulder R-WLShoulderBlade'
+  ],
+  [
+    FigureHold.WCrouched__L_WLShoulder__R_WLShoulderBlade,
+    'WCrouched L-WLShoulder R-WLShoulderBlade'
   ]
 ]);
